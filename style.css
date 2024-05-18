@@ -23,6 +23,7 @@ html,body{
  transition:all 0.5s;
  z-index:997;
  background:#fff;
+ 
  box-shadow:0px 6px 9px 0px rgba(0,0,0,0.06);
  align-items: center !important;
  position:fixed; 
@@ -37,7 +38,7 @@ html,body{
 
 #contact{
   background: #ed7e23;
-  margin-left: 100px;
+  
   color: #fff;
   border-radius:5px;
   padding: 10px 10px;
@@ -132,12 +133,14 @@ span {
 } */
 
 form {
+  
+  
   margin-top: 50px;
   margin-bottom: 50px;
   width: 600px;
-  height: 55px;
+  height: 372px;
   display: flex;
-
+  flex-direction: column;
 }
 form input{
   flex:1;
@@ -174,6 +177,11 @@ form button{
   align-items: center;
   height: 100vh;
   position: relative;
+  background-image: url(ContactPageImage.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
 }
 .hero-container p {
   color:black;
@@ -183,7 +191,10 @@ form button{
 }
 .form-control{
   font-size:20px;
-  border-color: #00f2fe;
+  /*border-color: #00f2fe;*/
+  border-radius:8px;
+  border-style:none;
+  padding:9px;
 }
 
 .btn {
@@ -198,6 +209,7 @@ form button{
   position: relative;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  left:186px;
 }
 
 .btn span {
@@ -244,18 +256,40 @@ form button{
   cursor: pointer;
 }
 .form-container{
-  margin:0 100px;
+  margin: 166px 491px;
+  margin-top: -13px;
 }
 
 .team-container , #contact  h2{
-  padding:20px;
+ /* padding:20px;
   text-align: center;
   font-size: 50px;
   justify-content: center;
+  align-items: center;*/
+
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  
+  display: flex;
+  justify-content: center;
   align-items: center;
-} 
+  flex-direction: column;
+  position: relative;
+}
+.team-container-title {
+  color:#ed7e23;
+}
 
+textarea {
+  width: 551px;
+  height: 156px;
+  /*border-color: cyan;*/
+}
 
+.form-group {
+  padding:10px;
+}
 
 /* .team-container{
   
@@ -267,8 +301,11 @@ form button{
   position: relative;
   /* margin:100px; */
   border:50px;
-  padding:50px;
+  padding:105px;
   /* left:30px; */
+}
+.wrapper h2{
+  font-size: 1.5rem;
 }
 .wrapper i {
   top: 50%;
@@ -284,15 +321,16 @@ form button{
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
+  color:#ffffff;
 }
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
 }
 #left{
-  left: -19px;
+  left: 19px;
 }
 #right{
-  right: -19px;
+  right: 19px;
 }
 .wrapper .carousel{
   display: grid;
@@ -334,6 +372,8 @@ form button{
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
+  border-style: solid;
+  border-width:thin;
 }
 .carousel .card .img {
   background: #8B53FF;
@@ -350,7 +390,7 @@ form button{
 }
 .carousel .card h2 {
   font-weight: 500;
-  font-size: 1.56rem;
+  font-size: 1.1rem;
   margin: 30px 0 5px;
 }
 .carousel .card span {
