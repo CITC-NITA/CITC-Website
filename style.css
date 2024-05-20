@@ -28,6 +28,7 @@ html,body{
  align-items: center !important;
  position:fixed; 
  display:flex !important;
+ top: 0px;
 }
 .logo {
   font-size: 25px;
