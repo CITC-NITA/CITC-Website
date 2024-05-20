@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+:root {
+    --card-width: 300px;
+    --card-height:500px;
+    --card-transition-duration: 800ms;
+    --card-transition-easing: ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,126,35,1) 97%, rgba(255,255,255,1) 100%);
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.app__bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.app_bg_image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
+    width: 180%;
+    height: 180%;
+    transition: transform 1000ms ease, opacity 1000ms ease;
+    overflow: hidden;
+}
+
+.app_bg_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app_bg_image.current--image {
+    opacity: 1;
+    --image-translate-offset: 0;
+}
+
+.app_bg_image.previous--image,
+.app_bg_image.next--image {
+    opacity: 0;
+}
+
+.app_bg_image.previous--image {
+    --image-translate-offset: -25%;
+}
+
+.app_bg_image.next--image {
+    --image-translate-offset: 25%;
+}
+
+.cardList {
+    position: absolute;
+    width: calc(3* var(--card-width));
+    height: auto;
+}
+
+.cardList__btn {
+    --btn-size: 35px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.cardList__btn.btn--left {
+    left: -5%;
+}
+
+.cardList__btn.btn--right {
+    right: -5%;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.cards__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.card {
+    --card-translateY-offset: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
+        translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset))
+        scale(var(--card-scale-offset));
+    display: inline-block;
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: transform var(--card-transition-duration)
+        var(--card-transition-easing);
+    user-select: none;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    transition: opacity var(--card-transition-duration)
+        var(--card-transition-easing);
+    opacity: calc(1 - var(--opacity));
+}
+
+.card__image {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 260px;
+    height: 40%;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 1rem;
+}
+
+.card__content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.prev {
+    --card-rotation-offset: 0deg;
+    --card-translateX-offset: -100%;
+    --card-scale-offset: 0.6;
+    --card-translateY-offset: -1rem;
+    --opacity: 0.4;
+    z-index: 1;
+}
+
+
+.nxtnxt{
+    --card-rotation-offset: 0deg;
+    --card-translateX-offset: 100%;
+    --card-scale-offset: 0.6;
+    --card-translateY-offset: -1rem;
+    --opacity: 0.4;
+    z-index: 1;
+}
+
+.current--card {
+    --card-rotation-offset: 0;
+    --card-translateX-offset: 0%;
+    --card-scale-offset: 1;
+    --card-translateY-offset: 0;
+    --opacity: 1;
+    z-index: 3;
+}
+
+
+
+
+
+.next--card {
+    --card-rotation-offset: 0deg;
+    --card-translateX-offset: 50%;
+    --card-translateY-offset: -1rem;
+    --card-scale-offset: 0.8;
+    --opacity: 0.5;
+    z-index: 2;
+}
+
+
+.previous--card {
+    --card-rotation-offset: 0deg;
+    --card-translateX-offset: -50%;
+    --card-translateY-offset: -1rem;
+    --card-scale-offset: 0.8;
+    --opacity: 0.5;
+    z-index: 2;
+}
+
+.loading__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 500;
+}
+
+.loader--text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+.loader span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    animation: loader 1.5s ease infinite;
+}
+
+.loader span:nth-child(1) {
+    border-color: #fff #fff transparent transparent;
+    animation-delay: -0.75s;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.support {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.support a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.support a:hover {
+    color: #ffb3b3;
+}
+
+
+.header {
+    width:100%;
+    padding: 20px 3%;
+    justify-content: space-between;
+    height:80px;
+    /* transition:all 0.5s; */
+    z-index:1;
+    background:#fff;
+    box-shadow:0px 6px 9px 0px rgba(0,0,0,0.06);
+    align-items: center !important;
+    position: fixed; 
+    display:flex !important;
+    top: 0px;
+   }
+
+   .logo {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .navbar a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+  
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #738da8;
+  }
+  
+
+  footer {
+    background-color:rgb(236, 90, 17);
+    text-align: center;
+    padding: 1rem;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+  
+
+:root {
+    --card-width: 300px;
+    --card-height: 500px;
+    --card-transition-duration: 800ms;
+    --card-transition-easing: ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(237, 126, 35, 1) 97%, rgba(255, 255, 255, 1) 100%);
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardList {
+    position: absolute;
+    width: calc(3 * var(--card-width));
+    height: auto;
+}
+
+.cardList__btn {
+    --btn-size: 35px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.cardList__btn.btn--left {
+    left: -5%;
+}
+
+.cardList__btn.btn--right {
+    right: -5%;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.cards__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.card {
+    --card-translateY-offset: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
+        translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset))
+        scale(var(--card-scale-offset));
+    display: inline-block;
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: transform var(--card-transition-duration) var(--card-transition-easing);
+    user-select: none;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__image {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 260px;
+    height: 40%;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 1rem;
+}
+
+.card__content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.hidden--card {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) translateX(0) translateY(0) scale(0);
+}
+
+.previous--card {
+    --card-rotation-offset: 0deg;
+    --card-translateX-offset: -50%;
+    --card-scale-offset: 0.8;
+    --card-translateY-offset: -1rem;
+    --opacity: 0.5;
+    z-index: 2;
+}
+
+.next--card {
+    --card-rotation-offset: 0deg;
+    --card-translateX-offset: 50%;
+    --card-translateY-offset: -1rem;
+    --card-scale-offset: 0.8;
+    --opacity: 0.5;
+    z-index: 2;
+}
+
+.current--card {
+    --card-rotation-offset: 0;
+    --card-translateX-offset: 0%;
+    --card-scale-offset: 1;
+    --card-translateY-offset: 0;
+    --opacity: 1;
+    z-index: 3;
+}
+
+.loading__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 500;
+}
+
+.loader--text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+.loader span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    animation: loader 1.5s ease infinite;
+}
+
+.loader span:nth-child(1) {
+    border-color: #fff #fff transparent transparent;
+    animation-delay: -0.75s;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
