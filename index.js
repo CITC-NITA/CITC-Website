@@ -39,10 +39,10 @@ app.post("/cont",(req,res) => {
         }
         console.log("Record Inserted Succesfully")
     })
-    return res.redirect('msg_sent.html')
+    return res.redirect('index.html')
 })
 
-app.get("/",(req,res) => {
+app.get("/contact.html",(req,res) => {
     res.set({
         "Allow-acces-Allow-Origin":'*'
     })
