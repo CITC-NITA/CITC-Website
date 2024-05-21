@@ -39,7 +39,7 @@ app.post("/sign_up",(req,res) => {
         }
         console.log("Record Inserted Succesfully")
     })
-    return res.redirect('signup_successful.html')
+    return res.redirect('index.html')
 })
 
 app.get("/",(req,res) => {
