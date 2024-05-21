@@ -177,7 +177,7 @@ form button{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url(ContactPageImage.png);
+  background-image: url(../images/ContactPageImage.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
