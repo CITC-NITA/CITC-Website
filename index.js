@@ -15,7 +15,7 @@ var db=mongoose.connection
 db.on('error',()=> console.log("Error in Connecting to Database"))
 db.once('open',()=> console.log("Connected to Database"))
 
-app.post("/sign_up",(req,res) => {
+app.post("/cont",(req,res) => {
     var name= req.body.name
     // var age=req.body.age
     var email=req.body.email
