@@ -51,3 +51,6 @@ app.get("/contact.html",(req,res) => {
 
 console.log("Listening on port 3000")
 
+const PORT = process.env.PORT || 3000;
+
+// service.listen(PORT , () => console.log("Listening on port 3000"));
