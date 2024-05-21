@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express=require("express")
 var bodyParser=require("body-parser")
 var mongoose=require("mongoose")
@@ -15,23 +16,21 @@ var db=mongoose.connection
 db.on('error',()=> console.log("Error in Connecting to Database"))
 db.once('open',()=> console.log("Connected to Database"))
 
-app.post("/cont",(req,res) => {
+app.post("/sign_up",(req,res) => {
     var name= req.body.name
-    // var age=req.body.age
+    var age=req.body.age
     var email=req.body.email
     var phno=req.body.phno
-    var subject=req.body.subject
-    var message=req.body.message
+    var gender=req.body.gender
+    var password=req.body.password
 
     var data={
         "name":name,
-        // "age":age,
+        "age":age,
         "email":email,
         "phno":phno,
-        // "gender":gender,
-        // "password":password
-        "subject" : subject,
-        "message" : message 
+        "gender":gender,
+        "password":password
     }
     db.collection('users').insertOne(data,(err,collection) => {
         if(err){
@@ -42,7 +41,7 @@ app.post("/cont",(req,res) => {
     return res.redirect('index.html')
 })
 
-app.get("/contact.html",(req,res) => {
+app.get("/",(req,res) => {
     res.set({
         "Allow-acces-Allow-Origin":'*'
     })
@@ -50,7 +49,3 @@ app.get("/contact.html",(req,res) => {
 }).listen(3000);
 
 console.log("Listening on port 3000")
-
-const PORT = process.env.PORT || 3000;
-
-// service.listen(PORT , () => console.log("Listening on port 3000"));
