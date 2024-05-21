@@ -31,7 +31,7 @@ app.post("/sign_up",(req,res) => {
         // "gender":gender,
         // "password":password
         "subject" : subject,
-        "message" : message
+        "message" : message 
     }
     db.collection('users').insertOne(data,(err,collection) => {
         if(err){
