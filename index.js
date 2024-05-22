@@ -1,4 +1,3 @@
-require('dotenv').config();
 var express=require("express")
 var bodyParser=require("body-parser")
 var mongoose=require("mongoose")
@@ -18,19 +17,21 @@ db.once('open',()=> console.log("Connected to Database"))
 
 app.post("/sign_up",(req,res) => {
     var name= req.body.name
-    var age=req.body.age
+    // var age=req.body.age
     var email=req.body.email
     var phno=req.body.phno
-    var gender=req.body.gender
-    var password=req.body.password
+    var subject=req.body.subject
+    var message=req.body.message
 
     var data={
         "name":name,
-        "age":age,
+        // "age":age,
         "email":email,
         "phno":phno,
-        "gender":gender,
-        "password":password
+        // "gender":gender,
+        // "password":password
+        "subject" : subject,
+        "message" : message
     }
     db.collection('users').insertOne(data,(err,collection) => {
         if(err){
@@ -49,3 +50,4 @@ app.get("/",(req,res) => {
 }).listen(3000);
 
 console.log("Listening on port 3000")
+
