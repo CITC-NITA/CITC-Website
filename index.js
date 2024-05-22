@@ -1,53 +1,86 @@
-var express=require("express")
-var bodyParser=require("body-parser")
-var mongoose=require("mongoose")
+const express = require("express")
+const mongoose = require ("mongoose");
+const bodyParser = require("body-parser");
+const dotenv = require ("dotenv");
+const path = require('path');
 
-const app=express()
+const app = express();
+dotenv.config();
 
-app.use(bodyParser.json())
-app.use(express.static('public'))
-app.use(bodyParser.urlencoded({
-    extended:true
-}))
+const port = process.env.PORT || 3000;
 
-mongoose.connect('mongodb://localhost:27017/Database')
-var db=mongoose.connection
-db.on('error',()=> console.log("Error in Connecting to Database"))
-db.once('open',()=> console.log("Connected to Database"))
+const username = process.env.MONGODB_USERNAME;
+const password = process.env.MONGODB_PASSWORD;
+mongoose.connect(`mongodb+srv://${username}:${password}@registrationpg.8dqyzvl.mongodb.net/collectedDB`, {
+ useNewurlParser :true,
+ useUnifiedTopology :true,
+});
 
-app.post("/sign_up",(req,res) => {
-    var name= req.body.name
-    // var age=req.body.age
-    var email=req.body.email
-    var phno=req.body.phno
-    var subject=req.body.subject
-    var message=req.body.message
+// registration schema
+const registrationSchema = new mongoose.Schema({
+    name : String, 
+    phone : Number,
+    email : String ,
+    subject : String,
+    message : String
+});
 
-    var data={
-        "name":name,
-        // "age":age,
-        "email":email,
-        "phno":phno,
-        // "gender":gender,
-        // "password":password
-        "subject" : subject,
-        "message" : message
-    }
-    db.collection('users').insertOne(data,(err,collection) => {
-        if(err){
-            throw err;
-        }
-        console.log("Record Inserted Succesfully")
-    })
-    return res.redirect('index.html')
+//model of registration schema
+
+const Registration = mongoose.model("Registration" , registrationSchema);
+
+app.use(bodyParser.urlencoded ({ extended : true}));
+app.use(bodyParser.json());
+
+app.get("/" , (req,res) =>{
+    res.sendFile(__dirname + "/pages/index.html");
 })
 
-app.get("/",(req,res) => {
-    res.set({
-        "Allow-acces-Allow-Origin":'*'
-    })
-    return res.redirect('index.html')
-}).listen(3000);
 
-console.log("Listening on port 3000")
+app.post("/cont" , async (req,res) => {
+    try{
+        const{name,phone ,email,subject, message} = req.body;
 
+        const registrationData = new Registration({
+           name,
+           phone,
+           email,
+           subject ,
+           message
+        });
+        await registrationData.save();
+        res.redirect("/success");
+    }
+    catch(error){
+        console.log(error);
+        res.redirect("error");
+
+    }
+})
+
+app.use(express.static(path.join(__dirname, 'pages')));
+
+app.get("/success", (req, res) => {
+    res.sendFile(__dirname+"/pages/success.html");
+})
+
+app.get("/error", (req, res) => {
+    res.sendFile(__dirname+"/pages/error.html");
+})
+
+app.get("/projectPage/project.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/projectPage/project.html");
+})
+
+app.get("/blogPage/blog.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/blogPage/blog.html");
+})
+
+app.get("/contactPage/contact.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/contactPage/contact.html");
+})
+
+app.listen(port , ()=>{
+    console.log(`server is running on port ${port}`);
+
+})
