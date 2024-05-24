@@ -201,7 +201,7 @@ form button{
 .btn {
   width: 140px;
   height: 50px;
-  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  background: ed7e23;
   color: #fff;
   border-radius: 50px;
   border: none;
@@ -662,14 +662,15 @@ input.box, input.form-control, textarea.form-control {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background: #007bff;
+  background: white;
   color: #fff;
   cursor: pointer;
   transition: background 0.3s;
+  width: 100px;
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: ed7e23;
 }
 
 /* Button text styling */
