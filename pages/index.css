@@ -407,6 +407,7 @@ footer .footer-container2 h3,
 footer .footer-container3 h3 {
   color: #fff;
   font-size: 35px;
+  padding-left: 20px;
 }
 
 footer .footer-container2 h3{
@@ -466,11 +467,12 @@ footer p {
 footer .footer-container3 ul {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 
 footer .footer-container3 li {
   color: #fff;
-  margin: 5px 0;
+  padding: 15px;
 }
 
 
