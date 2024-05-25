@@ -739,4 +739,51 @@ footer {
     padding: 1rem;
     
 }
-  
+.header {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:20px 3%;
+  background: #ffffff;
+  border-bottom: #738da8 solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo img{
+  display: flex;
+  width: 320px;
+  height: 190px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#contact{
+  background: #ed7e23;
+  color: #fff;
+  border-radius:5px;
+  padding: 10px 10px;
+
+}
+
+.navbar a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #738da8;
+}
+
+
+
+
+

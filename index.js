@@ -12,8 +12,8 @@ const port = process.env.PORT || 3000;
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 mongoose.connect(`mongodb+srv://${username}:${password}@registrationpg.8dqyzvl.mongodb.net/collectedDB`, {
- useNewurlParser :true,
- useUnifiedTopology :true,
+//  useNewurlParser :true,
+//  useUnifiedTopology :true,
 });
 
 // registration schema
