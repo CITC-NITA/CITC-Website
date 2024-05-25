@@ -1,4 +1,6 @@
 const express = require("express");
+const nodemailer = require('nodemailer');
+
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
@@ -37,6 +39,53 @@ const Subscription = mongoose.model("Subscription", subscriptionSchema);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+const transporter = nodemailer.createTransport({
+    service: 'gmail', // e.g., 'gmail'
+    auth: {
+        user: 'meshiva741@gmail.com',
+        pass: 'zhtt whog fazp zlro'
+    }
+});
+
+// Function to send confirmation email
+function sendConfirmationEmail(email) {
+    // Setup email data
+    const mailOptions = {
+        from: 'meshiva741@gmail.com',
+        to: email,
+        subject: 'Confirmation Email',
+        text: `Thank you for submitting your email. This is a confirmation that your email address (${email}) has been registered.`
+    };
+
+    // Send email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending confirmation email:', error);
+        } else {
+            console.log('Confirmation email sent:', info.response);
+        }
+    });
+}
+const subscribedEmails = new Set();
+// Route to handle form submission
+app.post('/submit', async (req, res) => {
+    const { email } = req.body;
+    sendConfirmationEmail(email);
+    const subscriptionData = new Subscription({
+        email
+    });
+    await subscriptionData.save();
+    const popupScript = `
+        <script>
+            alert("You have subscribed to our Blogs!");
+            window.location.href = "/"; // Redirect to home page or any other page
+        </script>
+    `;
+    res.send(popupScript);
+});
+
+
+
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/pages/index.html");
 });
@@ -61,21 +110,6 @@ app.post("/cont", async (req, res) => {
     }
 });
 
-app.post("/subs", async (req, res) => {
-    try {
-        const { email } = req.body;
-
-        const subscriptionData = new Subscription({
-            email
-        });
-
-        await subscriptionData.save();
-        res.redirect("/success");
-    } catch (error) {
-        console.log(error);
-        res.redirect("/subscription-error");
-    }
-});
 
 app.use(express.static(path.join(__dirname, 'pages')));
 
