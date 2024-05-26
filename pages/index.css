@@ -664,3 +664,66 @@ footer .footer-container3 li {
     padding: 1rem;
 
   }
+
+
+  .custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    display: flex;
+    
+}
+
+#customSelectInput {
+    width: 520px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 520px;
+    /* max-height: 200px; */
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#goButton {
+    /* margin-top: 10px; */
+    
+    
+    cursor: pointer;
+    background:#ed7e23;
+    padding: 10px 30px;
+    /* margin-left: 5px; */
+    border:none;
+    outline: none;
+    color: #fff;
+    /* letter-spacing: 1px; */
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+     /* margin-top: 10px; */
+      padding: 10px;
+      /* width: 100%; */
+      cursor: pointer;
+      height: 43px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}

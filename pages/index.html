@@ -51,13 +51,20 @@
 
             
           </div>
-          <div class="item2">
-            <form>
-              <input type="text" placeholder="      Search Your Content">
-              <button type="submit">></button>
-            </form>
-          </div>
-
+          <div class="custom-select-container">
+            <div class="flexing">
+            <input type="text" id="customSelectInput" placeholder="Search...">
+            <div id="customSelectDropdown" class="dropdown-content">
+                <a href="./blogPage/blog05.html" data-value="option1">SIH Hardware</a>
+                <a href="./blogPage/blog04.html" data-value="option2">SIH Software</a>
+                <a href="./blogPage/blog02.html" data-value="option3">Ayaam 2023</a>
+                <a href="./blogPage/blog06.html" data-value="option4">Ayaam 2024</a>
+                <a href="./blogPage/blog01.html" data-value="option5">CIT Cell</a>
+            </div>
+            </div>
+            <button id="goButton">Go</button>
+            
+            </div>
 
 
         </div>
@@ -300,6 +307,50 @@
 
 </footer>
 <script src="/navbar.js"></script>
+<script>let selectedLink = '';
+
+  document.getElementById('customSelectInput').addEventListener('click', function() {
+      document.getElementById('customSelectDropdown').style.display = 'block';
+  });
+  
+  document.getElementById('customSelectInput').addEventListener('keyup', function() {
+      let filter = this.value.toLowerCase();
+      let options = document.querySelectorAll('#customSelectDropdown a');
+  
+      options.forEach(option => {
+          if (option.textContent.toLowerCase().includes(filter)) {
+              option.style.display = '';
+          } else {
+              option.style.display = 'none';
+          }
+      });
+  });
+  
+  document.addEventListener('click', function(event) {
+      if (!document.querySelector('.custom-select-container').contains(event.target)) {
+          document.getElementById('customSelectDropdown').style.display = 'none';
+      }
+  });
+  
+  document.querySelectorAll('#customSelectDropdown a').forEach(option => {
+      option.addEventListener('click', function(event) {
+          event.preventDefault();
+          document.getElementById('customSelectInput').value = this.textContent;
+          selectedLink = this.getAttribute('href');
+          document.getElementById('customSelectDropdown').style.display = 'none';
+      });
+  });
+  
+  document.getElementById('goButton').addEventListener('click', function() {
+      if (selectedLink) {
+          window.location.href = selectedLink;
+      } else {
+          alert('Please select an option first.');
+      }
+  });
+  </script>
+
+
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
