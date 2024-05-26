@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900& display=swap');
 
 :root {
     --card-width: 300px;
@@ -197,19 +198,19 @@ button:focus {
 }
 
 .card__content h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .card__content p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 10px;
     margin-bottom: 1rem;
 }
 
 .card__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 1rem;
     color: #007bff;
     text-decoration: none;
@@ -336,12 +337,12 @@ button:focus {
 }
 
 
-.header {
+/*.header {
     width:100%;
     padding: 20px 3%;
     justify-content: space-between;
     height:80px;
-    /* transition:all 0.5s; */
+   
     z-index:1;
     background:#fff;
     box-shadow:0px 6px 9px 0px rgba(0,0,0,0.06);
@@ -370,7 +371,7 @@ button:focus {
   .navbar a:hover,
   .navbar a.active {
     color: #738da8;
-  }
+  }*/
   
 
   footer {
@@ -381,7 +382,114 @@ button:focus {
     position: fixed;
     width: 100%;
 }
-  
+
+.header {
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    background: #ffffff;
+    border-bottom: #738da8 solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+    display: flex;
+    width: 320px;
+    height: 190px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+#contact {
+    background: #ed7e23;
+    margin-left: 38px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #738da8;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ed7e23;
+}
+
+@media(max-width:576px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 4px;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 55%;
+        /* text-align: center; */
+        transition: 0.3s;
+        height: 51%;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    #contact {
+        width: 9rem;
+    }
+
+}
 
 :root {
     --card-width: 300px;
@@ -508,19 +616,19 @@ button:focus {
 }
 
 .card__content h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .card__content p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
 .card__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 1rem;
     color: #007bff;
     text-decoration: none;
@@ -610,7 +718,7 @@ button:focus {
     }
 }
 
-.header {
+/*.header {
     position: fixed;
     height: 100px;
     top: 0;
@@ -652,5 +760,5 @@ button:focus {
   .navbar a:hover,
   .navbar a.active {
     color: #738da8;
-  }
+  }*/
   

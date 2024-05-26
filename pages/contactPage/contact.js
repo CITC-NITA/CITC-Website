@@ -1,3 +1,4 @@
+/*responsive navbar*/
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -13,7 +14,7 @@ document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click" ,
 
 
 
-
+/*contact section*/
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;

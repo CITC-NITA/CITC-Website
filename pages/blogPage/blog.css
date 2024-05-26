@@ -37,6 +37,7 @@ html,body{
   margin-bottom: 30px;
 }
 
+
 #contact{
   background: #ed7e23;
   
@@ -73,7 +74,7 @@ html,body{
   transition: all 0.3s ease-in-out;
   background-color: #ed7e23;
 }
-@media(max-width:768px){
+@media(max-width:600px){
   .hamburger{
     display:block;
   }
@@ -88,16 +89,17 @@ html,body{
   }
 
   .nav-menu{
-    display:flex;
-    position:fixed;
-    left:-100%;
-    top:70px;
-    gap:0;
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 4px;
     flex-direction: column;
     background-color: #ffffff;
-    width:100%;
-    text-align: center;
+    width: 55%;
+    /* text-align: center; */
     transition: 0.3s;
+    height: 51%;
   }
   .nav-item{
     margin:16px 0;
@@ -105,6 +107,9 @@ html,body{
   }
   .nav-menu.active{
     left:0;
+  }
+  #contact{
+    width:9rem;
   }
   
 }
