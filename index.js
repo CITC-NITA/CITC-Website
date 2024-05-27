@@ -146,5 +146,4 @@ app.listen(port, () => {
 
 })
 
-/*responsive navbar */
 
