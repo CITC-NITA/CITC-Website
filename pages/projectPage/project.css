@@ -126,7 +126,7 @@ button:focus {
 }
 
 .card__content {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .card__content h2 {
@@ -549,7 +549,7 @@ button:focus {
 }
 
 .card__content {
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .card__content h2 {
@@ -789,7 +789,7 @@ button:focus {
     
     :root {
         --card-width: 270px;
-        --card-height: 470px;
+        --card-height: 460px;
         /* --card-transition-duration: ;
         --card-transition-easing: ease; */
         
