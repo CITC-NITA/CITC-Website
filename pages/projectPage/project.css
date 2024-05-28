@@ -556,7 +556,7 @@ button:focus {
 }
 
 .cardList__btn.btn--right {
-    right: -5%;
+    right:-5%;
 }
 
 .icon {
@@ -761,4 +761,68 @@ button:focus {
   .navbar a.active {
     color: #738da8;
   }*/
+  /* Media Query for Mobile Devices (up to 576px width) */
+@media (max-width: 576px) {
+    /* Adjustments for the header */
+    .header {
+        padding: 20px 5%;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
   
+
+    .card {
+        /* width: calc(100% - 20px); */
+        margin-bottom: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    /* Adjustments for card images */
+    .card__image {
+        width: 260px;
+        height: 200px;
+    }
+
+    /* Adjustments for card content */
+    .card__content {
+        padding: 1rem;
+        text-align: center;
+        
+    }
+    .card__wrapper {
+    
+    position: fixed;
+        justify-content: center;
+    }
+    
+    .cardList__btn.btn--right {
+        right: 25%;
+    }
+    .cardList__btn.btn--left{
+        left: 25%;
+    }
+}
+
+/* Responsive Styles for Cards */
+
+
+/* Media Query for Mobile Devices (up to 576px width) */
+
+/* Media Query for Mobile Devices (up to 576px width) */
+
