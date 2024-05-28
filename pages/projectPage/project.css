@@ -399,8 +399,8 @@ button:focus {
     display: flex;
     width: 320px;
     height: 190px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    /* margin-top: 40px; */
+    /* margin-bottom: 30px; */
 }
 
 
@@ -495,11 +495,6 @@ button:focus {
     --card-transition-easing: ease;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 body {
     width: 100;
@@ -518,7 +513,11 @@ button {
     background: none;
     cursor: pointer;
 }
-
+.card__link{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 button:focus {
     outline: none;
 }
@@ -577,7 +576,7 @@ button:focus {
     height: 100%;
     perspective: 1000px;
  
- margin-top: 60px;  /* padding: /; */
+ /* margin-top: 60px;   */
 }
 
 .card {
@@ -603,14 +602,14 @@ button:focus {
     
 }
 
-.card__image {
+/* .card__image {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     width: 260px;
     height: 30%;
     
-}
+} */
 
 .card__image img {
     width: 100%;
@@ -805,6 +804,17 @@ button:focus {
     .hamburger{
       display:block;
     }
+    .header{
+        /* height: 40px; */
+        /* overflow: ; */
+        transform: scaleY(0.8);
+        padding-left: 2px;
+        padding-right: 3px;
+
+    }
+  .logo img{
+    height: 30%;
+  }
     .hamburger.active .bar:nth-child(2){
       opacity:0;
     }
@@ -839,10 +849,10 @@ button:focus {
       width:9rem;
     }
     .cardList__btn.btn--left {
-        left: 31%;
+        left: 29%;
     }
     .cardList__btn.btn--right {
-        right: 31%;
+        right: 29%;
     }
    
     
