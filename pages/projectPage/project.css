@@ -529,7 +529,7 @@ button:focus {
 .app {
 
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -788,14 +788,16 @@ button:focus {
         margin-bottom: 20px;
         position: fixed;
         display: flex;
+        justify-content: center;
         flex-direction: column;
+        height: 600px;
         
 
     }
 
     /* Adjustments for card images */
     .card__image {
-        width: 2\60px;
+        width: 260px;
         height: 200px;
     }
 
@@ -835,6 +837,7 @@ button:focus {
 @media(max-width:576px) {
     .hamburger {
         display: block;
+        padding-right: 20px;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -862,6 +865,9 @@ button:focus {
         transition: 0.3s;
         height: 51%;
     }
+    .logo{
+        padding-left: 20px;
+    }
 
     .nav-item {
         margin: 16px 0;
@@ -884,9 +890,11 @@ button:focus {
     top: 50%;
     padding: 0;
     margin: 0px;
+    width: 100vw;
+    
 }
 footer{
-    top: ;
+
     right: 0%;
 
 }
