@@ -70,7 +70,7 @@ button:focus {
 
 .app_bg_image {
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
     top: 50%;
     transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
     width: 180%;
@@ -389,7 +389,7 @@ button:focus {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 3%;
+    /* padding: 20px 3%; */
     background: #ffffff;
     border-bottom: #738da8 solid 1px;
     display: flex;
@@ -527,12 +527,14 @@ button:focus {
 }
 
 .app {
+
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cardList {
@@ -762,11 +764,9 @@ button:focus {
     color: #738da8;
   }*/
   /* Media Query for Mobile Devices (up to 576px width) */
-@media (max-width: 576px) {
+@media (max-width: 476px) {
     /* Adjustments for the header */
-    .header {
-        padding: 20px 5%;
-    }
+  
 
     .logo img {
         max-width: 250px;
@@ -795,13 +795,13 @@ button:focus {
 
     /* Adjustments for card images */
     .card__image {
-        width: 260px;
+        width: 2\60px;
         height: 200px;
     }
 
     /* Adjustments for card content */
     .card__content {
-        padding: 1rem;
+        /* padding: 1rem; */
         text-align: center;
         
     }
@@ -817,6 +817,11 @@ button:focus {
     .cardList__btn.btn--left{
         left: 25%;
     }
+    footer{
+        margin: 0;
+        padding: 0;
+    }
+    
 }
 
 /* Responsive Styles for Cards */
@@ -826,3 +831,64 @@ button:focus {
 
 /* Media Query for Mobile Devices (up to 576px width) */
 
+
+@media(max-width:576px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 4px;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 55%;
+        /* text-align: center; */
+        transition: 0.3s;
+        height: 51%;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    #contact {
+        width: 9rem;
+    }
+.app{
+    /* position: fixed; */
+    right: -60%;
+    /* top: 100px; */
+    /* gap: 4px; */
+    bottom:-50%;
+    top: 50%;
+    padding: 0;
+    margin: 0px;
+}
+footer{
+    top: ;
+    right: 0%;
+
+}
+
+}
