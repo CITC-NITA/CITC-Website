@@ -126,7 +126,7 @@ button:focus {
 }
 
 .card__content {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .card__content h2 {
@@ -785,7 +785,9 @@ button:focus {
     .cardList__btn.btn--right {
         right: 29%;
     }
-   
+    .card__content {
+        padding: 0.5rem;
+    }
     
     :root {
         --card-width: 270px;
