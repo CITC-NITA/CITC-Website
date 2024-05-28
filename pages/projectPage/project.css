@@ -36,72 +36,9 @@ button:focus {
     outline: none;
 }
 
-.app {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.app__bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -5;
-    filter: blur(8px);
-    pointer-events: none;
-    user-select: none;
-    overflow: hidden;
-}
 
-.app__bg::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    z-index: 1;
-    opacity: 0.8;
-}
 
-.app_bg_image {
-    position: absolute;
-    /* left: 50%; */
-    top: 50%;
-    transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
-    width: 180%;
-    height: 180%;
-    transition: transform 1000ms ease, opacity 1000ms ease;
-    overflow: hidden;
-}
-
-.app_bg_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.app_bg_image.current--image {
-    opacity: 1;
-    --image-translate-offset: 0;
-}
-
-.app_bg_image.previous--image,
-.app_bg_image.next--image {
-    opacity: 0;
-}
-
-.app_bg_image.previous--image {
-    --image-translate-offset: -25%;
-}
-
-.app_bg_image.next--image {
-    --image-translate-offset: 25%;
-}
 
 .cardList {
     position: absolute;
@@ -151,9 +88,7 @@ button:focus {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
-        translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset))
-        scale(var(--card-scale-offset));
+  
     display: inline-block;
     width: var(--card-width);
     height: var(--card-height);
@@ -256,14 +191,14 @@ button:focus {
 }
 
 
-.previous--card {
+/* .previous--card {
     --card-rotation-offset: 0deg;
     --card-translateX-offset: -50%;
     --card-translateY-offset: -1rem;
     --card-scale-offset: 0.8;
     --opacity: 0.5;
     z-index: 2;
-}
+} */
 
 .loading__wrapper {
     position: absolute;
@@ -513,11 +448,7 @@ button {
     background: none;
     cursor: pointer;
 }
-.card__link{
-    border: none;
-    background: none;
-    cursor: pointer;
-}
+
 button:focus {
     outline: none;
 }
@@ -580,7 +511,7 @@ button:focus {
 }
 
 .card {
-    --card-translateY-offset: 100vh;
+    /* --card-translateY-offset: 100vh; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -807,7 +738,7 @@ button:focus {
     .header{
         /* height: 40px; */
         /* overflow: ; */
-        transform: scaleY(0.8);
+        /* transform: scaleY(0.8); */
         padding-left: 2px;
         padding-right: 3px;
 
@@ -858,11 +789,12 @@ button:focus {
     
     :root {
         --card-width: 270px;
-        --card-height: 490px;
+        --card-height: 480px;
         /* --card-transition-duration: ;
         --card-transition-easing: ease; */
         
     }
+   
     
   }
   
