@@ -14,6 +14,7 @@ html,body{
   height:100%;
   color: black;
   background-color: #ffffff;
+  margin-top: 0;
 }
 .header {
   position: fixed;
@@ -114,6 +115,10 @@ html,body{
   
 }
 
+.Home{
+  margin-top: 0px;
+}
+
 #main img{
   display: flex;
   width: 120px;
@@ -170,7 +175,7 @@ span {
   margin-right: 100px;
   margin-bottom: 0px;
   padding-bottom: 10px;
-  margin-top: 5px;
+  margin-top: 0px;
 
   margin-right: 30px;
 }
@@ -344,37 +349,73 @@ form button{
 }
 
 /* -------------footer section  -------------------------- */
+
 footer {
-  position: relative;
-  width: 100%;
-  background: #ed7e23;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between; /* Distribute space between the containers */
-  align-items: center;
-  flex-wrap: wrap;
+  background-color: #ed7e23;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-footer .footer-container2,
-footer .footer-container1,
-footer .footer-container3,
-footer .menu,
-footer p {
+.footer-container2,
+.footer-center,
+.footer-container3 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.footer-container2 {
+  width: 25%;
+  text-align: left;
+}
+
+.footer-container2 h3,
+.footer-container3 h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-container2 p,
+.footer-container3 p {
   margin: 10px 0;
 }
 
-footer .footer-container1,
-footer .menu {
+.footer-container2 form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-footer .footer-container1 li,
-footer .menu li {
-  list-style: none;
+.footer-container2 input.box {
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.footer-container2 button {
+  background-color: #f07345;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer-container2 button:hover {
+  background-color:  #b63806;
+  color: #f1f1f1;
+  
+}
+
+.footer-center{
+  margin-top: 100px;
+}
+
+.footer-container1 li a:hover {
+  transform: translateY(-10px);
 }
 
 footer .footer-container1 li a {
@@ -385,12 +426,11 @@ footer .footer-container1 li a {
   transition: 0.5s;
 }
 
-.footer-container1 li a:hover {
-  transform: translateY(-10px);
+.footer-center {
+  width: 35%;
 }
-
 footer .menu li a {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #fff;
   margin: 0 10px;
   display: inline-block;
@@ -402,47 +442,24 @@ footer .menu li a:hover {
   opacity: 1.5;
 }
 
-footer .footer-container2,
-footer .footer-container3 {
+.footer-container1 {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the start (left) */
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  
 }
 
-footer .footer-container2 h3,
-footer .footer-container3 h3 {
-  color: #fff;
-  font-size: 35px;
-  padding-left: 20px;
+.footer-container1 li {
+  margin: 0 10px;
 }
 
-footer .footer-container2 h3{
-  margin-top: 100px;
+.footer-container1 a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
-
-
-footer .footer-container2 p {
-  color: #fff;
-  font-size: 16px;
-  display: flex;
- 
-}
-
-footer .footer-container2 form {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-footer .footer-container2 form input[type="text"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  width: calc(100% - 110px); 
-  margin-right: -1px;
-}
 
 footer .footer-container2 form button {
   padding: 10px;
@@ -457,33 +474,92 @@ footer .footer-container2 form button {
   transition: 0.3s ease;
 }
 
-footer .footer-container2 form button:hover {
-  background-color:  #738da8;
+footer .menu li a:hover {
+  opacity: 1.5;
+}
 
-  color: #fff;
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 5px;
+  margin-top: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-container3 {
+  font-size: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.footer-container3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container3 li {
+  margin-bottom: 10px;
+}
+
+.footer-container3 li svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.bottom-footer {
+  margin-top: 20px;
+}
+
+.bottom-footer p {
+  margin: 0;
   
 }
 
-footer p {
-  color: #fff;
-  text-align: center;
-  margin-top: px;
-  margin-bottom: 0px;
-  font-size: 1.1em;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container2,
+  .footer-center,
+  .footer-container3 {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-container2 form {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .footer-container2 input.box {
+      width: 70%;
+      margin-right: 10px;
+  }
+
+  .footer-container2 button {
+      width: 20%;
+  }
+
+  .footer-container3 ul {
+      text-align: center;
+      
+  }
+
+  .footer-container3 li {
+      display: inline-block;
+      margin: 0 10px;
+      
+  }
 }
-
-footer .footer-container3 ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-footer .footer-container3 li {
-  color: #fff;
-  padding: 15px;
-}
-
-
 
   /*---------------------------------------------- our Mission----------------------------------- */
 
@@ -673,7 +749,27 @@ footer .footer-container3 li {
     width: 200px;
     display: flex;
     
+    
+}  
+.custom-select-container .flexing{
+  margin-left: 19px;
+  margin-right: 7px;
+  
 }
+
+.home-container .Divider p{
+  margin-bottom:8px ;
+}
+.custom-select-container #customSelectInput{
+  border-color: rgb(234, 232, 232);
+  border-radius: 10px;
+}
+
+.custom-select-container #goButton{
+  height: 47px;
+  border-radius: 10px;
+}
+
 
 #customSelectInput {
     width: 520px;
