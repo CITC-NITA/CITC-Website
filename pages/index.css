@@ -9,6 +9,13 @@
   font-family: 'Poppins',sans-serif;
 }
 
+#box-shadow{
+  box-shadow: inset 0px -0px 150px  #ed7e23;
+}
+
+#nav-shadow{
+  box-shadow: inset 0px 0px 20px  #ed7e23;
+}
 
 html,body{
   width:100%;
@@ -26,7 +33,7 @@ html,body{
   width: 100%;
   padding:20px 3%;
   background: #ffffff;
-  border-bottom: #738da8 solid 1px;
+  border-bottom: #ed7e23 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
