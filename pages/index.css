@@ -10,11 +10,14 @@
 }
 
 #box-shadow{
-  box-shadow: inset 0px -0px 150px  #ed7e23;
+  box-shadow: inset 0px 0px 170px  #ed7e23;
 }
 
 #nav-shadow{
-  box-shadow: inset 0px 0px 20px  #ed7e23;
+  background-color: #ffca9e;
+  display: relative;
+
+  z-index: ;
 }
 
 html,body{
