@@ -11,13 +11,15 @@
 
 #box-shadow{
   box-shadow: inset 0px 0px 170px  #ed7e23;
+  z-index: 5;
 }
 
-#nav-shadow{
+/* #nav-shadow{
   background-color: #ffca9e;
   display: relative;
   
-}
+  
+} */
 
 html,body{
   width:100%;
@@ -34,13 +36,20 @@ html,body{
   left: 0;
   width: 100%;
   padding:20px 3%;
-  background: #ffffff;
+  background: transparent;
   border-bottom: #ed7e23 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: background 0.4s ease-in-out; 
 }
+
+.header.scrolled {
+  background: white; 
+}
+
+
 .logo img{
   display: flex;
   width: 320px;
@@ -359,6 +368,8 @@ form button{
   
 }
 
+
+
 /* -------------footer section  -------------------------- */
 
 footer {
@@ -546,6 +557,7 @@ footer .menu li a:hover {
       text-align: center;
   }
 
+
   .footer-container2 form {
       flex-direction: row;
       justify-content: center;
@@ -703,43 +715,97 @@ footer .menu li a:hover {
 
  
 
-  /* ------------------------------Swipper wala section ka css---------------------- */
+  /* ------------------------------testimonial wala section ka css---------------------- */
 
-  .swiper {
-    width: 100%;
-    height: 100%;
+  .swiper-section {
+    margin: 40px;
   }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .swiper-section{
-    margin: 40px 40px;
-  }
-
-
-  .swiper-container{
+  
+  .swiper-container {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    margin: 15px;
     color: #ed7e23;
+    margin-bottom: 20px; /* Added margin-bottom for better spacing */
   }
-
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent; /* Make the background transparent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .swiper-client-msg {
+    padding: 20px 30px;
+    background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .swiper-client-msg::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(248, 249, 250, 0.9) transparent transparent transparent;
+  }
+  
+  .swiper-client-msg p::before, .swiper-client-msg p::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ced3ff;
+    font-size: 24px;
+  }
+  
+  .swiper-client-msg p::before {
+    content: "\f10d";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+  }
+  
+  .swiper-client-msg p::after {
+    content: "\f10e";
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+  }
+  
+  .swiper-client-data {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  
+  .swiper-client-data img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ced3ff;
+    object-fit: cover;
+  }
+  
+  .client-data-details p:first-child {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .client-data-details p:last-child {
+    color: #666;
+  }
+  
   /*--------------------------------- Events------------------- */
   .alex{
     display: grid;
@@ -783,7 +849,7 @@ footer .menu li a:hover {
 
 
 #customSelectInput {
-    width: 520px;
+    width: 320px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -835,6 +901,9 @@ footer .menu li a:hover {
       justify-content: center;
       align-items: center;
 }
+
+
+
 
 
 
