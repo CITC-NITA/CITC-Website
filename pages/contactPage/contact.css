@@ -16,7 +16,7 @@ html,body{
   color: black;
   background-color: #ffffff;
 }
-.header {
+/*.header {
   position: fixed;
   height: 100px;
   top: 0;
@@ -44,6 +44,60 @@ html,body{
 #contact{
   background: #ed7e23;
   
+  color: #fff;
+  border-radius:5px;
+  padding: 10px 10px;
+
+}
+
+.navbar a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #738da8;
+}*/
+
+.header {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:20px 3%;
+  background: transparent;
+  border-bottom: #ed7e23 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background 0.4s ease-in-out; 
+}
+
+.header.scrolled {
+  background: white; 
+}
+
+
+
+.logo img{
+  display: flex;
+  width: 320px;
+  height: 190px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+
+#contact{
+  background: #ed7e23;
+  margin-left: 100px;
   color: #fff;
   border-radius:5px;
   padding: 10px 10px;
@@ -271,51 +325,7 @@ form button{
   padding:9px;
 }
 
-/*.btn {
-  width: 140px;
-  height: 50px;
-  background: ed7e23;
-  color: #fff;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  left:186px;
-}
 
-.btn span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: top 0.5s;
-}
-
-.btn-text-one {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.btn-text-two {
-  position: absolute;
-  width: 100%;
-  top: 150%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.btn:hover .btn-text-one {
-  top: -100%;
-}
-
-.btn:hover .btn-text-two {
-  top: 50%;
-}*/
 
 
 
@@ -441,138 +451,7 @@ textarea {
 }
 
 
-/*.wrapper {
-  
-  width: 100%;
-  position: relative;
-  border:50px;
-  padding:105px;
-  
-}
-.wrapper h2{
-  font-size: 1.5rem;
-}
-.wrapper i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #EE8023;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-  color:#ffffff;
-}
-.wrapper i:active{
-  transform: translateY(-50%) scale(0.85);
-}
-#left{
-  left: 19px;
-}
-#right{
-  right: 19px;
-}
-.wrapper .carousel{
-  display: grid;
-  grid-auto-flow: column;
- 
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel .card {
-  scroll-snap-align: start;
-  width:240px;
-  height: 342px;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-  border-style: solid;
-  border-width:thin;
-}
-.carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
-}
-.card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-}
-.carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.1rem;
-  margin: 30px 0 5px;
-}
-.carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
-@media screen and (max-width: 1000px) {
-  .wrapper .carousel{
-   
-   
-    width:100%;
-  }
-  
-}
-@media screen and (max-width: 576px) {
-  .team-container-title {
-    padding:16px;
-  }
-  .team-container , #contact-section  h2{
-    font-size: 23px;
-  }
-  .wrapper{
-    padding:20px;
-    left:22px;
-  }
- .wrapper .carousel {
-   
-    
-    width: 90%;
-  }
-  #left{
-    left: -34px;
-  }
-  #right{
-    right: 6px;
-  }
-}*/
+
 
 .slide-container{
   max-width: 1120px;
@@ -705,11 +584,8 @@ textarea {
 .social-icon:hover {
   color: #0077b5; /* LinkedIn color */
 }
-/* 
- .social-icon:hover:nth-child(2) {
-  color: #1da1f2; /* Twitter color */
 
- /* } */
+
 
 .social-icon:hover:nth-child(2) {
   color: #e4405f; /* Instagram color */
@@ -934,118 +810,9 @@ footer {
     padding: 1rem;
     
 }
+
+
   
 
 
 
-/* Center the form */
-/*.main {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
- 
-}*/
-
-
-/*form {
-  width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-input.box, input.form-control, textarea.form-control {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background: white;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s;
-  width: 100px;
-}
-
-.btn:hover {
-  background: ed7e23;
-}
-
-
-.btn-text-one {
-  display: inline-block;
-}
-
-.btn-text-two {
-  display: none;
-}
-
-.btn:hover .btn-text-one {
-  display: none;
-}
-
-.btn:hover .btn-text-two {
-  display: inline-block;
-}
-
-.msg{
-
-  height: 40px;
-}
-
-
-.header {
-  position: fixed;
-  height: 100px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding:20px 3%;
-  background: #ffffff;
-  border-bottom: #738da8 solid 1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-.logo img{
-  display: flex;
-  width: 320px;
-  height: 190px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-#contact{
-  background: #ed7e23;
-  color: #fff;
-  border-radius:5px;
-  padding: 10px 10px;
-
-}
-
-.navbar a{
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 35px;
-
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: #738da8;
-}*/
