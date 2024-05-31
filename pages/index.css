@@ -43,11 +43,13 @@ html,body{
   align-items: center;
   z-index: 100;
   transition: background 0.4s ease-in-out; 
+  
 }
 
 .header.scrolled {
-  background: white; 
+  background-color: white;
 }
+
 
 
 
@@ -152,11 +154,13 @@ html,body{
   padding-right: 20% ;
   
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
+
 .home {
   height: 100vh;
   display: flex;
@@ -179,7 +183,11 @@ span {
 }
 
 .Divider{
-  margin-top: 70px;
+  margin-top: 50px;
+}
+
+.Divider .bold {
+  margin-bottom: 10px;
 }
 
 #customSelectInput{
@@ -192,10 +200,11 @@ span {
 
 
 .home-content h1{
-  font-size: 56px;
+  font-size: 65px;
   font-weight: 700;
   
   color:#ed7e23;
+  line-height: 1.2;
 }
 
 .home-content p{
