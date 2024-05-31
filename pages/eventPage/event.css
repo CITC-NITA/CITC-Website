@@ -53,14 +53,13 @@ html,body{
 
 
 
-/* 
-.logo img{
+ .logo img{
   display: flex;
   width: 320px;
   height: 190px;
   margin-top: 40px;
   margin-bottom: 30px;
-} */
+} 
 
 
 #contact{
