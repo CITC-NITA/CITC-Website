@@ -168,15 +168,27 @@ body {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 1fr;
-  
   max-width: 600px;
   margin-left: 20px;
-  margin-top: 180px;
+  margin-top: 100px;
 
 }
 span {
   color: #738da8;
 }
+
+.Divider{
+  margin-top: 70px;
+}
+
+#customSelectInput{
+  margin-top: 60px;
+}
+
+#goButton{
+  margin-top: 60px;
+}
+
 
 .home-content h1{
   font-size: 56px;
@@ -186,7 +198,10 @@ span {
 }
 
 .home-content p{
-  font-size: 16px;
+  margin-top: 20px;
+  /* margin-bottom: 30px; */
+  margin-left: 5px;
+  font-size: 20px;
 }
 
 .item1 img{
