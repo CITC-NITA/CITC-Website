@@ -14,6 +14,8 @@
   <title>CIT CELL - Unleashing the future of Civil Engineering</title>
 </head>
 <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+<script defer src="pages\app.js"></script>
 <body id="box-shadow" >
   
   <main >
@@ -44,17 +46,6 @@
 
     <!-- to make transparent when scroled in the header -->
 
-    <script>
-      document.addEventListener('scroll',()=>{
-        const header=document.querySelector('header');
-    
-        if(window.scrollY > 20){
-          header.classList.add('scrolled');
-        }else{
-          header.classList.remove('scrolled');
-        }
-      })
-    </script>
 
   
     <section class="Home"  >
@@ -104,9 +95,9 @@
     <section class="about">
       <div>
         <div class="header-about"><h2>ABOUT US</h2></div>
-        <div>
+        <div id="header-para">
           <p>
-            Welcome to the Civil Innovation & Technology Cell, in partnership with the Civil Engineering Club! Our mission is to revolutionize civil engineering by integrating advanced technology with traditional principles, promoting a culture of innovation and collaboration. We have three specialized teams: the Tech Titans, who lead digital integration through IoT, AI, and ML to transform design, construction, and infrastructure management; the Core Crew, who uphold traditional civil engineering disciplines while embracing technological advancements for robust and reliable structures; and the Design Dynamos, who combine creativity and precision to realize visionary concepts with meticulous planning and advanced analytical tools. Together, we drive the future of civil engineering, blending tradition and innovation to create sustainable, visionary solutions. Join us in achieving groundbreaking success through collaboration.
+            Welcome to the Civil Innovation & Technology Cell! <br> We have three specialized teams: the Tech Titans, Core Crew, and the Design Dynamos. <br> Join us in achieving groundbreaking success through collaboration.
           </p>
           
         </div>
@@ -125,7 +116,7 @@
                   <h4>TECH TITANS</h4>
                   <p>These tech-savvy minds, part of the Digital Integration, IoT, AI & ML Team, explore the exciting possibilities of emerging technologies in the civil engineering landscape.
                   </p>
-                  <a href="#"><box-icon name='link-external'></box-icon></a>
+                  <a href="tech-titans.html"><box-icon name='link-external'></box-icon></a>
                 </div>
               </div>
             </div>
@@ -138,7 +129,7 @@
                   <h4>CORE CREW </h4>
                   <p>Our experts uphold the core principles of civil engineering, ensuring the solidity of our foundation.
                   </p>
-                  <a href="#"><box-icon name='link-external'></box-icon></a>
+                  <a href="core-crew.html"><box-icon name='link-external'></box-icon></a>
                 </div>
               </div>
               
@@ -153,7 +144,7 @@
                   <p> This creative group uses their expertise to analyze and design innovative solutions for the future.
 
                   </p>
-                  <a href="#"><box-icon name='link-external'></box-icon></ion-icon></box-icon></a>
+                  <a href="design-dynamos.html"><box-icon name='link-external'></box-icon></ion-icon></box-icon></a>
                 </div>
               </div>
               
@@ -363,14 +354,14 @@
 
   <!-- -------------------------------------------------------------------------------------------------- -->
     
-  <script>
+  <!-- <script>
     const header=document.querySelector('.header');
     
     header.addEventListener('scroll',()=>{
      header.classList.remove('.scrolled');
       
     })
-  </script>
+  </script> -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -534,7 +525,20 @@
 <script src="../index.js"></script>
 
 <!-- code for the header to remove the transparency -->
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+  
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  });
+  
+</script>
 
 
 

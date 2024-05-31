@@ -290,6 +290,74 @@ form button{
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 45px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .item0, .item1 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .item1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Divider {
+    margin-top: 20px;
+  }
+
+  #customSelectInput, #goButton {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    padding: 0 5%;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .item1 {
+    order: 1;
+  }
+
+  .home-content h1 {
+    font-size: 35px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .Divider {
+    margin-top: 10px;
+  }
+
+  #customSelectInput, #goButton {
+    margin-top: 10px;
+  }
+}
+/* ---------------------------------------our team section starts------------------------------------------------ */
+
 .Ourteam{
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -422,6 +490,14 @@ footer {
 .footer-container3 h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+}
+
+
+#header-para{
+  font-size: 22px;
+  text-align: center;
+  
+  
 }
 
 .footer-container2 p,
