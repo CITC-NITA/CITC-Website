@@ -306,22 +306,15 @@ button:focus {
   }*/
   
 
-  footer {
-    background-color:rgb(236, 90, 17);
-    text-align: center;
-    padding: 1rem;
-    bottom: 0px;
-    position: fixed;
-    width: 100%;
-}
+  
 
-.header {
+/*.header {
     position: fixed;
     height: 100px;
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 20px 3%; */
+    padding: 20px 3%;
     background: #ffffff;
     border-bottom: #738da8 solid 1px;
     display: flex;
@@ -334,8 +327,7 @@ button:focus {
     display: flex;
     width: 320px;
     height: 190px;
-    /* margin-top: 40px; */
-    /* margin-bottom: 30px; */
+    
 }
 
 
@@ -355,6 +347,61 @@ button:focus {
     font-weight: 500;
     margin-left: 35px;
     font-family: 'Poppins',sans-serif;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #738da8;
+}*/
+
+.header {
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    background: transparent;
+    border-bottom: #ed7e23 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.4s ease-in-out;
+    font-family: 'Poppins',sans-serif;
+}
+
+.header.scrolled {
+    background: white;
+}
+
+
+
+.logo img {
+    display: flex;
+    width: 320px;
+    height: 190px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+#contact {
+    background: #ed7e23;
+    margin-left: 100px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
 }
 
 .navbar a:hover,
@@ -798,7 +845,18 @@ button:focus {
     }
    
     
-  }
+}
+footer {
+    background-color:rgb(236, 90, 17);
+    text-align: center;
+    padding: 1rem;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+ 
+
   
 
   

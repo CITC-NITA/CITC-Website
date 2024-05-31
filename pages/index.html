@@ -17,7 +17,7 @@
 <body id="box-shadow" >
   
   <main >
-    <header class="header"id="nav-shadow" >
+    <header class="header scrolled"id="nav-shadow" >
       <!-- <img src="img\Logo.png" alt="img\Logo.png"> -->
       <a href="#" class="logo">
         <img src="./images/Logo.png" alt="image\logo.png">
@@ -345,7 +345,14 @@
 
   <!-- -------------------------------------------------------------------------------------------------- -->
     
- 
+  <script>
+    const header=document.querySelector('.header');
+    
+    header.addEventListener('scroll',()=>{
+     header.classList.remove('.scrolled');
+      
+    })
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -438,6 +445,8 @@
 </div>
 
 </footer>
+
+
 <script >
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
@@ -452,6 +461,7 @@
     navMenu.classList.remove("active");
   }))
 </script>
+
 <script>let selectedLink = '';
 
   document.getElementById('customSelectInput').addEventListener('click', function() {
@@ -497,6 +507,8 @@
 
 
 
+
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -504,7 +516,7 @@
 <script src="../index.js"></script>
 
 <!-- code for the header to remove the transparency -->
-<script>
+<!--<script>
   document.addEventListener('scroll',()=>{
     const header=document.querySelector('header');
 
@@ -514,7 +526,7 @@
       header.classList.remove('scrolled');
     }
   })
-</script>
+</script>-->
 
 
 

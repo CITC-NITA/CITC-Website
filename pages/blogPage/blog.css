@@ -15,7 +15,7 @@ html,body{
   color: black;
   background-color: #ffffff;
 }
-.header {
+/*.header {
   position: fixed;
   height: 100px;
   top: 0;
@@ -59,8 +59,61 @@ html,body{
 .navbar a:hover,
 .navbar a.active {
   color: #738da8;
+}*/
+
+.header {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:20px 3%;
+  background: transparent;
+  border-bottom: #ed7e23 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background 0.4s ease-in-out; 
 }
 
+.header.scrolled {
+  background: white; 
+}
+
+
+
+.logo img{
+  display: flex;
+  width: 320px;
+  height: 190px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+
+#contact{
+  background: #ed7e23;
+  margin-left: 100px;
+  color: #fff;
+  border-radius:5px;
+  padding: 10px 10px;
+
+}
+
+.navbar a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #738da8;
+}
 .hamburger{
   display:none;
   cursor:pointer;
@@ -482,8 +535,9 @@ textarea {
   clear: both;
 }
 .blog h2 {
-  color:black;
-  margin:18px;
+  color: black;
+  margin: 6px;
+  padding: 2rem;
 }
 
 .blog-post-img img{
@@ -511,7 +565,7 @@ textarea {
   
   
   background-color:#ffffff;
-  padding-top:80px;
+  padding-top:99px;
 
 }
 
@@ -534,13 +588,13 @@ textarea {
 .recent-post{
   width: 100%;
   max-width: 60rem;
-  margin:20px;
-  padding:7px;
+  margin: -10px;
+  padding: 7px;
   display: flex;
   flex-direction: row;
   border-radius: 0.8rem;
-  position:relative;
-  right:26px;
+  position: relative;
+  right: -23px;
 }
 
 
@@ -607,7 +661,7 @@ textarea {
   font-size: 1.5rem;
   /*margin: 1.5 rem 0 2rem;*/
   text-transform: uppercase;
-  color: #4facfe;
+  color: #1D426A;
 }
 .recent-post-title{
   font-size: 1.5rem;
@@ -621,6 +675,9 @@ textarea {
   font-size:1.09rem;
   color: rgba(0,0,0,0.7);
 
+}
+.recent-post-info a{
+  text-decoration: none;
 }
 
 
