@@ -13,16 +13,7 @@
   z-index: 5;
 }
 
-/* #nav-shadow{
-  background-color: #ffca9e;
-  display: relative;
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-} */
+
 
 html,body{
   width:100%;
@@ -48,10 +39,6 @@ html,body{
   transition: background 0.4s ease-in-out; 
   
 }
-
-
-
-
 
  .logo img{
   display: flex;
@@ -138,11 +125,278 @@ html,body{
   
 }
 
+.home-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin-left: 20px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  padding: 0 10%;
+  
+}
+
+.item1 img{
+  margin-bottom: 300px;
+  width: 1000px;
+  margin-left: 80px;
+  margin-bottom: 0px;
+  margin-top: 150px;
+  
+}
+
+.Divider{
+  width: 500px;
+
+}
+
+.Divider .don img{
+  width: 500px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.Divider{
+  margin-top: 30px;
+  
+}
+
+.don2 h2{
+  text-decoration: none;
+  font-size: 23px;
+}
+
+/* --------------------------footer wala section--------------------------------------- */
 
 
 
+footer {
+  background-color: #ed7e23;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container2,
+.footer-center,
+.footer-container3 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.footer-container2 {
+  width: 25%;
+  text-align: left;
+}
+
+.footer-container2 h3,
+.footer-container3 h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
 
+#header-para{
+  font-size: 22px;
+  text-align: center;
+  
+  
+}
+
+.footer-container2 p,
+.footer-container3 p {
+  margin: 10px 0;
+}
+
+.footer-container2 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container2 input.box {
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.footer-container2 button {
+  background-color: #f07345;
+  /* border: none; */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer-container2 button:hover {
+  background-color:  #FF0000;
+  color: #f1f1f1;
+  
+}
+
+.footer-center{
+  margin-top: 100px;
+}
+
+.footer-container1 li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .footer-container1 li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.footer-center {
+  width: 35%;
+}
+footer .menu li a {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1.5;
+}
+
+.footer-container1 {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  
+}
+
+.footer-container1 li {
+  margin: 0 10px;
+}
+
+.footer-container1 a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+
+footer .footer-container2 form button {
+  padding: 10px;
+  width: 100px; 
+  height: 45px;
+  background-color: #fff;
+  font-size: 13px;
+  color: #ed7e23;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer .menu li a:hover {
+  opacity: 1.5;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 5px;
+  margin-top: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-container3 {
+  font-size: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.footer-container3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container3 li {
+  margin-bottom: 10px;
+}
+
+.footer-container3 li svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.bottom-footer {
+  margin-top: 20px;
+}
+
+.bottom-footer p {
+  margin: 0;
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container2,
+  .footer-center,
+  .footer-container3 {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+
+
+  .footer-container2 form {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .footer-container2 input.box {
+      width: 70%;
+      margin-right: 10px;
+  }
+
+  .footer-container2 button {
+      width: 20%;
+  }
+
+  .footer-container3 ul {
+      text-align: center;
+      
+  }
+
+  .footer-container3 li {
+      display: inline-block;
+      margin: 0 10px;
+      
+  }
+}
 
 
 
