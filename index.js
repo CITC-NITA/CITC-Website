@@ -137,6 +137,10 @@ app.get("/blogPage/blog.html", (req, res) => {
     res.sendFile(__dirname + "/pages/blogPage/blog.html");
 });
 
+app.get("/pages/eventPage/arjuna.html", (req, res) => {
+    res.sendFile(__dirname + "/pages/eventPage/arjuna.html");
+});
+
 app.get("/contactPage/contact.html", (req, res) => {
     res.sendFile(__dirname + "/pages/contactPage/contact.html");
 });

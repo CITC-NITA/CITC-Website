@@ -123,7 +123,7 @@ html, body {
   }
   
   .background {
-    background-image: url('/pages/images/eventbg.png');
+    /* background-image: url('/pages/images/eventbg.png'); */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -134,6 +134,7 @@ html, body {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     margin-top: 91px;
+    background-color: #000;
     animation: fadeIn 1s ease-in-out;
     /* background-color: #000; */
   }
