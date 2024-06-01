@@ -153,6 +153,8 @@ html,body{
   
 }
 
+
+
 .Divider{
   width: 500px;
 
@@ -165,14 +167,36 @@ html,body{
 }
 
 .Divider{
-  margin-top: 30px;
+  margin-top: 50px;
+  align-text:center;
   
+ 
 }
 
-.don2 h2{
+.don2 a h2{
   text-decoration: none;
+  color: #ed7e23;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
   font-size: 23px;
 }
+
+.don2 a h2:hover{
+  opacity: 1.5;
+  /* font-size: 24px; */
+  color: #e95019;
+}
+
+.don2 p{
+  font-size: 15px;
+  color: rgb(50, 49, 49);
+}
+
+.don2 p:hover{
+  color:black;
+}
+
 
 /* --------------------------footer wala section--------------------------------------- */
 
