@@ -401,6 +401,7 @@ h3 {
   margin-bottom: 0px;
   font-family: Arial, sans-serif;
   font-size: 55px;
+  margin-top: 0px;
 }
 
 p {
@@ -448,7 +449,7 @@ section {
 
 .faq h3 {
   font-size: 45px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .faq ol {
@@ -481,7 +482,7 @@ hr.gradient {
 
 h3 {
   font-size: 35px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 ol {
@@ -914,7 +915,8 @@ width: 300px;
       font-size: 25px;
   }
   .faq{
-      padding-top: 100px;
+      /* padding-top: 100px; */
+    
   }
   .faq ol {
       font-size: 16px;
@@ -971,10 +973,22 @@ width: 300px;
 
 
 
-.faq , .finale  , .process , .dates , .about{
+.process , .dates {
   height: 77vh;
 }
+.about{
+  height: 45vh;
+}
+.processnext{
+  height: 60vh;
+}
 
+.faq{
+  height: 60vh;
+}
+.finale{
+  height: 50vh;
+}
 /**/
 .man {
 width: 800px;
