@@ -1,9 +1,10 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
   font-family: Arial, sans-serif;
 }
+
 
 .header {
   position: fixed;
@@ -123,7 +124,7 @@ html, body {
 }
 
 .background {
-  /* background-image: url('/pages/images/eventbg.png'); */
+  background-image: url('../images/eventbg.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -134,7 +135,7 @@ html, body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   margin-top: 91px;
-  background-color: #000;
+  /* background-color: #000; */
   animation: fadeIn 1s ease-in-out;
   /* background-color: #000; */
 }
@@ -179,7 +180,7 @@ html, body {
 .content a,
 .content .timeline-header,
 .content .cash-prize {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .content button {
@@ -311,21 +312,27 @@ html, body {
 }
 
 .arjuna {
-  width: 650px;
-  height: 140px;
+  width: 750px;
+  height: 240px;
   position: relative;
   right: 1000px;
   left: -30%;
 }
 
-.h2{
+/* h2{
   position: relative;
   left: 1000px;
   font-size: 20px;
-}
+  padding-right: 0px;
+  margin-right: 0px;
+} */
 .content h2 {
   font-size: 60px;
   color: #95E9F8;
+  padding-left: 0px;
+  padding-right: 0%;
+  margin-right: 0%;
+  max-width: 980px;
   animation: textFadeIn 1s ease-in-out;
 }
 
@@ -342,7 +349,7 @@ html, body {
 
 h3 {
   color: #95E9F8;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-family: Arial, sans-serif;
   font-size: 55px;
 }
@@ -351,29 +358,32 @@ p {
   color: white;
   font-size: 30px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: Arial, sans-serif;
+  margin-top: 10px;
 }
 
 ol {
   color: white;
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 0px;
   padding-left: 20px;
   font-family: Arial, sans-serif;
-  font-weight: 800;
+  /* font-weight: 800; */
   margin-left: 50px;
 }
 
 ol li {
   margin-bottom: 0px;
+  line-height: 1.5;
 }
 
 .arrowman2 {
-  width: 730px;
-  height: 773px;
-  position: relative;
-  left: 400px;
+  width: 550px;
+  height: 432px;
+  position: absolute;
+  left: 940px;
+  top: 300px;
 }
 
 footer {
@@ -445,11 +455,12 @@ ol {
 
 .processnext p {
   font-size: 20px;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 
+
 .main {
-  height: 120vh;
+  height: 75vh;
   scroll-snap-align: start;
   padding-top: 140px;
 }
@@ -464,28 +475,28 @@ ol {
   z-index: 1;
   
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: none;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 4px 28px;
-  height: 56px;
-  border-radius: 0;
-  overflow: hidden;
-  background: transparent;
+  align-items: center; 
+  justify-content: center; 
+  text-transform: none; 
+  font-weight: 600; 
+  font-size: 14px; 
+  padding: 4px 28px; 
+  height: 56px; 
+  border-radius: 0; 
+  overflow: hidden; 
+  background: transparent; 
   letter-spacing: 0.07em;
+  background-color: #95E9F8;
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
-  color: #fff;
+  color: #000; 
   border: 2px solid #FF7571;
-  top: 105px;
-  left: 755px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  
+  /* transition: background 0.3s ease, transform 0.3s ease; */
 }
 
 .main button:hover {
-  background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
+  /* background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%); */
   background-position: 58% 50%;
   background-size: 500%;
   color: black;
@@ -692,14 +703,8 @@ footer {
 
 
 
-.content {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.content:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
+
 
 
 
@@ -788,7 +793,7 @@ footer:hover {
   .about{
       padding: 0%;
       margin: 0%;
-      padding-top: 120px;
+      /* padding-top: 1000px; */
   }
   section{
       padding: 10px;
@@ -810,7 +815,7 @@ width: 300px;
       /* padding: 1px; */
   }
    .processnext h3{
-  font-size: 25px;
+  font-size: 35px;
   }
   .cash-prize{
       font-size: 32px;
@@ -822,7 +827,7 @@ width: 300px;
       font-size: 15px;
   }
   .process{
-      height: 200vh;
+      height: 110vh;
   }
   .processnext{
       height: 140vh;
@@ -1155,8 +1160,18 @@ animation: wall 8s infinite linear;
 }
 }
 
+h3{
+  font-weight: 1000;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+p , li , ol li{
+  font-size: 23px;
+}
+h2{
+  font-size: larger;
+}
 
-.best{
-display: flex;
-flex-direction: row;
+.about h3 {
+  padding-top: 60px;
 }
