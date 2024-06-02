@@ -268,7 +268,7 @@ border-radius: 5px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-weight: 700;
+font-weight: 600;
 font-size: 18px;
 margin-top: 0%;
 position: relative;
@@ -314,9 +314,10 @@ top: -14px;
 }
 
 .cash-prize {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 40px;
   text-align: center;
+  color: #95E9F8;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s forwards 2s;
@@ -346,7 +347,7 @@ top: -14px;
   background-color: white;
   border-radius: 20px;
   margin-top: 40px;
-  margin-left: 45px;
+  /* margin-left: 45px; */
   font-size: 35px;
   font-weight: 900;
   width: 500px;
@@ -354,7 +355,8 @@ top: -14px;
   display: flex;
   color: #1D426A;
   position: relative;
-  left: -10px;
+  left: -118px;
+  padding-left: 100px;
 
 }
 
@@ -450,7 +452,7 @@ section {
 }
 
 .faq ol {
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 20px;
   line-height: 1.5;
 }
@@ -483,7 +485,7 @@ h3 {
 }
 
 ol {
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 17.3px;
   line-height: 1.5;
 }
@@ -864,6 +866,7 @@ width: 300px;
   .process-header{
       width: 230px;
       margin-left: 0px;
+      padding-left: 1000px;
       /* padding-left: 0%; */
       /* margin-left: 0%; */
   }
@@ -890,6 +893,8 @@ width: 300px;
   }
   .process{
       height: 110vh;
+      position: relative;
+      left: -15px;
   }
   .processnext{
       height: 140vh;
@@ -1226,14 +1231,18 @@ h3{
   font-weight: 1000;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  font-size: 40px;
 }
 p , li , ol li{
-  font-size: 23px;
+  font-size: 20px;
 }
-h3{
-  font-size: 38px;
-}
+
 
 .about h3 {
   padding-top: 60px;
+}
+
+.process{
+  position: relative;
+  left: -15px;
 }
