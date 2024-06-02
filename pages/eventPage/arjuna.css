@@ -206,18 +206,46 @@ html, body {
 
 .timeline {
   margin-right: 45px;
-}
+  }
 
 .snap {
   scroll-snap-align: start;
 }
 
-.dates {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+.timeline-line{
+  width: 1300px;
+  height: 20px;
+  border-radius: 10px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+
+  .timeline-vertical{
+    width: 20px;
+    height: 20px;
+    /* border-radius: 10px; */
+      background-color: white;
+      margin-left: 100px;
+      margin-right: 100px;
+      position: relative;
+      top: 0px;
+   
+  }
+
+  .time {
+    display: flex;
+    /* margin-top: 50px; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+    gap: 20px;
+  }
+ 
 
 .timeline-header {
   font-size: 2rem;
@@ -231,20 +259,31 @@ html, body {
   max-width: 800px;
 }
 
-.time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.event-date{
+background-color: white;
+color: #000;
+width: 300px;
+height: 120px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+font-size: 18px;
+margin-top: 0%;
+position: relative;
+top: -14px;
 }
 
 .timeline-event {
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  color: #000;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -255,8 +294,11 @@ html, body {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #95E9F8;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  background-color: white;
+  margin-bottom: 0px;
+  z-index: 1;
+ 
 }
 
 .timeline-event.one {
@@ -288,29 +330,32 @@ html, body {
 }
 
 .timeline-header {
-  padding: 10px;
+  padding: 5px;
   background-color: white;
-  color: black;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 40px;
-  margin-left: 45px;
-  font-size: 30px;
+  /* margin-left: 45px; */
+  font-size: 35px;
   font-weight: 900;
-  width: 200px;
+  width: 260px;
+  color: #1D426A;
 }
 
 .process-header {
-  padding: 10px;
+  padding: 5px;
   background-color: white;
-  color: black;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 40px;
   margin-left: 45px;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 900;
   width: 500px;
   align-items: center;
   display: flex;
+  color: #1D426A;
+  position: relative;
+  left: -10px;
+
 }
 
 .arjuna {
@@ -447,6 +492,7 @@ ol {
   padding-top: 140px;
   padding-bottom: 100px;
   height: 110vh;
+  padding-left: 50px;
   scroll-snap-align: start;
 }
 
@@ -470,6 +516,11 @@ ol {
 
 .dates {
   height: 100vh;
+  padding-left: 0px;
+  padding-top: 100px;
+  position: relative;
+  left: -15px;
+ 
 }
 
 .main button {
@@ -720,8 +771,12 @@ footer {
 
 .timeline-event:hover {
   transform: scale(1.05);
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   color: #000;
+}
+.event-date:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 
@@ -808,13 +863,16 @@ width: 300px;
   }
   .process-header{
       width: 230px;
+      margin-left: 0px;
       /* padding-left: 0%; */
       /* margin-left: 0%; */
   }
   .timeline-header{
-      width: 200px;
+      width: 400px;
       /* padding-top :16px; */
       margin-left: 0px;
+      /* position: relative; */
+      /* left: -140px; */
       /* padding: ; */
       /* padding: 1px; */
   }
