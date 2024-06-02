@@ -357,6 +357,8 @@ top: -14px;
   position: relative;
   left: -118px;
   padding-left: 100px;
+  margin-bottom: 30px;
+
 
 }
 
@@ -870,6 +872,7 @@ width: 300px;
       padding-left: 1000px;
       /* padding-left: 0%; */
       /* margin-left: 0%; */
+      
   }
   .timeline-header{
       width: 400px;
