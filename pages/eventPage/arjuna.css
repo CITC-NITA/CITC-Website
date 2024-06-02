@@ -1,7 +1,7 @@
 html, body {
   margin: 0; 
   padding: 0; 
-  height: 100%; 
+  /* height: 100%;  */
   font-family: Arial, sans-serif;
 }
 
@@ -136,7 +136,7 @@ html, body {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  margin-top: 91px;
+  margin-top: 40px;
   /* background-color: #000; */
   animation: fadeIn 1s ease-in-out;
   /* background-color: #000; */
@@ -152,11 +152,11 @@ html, body {
 }
 
 .content {
-  height: 100%;
-  padding-top: 200px;
+  /* height: 100%; */
+  /* padding-top: 200px; */
   max-width: 1560px;
   color: #fff;
-  animation: fadeInUp 1s ease-in-out;
+  /* animation: fadeInUp 1s ease-in-out; */
 }
 
 @keyframes fadeInUp {
@@ -432,7 +432,7 @@ ol li {
   height: 432px;
   position: absolute;
   left: 940px;
-  top: 300px;
+  top: 200px;
 }
 
 footer {
@@ -458,7 +458,7 @@ section {
 }
 
 .finale {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   height: 100vh;
 }
 
@@ -491,7 +491,7 @@ ol {
 }
 
 .process {
-  padding-top: 140px;
+  /* padding-top: 140px; */
   padding-bottom: 100px;
   height: 110vh;
   padding-left: 50px;
@@ -499,7 +499,7 @@ ol {
 }
 
 .processnext {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   height: 90vh;
   scroll-snap-align: start;
 }
@@ -513,13 +513,13 @@ ol {
 .main {
   height: 75vh;
   scroll-snap-align: start;
-  padding-top: 140px;
+  /* padding-top: 140px; */
 }
 
 .dates {
   height: 100vh;
   padding-left: 0px;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   position: relative;
   left: -15px;
  
@@ -818,7 +818,7 @@ footer:hover {
       /* display: grid; */
       /* overflow: hidden; */
       padding: 0%;
-      padding-top: 100px;
+      /* padding-top: 100px; */
       margin: 0%;
   }
   .man{
@@ -858,7 +858,7 @@ footer:hover {
   }
   section{
       padding: 10px;
-      padding-top: 80px;
+      /* padding-top: 80px; */
   }
   .main img{
 width: 300px;
@@ -898,13 +898,13 @@ width: 300px;
   }
   .processnext{
       height: 140vh;
-      padding-top: 100px;
+      /* padding-top: 100px; */
   }
   .processnext ol {
       font-size: 16px;
   }
   .finale{
-      padding-top: 100px;
+      /* padding-top: 100px; */
       /* padding-bottom: 40px; */
   }
   .finale ol{
@@ -1241,7 +1241,7 @@ p , li , ol li{
 
 
 .about h3 {
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 .process{
