@@ -971,7 +971,9 @@ width: 300px;
 
 
 
-
+.faq , .finale  , .process , .dates , .about{
+  height: 77vh;
+}
 
 /**/
 .man {
