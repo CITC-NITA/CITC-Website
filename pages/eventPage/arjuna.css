@@ -64,8 +64,7 @@ html, body {
   transition: color 0.3s ease;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover {
   color: #ed7e23;
 }
 
@@ -702,6 +701,7 @@ footer {
 
 .content img:hover {
   transform: scale(1.1);
+
 }
 
 
@@ -1173,7 +1173,7 @@ p , li , ol li{
   font-size: 23px;
 }
 h3{
-  font-size: 45px;
+  font-size: 38px;
 }
 
 .about h3 {
