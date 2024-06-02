@@ -52,6 +52,9 @@ html, body {
   background: #d96a1d;
 }
 
+.about a{
+  color: #00BDAE;
+}
 .navbar a {
   font-size: 18px;
   color: black;
@@ -443,6 +446,7 @@ ol {
 
 .process {
   padding-top: 140px;
+  padding-bottom: 100px;
   height: 110vh;
   scroll-snap-align: start;
 }
@@ -479,10 +483,10 @@ ol {
   justify-content: center; 
   text-transform: none; 
   font-weight: 600; 
-  font-size: 14px; 
+  font-size: 24px; 
   padding: 4px 28px; 
   height: 56px; 
-  border-radius: 0; 
+  border-radius: 10; 
   overflow: hidden; 
   background: transparent; 
   letter-spacing: 0.07em;
@@ -490,13 +494,13 @@ ol {
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
   color: #000; 
-  border: 2px solid #FF7571;
+  /* border: 2px solid #FF7571; */
   
   /* transition: background 0.3s ease, transform 0.3s ease; */
 }
 
 .main button:hover {
-  /* background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%); */
+  background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
   background-position: 58% 50%;
   background-size: 500%;
   color: black;
@@ -1168,8 +1172,8 @@ h3{
 p , li , ol li{
   font-size: 23px;
 }
-h2{
-  font-size: larger;
+h3{
+  font-size: 45px;
 }
 
 .about h3 {
