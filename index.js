@@ -20,11 +20,11 @@ mongoose.connect(`mongodb+srv://${username}:${password}@registrationpg.8dqyzvl.m
 
 // registration schema
 const registrationSchema = new mongoose.Schema({
-    name: String,
-    phone: Number,
-    email: String,
-    subject: String,
-    message: String
+    name:String,
+    phone:Number,
+    email:String,
+    subject:String,
+    message:String
 });
 
 // subscription schema
@@ -32,9 +32,24 @@ const subscriptionSchema = new mongoose.Schema({
     email: String
 });
 
+
+const arjunaSchema = new mongoose.Schema({
+    firstName:String,
+    lastName:String,
+    email:String,
+    phone:Number,
+    address:String,
+    college:String,
+    teamName:String,
+    teamMember:Number,
+    role:String,
+    idea:String,
+
+})
 // models
 const Registration = mongoose.model("Registration", registrationSchema);
 const Subscription = mongoose.model("Subscription", subscriptionSchema);
+const Arjun = mongoose.model("Arjun" , arjunaSchema);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -86,6 +101,9 @@ app.post('/submit', async (req, res) => {
 
 
 
+
+
+
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/pages/index.html");
 });
@@ -109,6 +127,33 @@ app.post("/cont", async (req, res) => {
         res.redirect("/error");
     }
 });
+
+app.post("/register_up", async (req, res) => {
+    try {
+        const { firstName,lastName,email,phone,address,college,teamName,teamMember,role,idea} = req.body;
+
+        const arjunData = new Arjun({
+            firstName, 
+            lastName,
+            email,
+            phone,
+            address,
+            college,
+             teamName,
+            teamMember,
+            role,
+            idea
+        });
+
+        await arjunData.save();
+        res.redirect("/success");
+    } catch (error) {
+        console.log(error);
+        res.redirect("/error");
+    }
+});
+
+
 
 
 app.use(express.static(path.join(__dirname, 'pages')));
