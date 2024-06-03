@@ -91,8 +91,34 @@ html, body {
   margin: 0%;
 }
 
+
+.typing-demo {
+  width: 900px;
+  animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border-right: 3px solid; */
+  font-family: monospace;
+  /* font-size: 2em; */
+  gap: 0px;
+  word-spacing: -15px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
 .background {
-  background-image: url('../images/eventbg.png');
+  /* background-image: url('../images/eventbg.png'); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -103,8 +129,8 @@ html, body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   margin-top: 40px;
-  /* background-color: #000; */
-  animation: fadeIn 1s ease-in-out;
+  background-color: #000;
+  /* animation: fadeIn 1s ease-in-out; */
   /* background-color: #000; */
 }
 
@@ -329,13 +355,17 @@ top: -14px;
 
 }
 
+.about a{
+  font-size: 25px;
+}
+
 .arjuna {
   width: 750px;
   height: 240px;
   position: relative;
-  right: 1000px;
-  left: -30%;
-  padding-top:52px;
+  right: 10000px;
+  left: -45%;
+  padding-top:42px;
 }
 
 /* h2{
@@ -399,10 +429,10 @@ ol li {
 }
 
 .arrowman2 {
-  width: 560px;
+  width: 660px;
   height: 449px;
   position: absolute;
-  left: 940px;
+  left: 845px;
   top: 200px;
 }
 
@@ -640,9 +670,6 @@ ol {
   }
 }
 
-footer {
-  animation: bounceIn 1s ease-in-out;
-}
 
 
 
@@ -1135,6 +1162,10 @@ p , li , ol li{
 
 @media(max-width: 768px){
  
+
+  .arjuna{
+    padding-top: 100px;
+  }
   p{
       font-size: 18px;
   }
@@ -1151,6 +1182,7 @@ p , li , ol li{
       padding: 0%;
       /* padding-top: 100px; */
       margin: 0%;
+      height: 100vh;
   }
   .man{
     display: none;
@@ -1235,10 +1267,7 @@ width: 300px;
   .processnext ol {
       font-size: 16px;
   }
-  .finale{
-      /* padding-top: 100px; */
-      /* padding-bottom: 40px; */
-  }
+ 
   .finale ol{
       font-size: 15px;
   }
