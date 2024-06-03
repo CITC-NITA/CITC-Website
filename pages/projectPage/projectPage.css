@@ -79,7 +79,15 @@ html,body{
   transition: all 0.3s ease-in-out;
   background-color: #ed7e23;
 }
-@media(max-width:600px){
+@media(max-width:576px){
+  .logo img {
+    border-radius: 50%;
+    right: 10p;
+    top: -2rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+  }
   .hamburger{
     display:block;
   }
@@ -114,7 +122,8 @@ html,body{
     left:0;
   }
   #contact{
-    width:9rem;
+    width: 9rem;
+    margin-left: 2.5rem;
   }
   
 }

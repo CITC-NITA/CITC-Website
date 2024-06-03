@@ -231,13 +231,63 @@ width: 300px;
   background-color: #ed7e23;
 }
 
+@media(max-width:576px) {
+  .header{
+    height:70px;
+  }
+  .logo img{
+    border-radius: 50%;
+    /* height: 100px; */
+    /* padding: 14px 0; */
+    /* margin-top: 3rem; */
+    /* padding-left: 17px; */
+    right: 10p;
+    /* position: fixed; */
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+  }
+  .hamburger {
+      display: block;
+  }
 
-.event-date span{
-  color: #1D426A;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 0%;
-  margin: 0%;
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+      display: flex;
+      position: fixed;
+      left: -100%;
+      top: 100px;
+      gap: 4px;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 55%;
+      transition: 0.3s;
+      height: 51%;
+  }
+
+  .nav-item {
+      margin: 16px 0;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  #contact {
+      width: 9rem;
+  }
 }
 
 
