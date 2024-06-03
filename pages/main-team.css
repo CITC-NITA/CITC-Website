@@ -1,269 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,200;1,300;1,800;1,900&family=Kanit:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
-}
-
-h1 {
-    white-space: nowrap; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../pages/images/5.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    scroll-behavior: smooth;
     
 }
 
-.about-wrapper{
-    padding: 8% 10%;
-    background-color: #2d2a2a;
-}
-
-.about{
-    display: flex;
-    justify-content: space-between;
-}
-
-.about .content{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.about .content h1{
-    font-size: 4rem;
-    margin-bottom: 50px;
-    width: 50%;
-    line-height: 2rem;
-    color: #fff;
-}
-
-.about .content p{
-    width: 50%;
-    line-height: 32px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
-
-.button{
-    height: 70px;
-    width: 220px;
-    background-color: rgb(234, 161, 26);
-    border-radius: 40px;
-    border: 0.4px solid rgb(234, 161, 26);
-    color: #1c1c1c;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: .6s;
-
-}
-
-.button:hover{
-    background-color: rgb(251, 217, 0);
-}
-
-.button i{
-    padding: 15px;
-    background-color: #1c1c1c;
-    border-radius: 50%;
-    color: rgb(234, 161, 26);
-    transition: .6s;
-}
-
-.button:hover i{
-    transform: scale(1.08);
-}
-
-.button span{
-    margin-left: 28px;
-    transition: .6s;
-}
-
-.button:hover span{
-    animation:  anims 1s linear forwards;
-}
-
-@keyframes anims {
-    100%{
-        filter: blur(0px);
-    }
-    0%{
-        filter: blur(3px);
-    }
-}
-
-.about .images{
-    display: flex;
-    gap: 25px;
-}
-
-.about .images .image{
-    height: 380px;
-    width: 260px;
-    position: relative;
-    transition: .6s;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 3px;
-    overflow: hidden;
-}
-.about .images .image::after{
-    content: '';
-    position: absolute;
-    top: 99.5%;
-    left: 0;
-    background-color: rgb(251, 217, 0);
-    height: 5px;
-    width: 0;
-    transition: .6s;
-}
-.about .images .image:hover:after{
-    width: 100%;
-}
-
-.image-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.image-wrapper #don{
-    margin-top: 130px;
+h1 {
+    white-space: nowrap;
+    color: aliceblue;
+    
 }
 
 
-.about .images .image img{
-height: 100%;
-width: 100%;
-border-radius: 3px;
-}
-
-.card{
-    position: absolute;
-    top: 100%;
-    left: 0;
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: .6s;
-    color: #fff;
-}
+    
 
-.about .images .image:hover .card{
-    top: 0;
 }
 
 
-.image-wrapper:last-child{
+.header h1{
+    font-size: 60px;
+    margin-top:  50px;
+    margin-bottom: 20px;
+
+}
+
+.header-para{
+    color: rgb(142, 223, 228);
+    font-size: 25px;
+    text-align: center;
+
+    
+}
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+}
+
+.card img{
+    width: 240px;
+    height: 320px;
+    border-radius: 50px;
     margin-top: 50px;
 }
 
-
-
-.card h5{
-    margin-top: 200px;
-    letter-spacing: 1px;
-    color: rgb(251, 217, 0);
+.card img:hover{
+    
 }
 
-.card .social{
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.card .social .icon{
-    height: 40px;
-    width: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #fff;
-    border-radius: 50%;
-    position: relative;
-    transition: .6s;
-}
-
-.card .social .icon i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-.card .social .icon:hover i{
-    color: #1c1c1c;
-}
-
-.card .social .icon:hover{
-   background-color: #fff;
-    transform: translateY(-8px);
-}
-@media screen and (max-width:1100px) {
-    .about .images .image{
-        height: 320px;
-        width: 220px;
-    }
-    .about .content h1{
-        font-size: 3.5rem;
-        width: 80%;
-        line-height: 2rem;
-    }
-
-    .about .content p{
-        width: 80%;
-        margin-bottom: 20px;
-    }
+.layer{
+    margin-left: 30px;
 
 }
 
-
-@media screen and (max-width:900px) {
-    .about .images .image{
-        height: 500px;
-        width: 360px;
-    }
-    .about .images{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 120px;
-    }
-    .about{
-        flex-direction: column;
-    }
-    .button{
-        margin-bottom: 30px;
-    }
+.layer h2{
+    color: rgb(142, 223, 228);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
-
-@media screen and (max-width:768px) {
-    .about .images .image{
-        height: 450px;
-        width: 320px;
-    }
+.layer p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
 }
 
-
-@media screen and (max-width:500px) {
-    .about .content h1{
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-    .about .content p{
-        width: 100%;
-    }
-    .about-wrapper{
-        padding: 8% 6%;
-    }
-    .about .images .image{
-        height: 380px;
-        width: 280px;
-    }
+.para{
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 60px;
+    
 }
