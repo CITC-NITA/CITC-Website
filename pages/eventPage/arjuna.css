@@ -236,7 +236,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 font-weight: 500;
-/* font-size: 18px; */
+font-size: 22px;
 margin-top: 0%;
 position: relative;
 top: -14px;
@@ -335,6 +335,7 @@ top: -14px;
   position: relative;
   right: 1000px;
   left: -30%;
+  padding-top:52px;
 }
 
 /* h2{
@@ -398,8 +399,8 @@ ol li {
 }
 
 .arrowman2 {
-  width: 550px;
-  height: 432px;
+  width: 560px;
+  height: 449px;
   position: absolute;
   left: 940px;
   top: 200px;
@@ -695,7 +696,7 @@ footer {
   transition: transform 0.3s ease;
 }
 
-.content img:hover {
+.arjuna:hover {
   transform: scale(1.1);
 
 }
