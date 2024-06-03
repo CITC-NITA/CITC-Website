@@ -6,6 +6,155 @@ html, body {
 }
 
 
+
+
+
+
+
+
+@media(max-width: 768px){
+ 
+
+  .arjuna{
+    padding-top: 100px;
+  }
+  .typing-demo{
+    width: 100px;
+  }
+  p{
+      font-size: 18px;
+  }
+  ol{
+      font-size: 18px;
+  }
+  h2 h3{
+      font-size: 24px;
+  }
+  .main{
+      /* width: 100vw; */
+      /* display: grid; */
+      /* overflow: hidden; */
+      padding: 0%;
+      /* padding-top: 100px; */
+      margin: 0%;
+      height: 100vh;
+  }
+  .man{
+    display: none;
+  }
+
+  .main button {
+    font-family: "alliance", mono, sans-serif;
+    position: relative;
+    z-index: 1;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 28px;
+    height: 56px;
+    border-radius: 0;
+    overflow: hidden;
+    background: transparent;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
+    color: #fff;
+    border: 2px solid #FF7571;
+   top: 0px;
+   left: 0px;
+   margin-top: 0px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .about{
+      padding: 0%;
+      margin: 0%;
+      /* padding-top: 1000px; */
+  }
+  section{
+      padding: 10px;
+      /* padding-top: 80px; */
+  }
+  .main img{
+width: 300px;
+  }
+  .process-header{
+      width: 230px;
+      margin-left: 0px;
+      padding-left: 1000px;
+      /* padding-left: 0%; */
+      /* margin-left: 0%; */
+      
+  }
+  .timeline-header{
+      width: 400px;
+      /* padding-top :16px; */
+      margin-left: 0px;
+      /* position: relative; */
+      /* left: -140px; */
+      /* padding: ; */
+      /* padding: 1px; */
+  }
+   .processnext h3{
+  font-size: 35px;
+  }
+  .cash-prize{
+      font-size: 32px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+  }
+  .process ol li{
+      font-size: 15px;
+  }
+  .process{
+      height: 110vh;
+      position: relative;
+      left: -15px;
+  }
+  .processnext{
+      height: 140vh;
+      /* padding-top: 100px; */
+  }
+  .processnext ol {
+      font-size: 16px;
+  }
+ 
+  .finale ol{
+      font-size: 15px;
+  }
+  .faq h3{
+      font-size: 25px;
+  }
+  .faq{
+      /* padding-top: 100px; */
+    
+  }
+  .faq ol {
+      font-size: 16px;
+  }
+
+  .arrowman2{
+    display: none;
+  }
+  .timeline-line , .timeline-vertical{
+    display: none;
+  }
+  .time{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .process-header{
+    width: 100px;
+    font-size: 10px;
+  }
+}
+
+
 .header {
   position: fixed;
   height: 60px;
@@ -118,7 +267,7 @@ html, body {
 
 
 .background {
-  /* background-image: url('../images/eventbg.png'); */
+  background-image: url('../images/eventbg.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -129,7 +278,7 @@ html, body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   margin-top: 40px;
-  background-color: #000;
+  /* background-color: #000; */
   /* animation: fadeIn 1s ease-in-out; */
   /* background-color: #000; */
 }
@@ -1155,148 +1304,3 @@ p , li , ol li{
       width: 9rem;
   }
 }
-
-
-
-
-
-@media(max-width: 768px){
- 
-
-  .arjuna{
-    padding-top: 100px;
-  }
-  p{
-      font-size: 18px;
-  }
-  ol{
-      font-size: 18px;
-  }
-  h2 h3{
-      font-size: 24px;
-  }
-  .main{
-      /* width: 100vw; */
-      /* display: grid; */
-      /* overflow: hidden; */
-      padding: 0%;
-      /* padding-top: 100px; */
-      margin: 0%;
-      height: 100vh;
-  }
-  .man{
-    display: none;
-  }
-
-  .main button {
-    font-family: "alliance", mono, sans-serif;
-    position: relative;
-    z-index: 1;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: none;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 4px 28px;
-    height: 56px;
-    border-radius: 0;
-    overflow: hidden;
-    background: transparent;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
-    color: #fff;
-    border: 2px solid #FF7571;
-   top: 0px;
-   left: 0px;
-   margin-top: 0px;
-    transition: background 0.3s ease, transform 0.3s ease;
-  }
-  .about{
-      padding: 0%;
-      margin: 0%;
-      /* padding-top: 1000px; */
-  }
-  section{
-      padding: 10px;
-      /* padding-top: 80px; */
-  }
-  .main img{
-width: 300px;
-  }
-  .process-header{
-      width: 230px;
-      margin-left: 0px;
-      padding-left: 1000px;
-      /* padding-left: 0%; */
-      /* margin-left: 0%; */
-      
-  }
-  .timeline-header{
-      width: 400px;
-      /* padding-top :16px; */
-      margin-left: 0px;
-      /* position: relative; */
-      /* left: -140px; */
-      /* padding: ; */
-      /* padding: 1px; */
-  }
-   .processnext h3{
-  font-size: 35px;
-  }
-  .cash-prize{
-      font-size: 32px;
-      display: flex;
-      text-align: center;
-      align-items: center;
-  }
-  .process ol li{
-      font-size: 15px;
-  }
-  .process{
-      height: 110vh;
-      position: relative;
-      left: -15px;
-  }
-  .processnext{
-      height: 140vh;
-      /* padding-top: 100px; */
-  }
-  .processnext ol {
-      font-size: 16px;
-  }
- 
-  .finale ol{
-      font-size: 15px;
-  }
-  .faq h3{
-      font-size: 25px;
-  }
-  .faq{
-      /* padding-top: 100px; */
-    
-  }
-  .faq ol {
-      font-size: 16px;
-  }
-
-  .arrowman2{
-    display: none;
-  }
-  .timeline-line , .timeline-vertical{
-    display: none;
-  }
-  .time{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .process-header{
-    width: 100px;
-    font-size: 10px;
-  }
-}
-
-
