@@ -417,13 +417,13 @@ form button{
   margin: 166px 491px;
   margin-top: -13px;
 }
-.contact-section{
+#contact-section{
   
   height: 87vh;
 }
 
 
-.team-container , .contact-section h2 {
+.team-container , #contact-section h2 {
  
 
   padding: 20px;
