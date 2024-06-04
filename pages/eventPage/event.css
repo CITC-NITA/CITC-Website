@@ -43,7 +43,7 @@ html,body{
  .logo img{
   display: flex;
   width: 320px;
-  height: 90px;
+  height: 190px;
   margin-top: 40px;
   margin-bottom: 30px;
   overflow: scroll;
@@ -440,6 +440,51 @@ footer .menu li a:hover {
     display: inline-block;
     transition: 0.5s;
   }
+  
+  
+.home{
+  /* width: 700px; */
+  overflow: scroll;
+  height: 120vh;
+  padding: 0px;
+  }
+  
+  .item1 img{
+    display: none;
+    padding-top: 200px;
+    margin-top: 200px;
+    padding: 0px;
+
+  }
+  
+  .home-content{
+  /* width: 100px; */
+  margin: 0px;
+  padding: 0px;
+
+  }
+  
+  .Divider{
+  /* width: 50%; */
+  /* overflow: scroll; */
+  width: 90%;
+  padding: 0px;
+
+  }
+  
+  .don{
+  /* width: 100%; */
+  width: 50%;
+
+  padding: 0px;
+
+  }
+  
+  .Divider .don img{
+    width: 310px;
+    
+  }
+  
   
   
   
