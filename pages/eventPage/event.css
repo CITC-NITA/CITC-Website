@@ -46,7 +46,7 @@ html,body{
   height: 190px;
   margin-top: 40px;
   margin-bottom: 30px;
-  overflow: scroll;
+  /* overflow: scroll; */
   display: block;
 } 
 
