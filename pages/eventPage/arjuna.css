@@ -355,14 +355,21 @@ top: -14px;
 .about a{
   font-size: 25px;
 }
+.main{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: -10%;
+flex-direction: column;  
+}
 
 .arjuna {
   width: 750px;
   height: 240px;
   position: relative;
   right: 10000px;
-  left: -45%;
-  padding-top:42px;
+  left: -3%;
+  padding-top:32px;
 }
 
 /* h2{
@@ -1405,7 +1412,10 @@ font-size: 35px;
   padding-left: 50px;
 }
 
-
+section{
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -1487,4 +1497,14 @@ hr.gradient {
   /* width: 500px; */
 }
 
+.process-header{
+  position: relative;
+  left: -60px;
+  font-size: 22px;
+}
+
+h3{
+  font-size: 25px;
+  /* padding: 90px; */
+}
 }
