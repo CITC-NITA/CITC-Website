@@ -178,6 +178,10 @@ app.get("/projectPage/project.html", (req, res) => {
     res.sendFile(__dirname + "/pages/projectPage/project.html");
 });
 
+app.get("/eventPage/arjuna.html", (req, res) => {
+    res.sendFile(__dirname + "/pages/eventPage/arjuna.html");
+});
+
 app.get("/blogPage/blog.html", (req, res) => {
     res.sendFile(__dirname + "/pages/blogPage/blog.html");
 });
