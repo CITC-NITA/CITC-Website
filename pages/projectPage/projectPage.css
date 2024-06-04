@@ -9,10 +9,6 @@
 }
 
 
-#box-shadow{
-  box-shadow: inset 0px 0px 170px  #ed7e23;
-  z-index: 5;
-}
 
 html,body{
   width:100%;
@@ -706,6 +702,8 @@ textarea {
 
 .main-blog-content{
   padding:6rem;
+  box-shadow: inset 0px 0px 170px  #ed7e23;
+  z-index: 5;
 }
 .main-image{
       
