@@ -44,8 +44,6 @@ html, body {
   margin-bottom: 30px;
 }
 
-
-
 #contact {
   background: #ed7e23;
   color: #fff;
@@ -357,21 +355,14 @@ top: -14px;
 .about a{
   font-size: 25px;
 }
-.main{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  left: -10%;
-flex-direction: column;  
-}
 
 .arjuna {
   width: 750px;
   height: 240px;
   position: relative;
   right: 10000px;
-  left: -3%;
-  padding-top:32px;
+  left: -45%;
+  padding-top:42px;
 }
 
 /* h2{
@@ -1274,10 +1265,9 @@ section{
   padding-top: 100px;
 }
 .typing-demo{
-  width: 600px;
-  font-size: 98px;
-  position: relative;
-  left: 50px;
+  width: 100px;
+  font-size: 20px;
+  /* left: ; */
 }
 p{
     font-size: 18px;
@@ -1285,7 +1275,9 @@ p{
 ol{
     font-size: 18px;
 }
-
+h2 h3{
+    font-size: 24px;
+}
 .main{
     /* width: 100vw; */
     /* display: grid; */
@@ -1414,10 +1406,7 @@ font-size: 35px;
   padding-left: 50px;
 }
 
-section{
-  display: flex;
-  flex-direction: column;
-}
+
 
 
 
@@ -1446,8 +1435,8 @@ section{
 
 .main h2{
 width: 100%;
-font-size: 20px;
-/* margin-left: px; */
+font-size: 15px;
+margin-left: px;
 word-spacing: 0px;
 word-wrap: break-word;
 font-weight: 1000;
@@ -1463,7 +1452,6 @@ margin-top : 1px;
   color: #000;
   border-radius: 10px;
   border: none;
-  left: 40px;
 }
 .arjuna{
   padding-top: 80px;
@@ -1491,22 +1479,6 @@ margin-top : 1px;
 .faq{
   height: 130vh;
 }
-hr.gradient {
-  background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
-  height: 8px;
-  padding: 0px;
-  margin: 0px;
-  /* width: 500px; */
-}
 
-.process-header{
-  position: relative;
-  left: -60px;
-  font-size: 22px;
-}
 
-h3{
-  font-size: 25px;
-  /* padding: 90px; */
-}
 }
