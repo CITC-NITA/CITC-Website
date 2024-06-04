@@ -151,7 +151,11 @@ button:focus {
     /* font-family: 'Poppins',sans-serif;
     font-size: 1rem;
     color: #007bff; */
+    /* z-index: 100; */
     /* text-decoration: none; */
+    /* position: relative;
+    left: 1000px; */
+    
 }
 
 
@@ -603,6 +607,7 @@ button:focus {
 
 .card__content {
     /* padding: 1rem; */
+    z-index: 100;
 }
 
 .card__content h2 {

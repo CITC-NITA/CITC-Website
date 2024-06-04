@@ -162,7 +162,7 @@ html, body {
 .content .arjuna {
   border-radius: 8px;
   position: relative;
-  left: 60px;
+  left: -35px;
 }
 
 .content h2,
@@ -1331,7 +1331,7 @@ width: 300px;
     width: 80%;
     margin-left: 0px;
     padding-left: 100px;
-    left: -100px;
+    left: -70px;
     font-size: 17px;
     padding-right: 0px;
     padding-top: 6px;
@@ -1352,6 +1352,7 @@ width: 300px;
     /* padding: ; */
     /* padding: 1px; */
     padding: 0px;
+  
 }
  .processnext h3{
 font-size: 35px;
@@ -1435,7 +1436,7 @@ section{
 
 .main h2{
 width: 100%;
-font-size: 15px;
+font-size: 22px;
 margin-left: px;
 word-spacing: 0px;
 word-wrap: break-word;
@@ -1455,6 +1456,7 @@ margin-top : 1px;
 }
 .arjuna{
   padding-top: 80px;
+
 }
 
 .content h2, .content h3, .content p, .content a, .timeline-header, .content .cash-prize{
@@ -1479,6 +1481,13 @@ margin-top : 1px;
 .faq{
   height: 130vh;
 }
+
+.content .arjuna {
+  border-radius: 8px;
+  position: relative;
+  left: 30px;
+}
+
 
 
 }
