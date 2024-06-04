@@ -162,13 +162,13 @@ html, body {
 .content .arjuna {
   border-radius: 8px;
   position: relative;
-  left: 10px;
+  left: 60px;
 }
 
 .content h2,
 .content h3,
 .content p,
-.content a,
+.about a,
 .content .timeline-header,
 .content .cash-prize {
   padding-left: 40px;
@@ -534,7 +534,7 @@ ol {
   text-transform: none; 
   font-weight: 600; 
   font-size: 24px; 
-  padding: 4px 28px; 
+  /* padding: 4px 28px;  */
   height: 56px; 
   border-radius: 10; 
   overflow: hidden; 
@@ -674,6 +674,9 @@ ol {
   position: relative;
   transition: color 0.3s ease;
 }
+.main a{
+  text-decoration: none;
+}
 
 .navbar a::after {
   content: '';
@@ -694,7 +697,11 @@ ol {
 }
 
 
-
+.event-date span{
+  font-weight: 1000;
+  color: #2C6087;
+  font-size: 25px;
+}
 
 @keyframes pulse {
   0% {
@@ -1100,6 +1107,7 @@ p , li , ol li{
 
 
 @media(max-width:600px) {
+ 
     .header{
       height:70px;
     }
@@ -1157,13 +1165,6 @@ p , li , ol li{
         width: 9rem;
     }
   
-  .man {
-    transform: scale(0.75);
-  }
-  .man {
-    transform: scale(0.5);
-  }
-  
   
   
 
@@ -1212,7 +1213,7 @@ p , li , ol li{
     background-image: url('../images/eventbg.png');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     padding-top: 40px;
     background-position-y: 100px;
     height: calc(100% - 50px);
@@ -1220,6 +1221,7 @@ p , li , ol li{
     scroll-snap-type: none;
     scroll-behavior: smooth;
     margin-top: 40px;
+    overflow: hidden;
     /* background-color: #000; */
     /* animation: fadeIn 1s ease-in-out; */
     /* background-color: #000; */
@@ -1263,7 +1265,10 @@ section{
   padding-top: 100px;
 }
 .typing-demo{
-  width: 100px;
+  width: 600px;
+  font-size: 98px;
+  position: relative;
+  left: 50px;
 }
 p{
     font-size: 18px;
@@ -1271,9 +1276,7 @@ p{
 ol{
     font-size: 18px;
 }
-h2 h3{
-    font-size: 24px;
-}
+
 .main{
     /* width: 100vw; */
     /* display: grid; */
@@ -1282,9 +1285,6 @@ h2 h3{
     /* padding-top: 100px; */
     margin: 0%;
     height: 100vh;
-}
-.man{
-  display: none;
 }
 
 .main button {
@@ -1298,7 +1298,7 @@ h2 h3{
   text-transform: none;
   font-weight: 600;
   font-size: 14px;
-  padding: 4px 28px;
+  /* padding: 4px 28px; */
   height: 56px;
   border-radius: 0;
   overflow: hidden;
@@ -1434,8 +1434,8 @@ section{
 
 .main h2{
 width: 100%;
-font-size: 15px;
-margin-left: px;
+font-size: 20px;
+/* margin-left: px; */
 word-spacing: 0px;
 word-wrap: break-word;
 font-weight: 1000;
@@ -1451,6 +1451,7 @@ margin-top : 1px;
   color: #000;
   border-radius: 10px;
   border: none;
+  left: 40px;
 }
 .arjuna{
   padding-top: 80px;
@@ -1478,4 +1479,12 @@ margin-top : 1px;
 .faq{
   height: 130vh;
 }
+hr.gradient {
+  background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
+  height: 8px;
+  padding: 0px;
+  margin: 0px;
+  /* width: 500px; */
+}
+
 }
