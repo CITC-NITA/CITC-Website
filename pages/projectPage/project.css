@@ -800,9 +800,10 @@ button:focus {
   }
   .button-24:hover,
   .button-24:active {
-    background-color: initial;
+    background-color:#ed7e23;
     background-position: 0 0;
-    color: #ed7e23;
+    
+    color: white;
   }
   
   .button-24:active {
