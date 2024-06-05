@@ -334,6 +334,102 @@ span {
   
 }
 
+.custom-select-container {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  display: flex;
+  
+  
+}  
+.custom-select-container .flexing{
+margin-left: 19px;
+margin-right: 7px;
+
+}
+
+.home-container .Divider p{
+margin-bottom:8px ;
+}
+.custom-select-container #customSelectInput{
+border-color: rgb(234, 232, 232);
+border-radius: 10px;
+}
+
+.custom-select-container #goButton{
+
+height: 40px;
+border-radius: 10px;
+}
+
+
+#customSelectInput {
+ width: 276px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 520px;
+  /* max-height: 200px; */
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+#goButton {
+  /* margin-top: 10px; */
+  
+  
+  cursor: pointer;
+  background:#ed7e23;
+  padding: 10px 30px;
+  /* margin-left: 5px; */
+  border:none;
+  outline: none;
+  color: #fff;
+  /* letter-spacing: 1px; */
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+   /* margin-top: 10px; */
+    padding: 10px;
+    /* width: 100%; */
+    cursor: pointer;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section-2 , .swiper-section{
+margin-top: 160px;
+
+}
+
+
+.swiper-section{
+margin-bottom: 150px;
+}
+
+
 
 .home-content h1{
   font-size: 65px;
@@ -500,7 +596,7 @@ form button{
     display: inline-block;
     width: 170px;
     display: flex;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   
 
@@ -547,7 +643,7 @@ form button{
   }
 
   .home-content p {
-    font-size: 14px;
+    font-size: 11px;
     position: relative;
     left: 10px;
     padding-bottom: 1px;
@@ -565,6 +661,10 @@ form button{
     right: 15px;
     /* padding: 20px; */
     bottom: -48px;
+  }
+
+  #goButton{
+    height: 40px;
   }
   .item1 img {
     margin-left: 50px;
@@ -1326,11 +1426,7 @@ footer .menu li a:hover {
   .client-data-details p:last-child {
     color: #666;
   }
-  @media(max-width:576px){
-    .swiper-section {
-      margin: 40px;
-    }
-    
+  
     .swiper-container {
       display: flex;
       align-items: center;
@@ -1424,7 +1520,68 @@ footer .menu li a:hover {
     .client-data-details p:last-child {
       color: #666;
     }
-  }
+  
+
+
+    @media (max-width: 576px) {
+      .swiper-section {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .swiper-container {
+        font-size: 24px; 
+      }
+    
+      .swiper-slide {
+        padding: 10px;
+        font-size: 16px; 
+        width: 100% !important; 
+        margin-bottom: 30px;
+      }
+    
+      .swiper-client-msg {
+        padding: 15px;
+        font-size: 14px; 
+      }
+    
+      .swiper-client-data {
+        flex-direction: column; 
+        align-items: center;
+        gap: 0.5rem;
+      }
+    
+      .swiper-client-data img {
+        width: 60px;
+        height: 60px; 
+      }
+    
+      .client-data-details p {
+        text-align: center; 
+       
+      }
+    
+      .client-data-details p:first-child,
+      .client-data-details p:last-child {
+        margin: 0;
+      }
+    
+      .mySwiper {
+        width: 100%;
+      }
+    
+      .swiper-wrapper {
+        flex-direction: row; 
+      }
+    
+      .swiper-container {
+        width: 100%;
+        padding: 0 20px; 
+      }
+    }
+    
+    
+    
   /*--------------------------------- Events------------------- */
   .alex{
     display: grid;
@@ -1439,100 +1596,7 @@ footer .menu li a:hover {
   }
 
 
-  .custom-select-container {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    display: flex;
-    
-    
-}  
-.custom-select-container .flexing{
-  margin-left: 19px;
-  margin-right: 7px;
   
-}
-
-.home-container .Divider p{
-  margin-bottom:8px ;
-}
-.custom-select-container #customSelectInput{
-  border-color: rgb(234, 232, 232);
-  border-radius: 10px;
-}
-
-.custom-select-container #goButton{
-  height: 47px;
-  border-radius: 10px;
-}
-
-
-#customSelectInput {
-   width: 276px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    width: 520px;
-    /* max-height: 200px; */
-    overflow-y: auto;
-    max-height: 200px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-#goButton {
-    /* margin-top: 10px; */
-    
-    
-    cursor: pointer;
-    background:#ed7e23;
-    padding: 10px 30px;
-    /* margin-left: 5px; */
-    border:none;
-    outline: none;
-    color: #fff;
-    /* letter-spacing: 1px; */
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-     /* margin-top: 10px; */
-      padding: 10px;
-      /* width: 100%; */
-      cursor: pointer;
-      height: 43px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-
-
-
-.section-2 , .swiper-section{
-  margin-top: 160px;
-
-}
-
-
-.swiper-section{
-  margin-bottom: 150px;
-}
-
 
 @media(max-width:1285px) {
   html{
