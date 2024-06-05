@@ -500,8 +500,10 @@ form button{
     display: inline-block;
     width: 170px;
     display: flex;
-    margin-left: 30px;
+    margin-left: 10px;
   }
+  
+
   .item0{
     width: 100%;
     margin-left: 20px;
@@ -558,7 +560,7 @@ form button{
   
   #customSelectInput, #goButton {
     margin-top: 10px;
-    height: 40px;
+    height: 38px;
     position: relative;
     right: 15px;
     /* padding: 20px; */
