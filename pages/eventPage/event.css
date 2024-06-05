@@ -50,7 +50,6 @@ html,body{
   height: 190px;
   margin-top: 40px;
   margin-bottom: 30px;
-  /* overflow: scroll; */
   display: block;
 } 
 
@@ -78,11 +77,11 @@ html,body{
 .navbar a.active {
   color: #738da8;
 }
+
 .hamburger{
   display:none;
   cursor:pointer;
 }
-
 
 .bar{
   display:block;
@@ -161,7 +160,7 @@ html,body{
 }
 
 .home {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   align-items:center;
   padding: 0 10%;
@@ -169,24 +168,21 @@ html,body{
 }
 
 .item1 img{
-  margin-bottom: 300px;
-  width: 1000px;
-  margin-left: 80px;
+  margin-bottom: 100px;
+  width: 1090px;
+  margin-left: 10px;
   margin-bottom: 0px;
   margin-top: 150px;
   transition:0.5s ;
+  z-index: 1000;
   
 }
+
 .item1 img:hover{
   transform: translateY(-8px);
   width: 1030px;
-  
 
 }
-
-
-
-
 
 
 .Divider{
@@ -198,7 +194,7 @@ html,body{
 
 .Divider .don img{
   width: 500px;
-  height: 150px;
+  height: 200px;
   border-radius: 20px;
   
 }
@@ -212,11 +208,9 @@ html,body{
 
 
 .Divider{
-  margin-top: 50px;
-  
-  
- 
+  margin-top: 4px;
 }
+
 
 .don2 a h2{
   text-decoration: none;
@@ -224,7 +218,7 @@ html,body{
   display: inline-block;
   text-decoration: none;
   opacity: 0.75;
-  font-size: 20px;
+  font-size: 18px;
   margin: 5px 5px;
   transition: 0.3s;
 
@@ -239,6 +233,11 @@ html,body{
   font-size: 15px;
   color: rgb(50, 49, 49);
   margin-left: 5px;
+}
+
+#mango1{
+  margin-top: 48px;
+  margin-bottom: 10px;
 }
 
 
