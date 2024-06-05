@@ -19,7 +19,7 @@
 <body id="box-shadow" >
   
   <main >
-    <header class="header scrolled"id="nav-shadow" >
+    <header id="head" class="header scrolled"id="nav-shadow" >
       <!-- <img src="img\Logo.png" alt="img\Logo.png"> -->
       <a href="#" class="logo">
         <img src="../pages/images/Logo.png" alt="image\logo.png">
@@ -28,6 +28,12 @@
       
       <nav class="navbar" >
         <div class="nav-menu">
+          <a class="conta">
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider"></span>
+            </label>
+        </a>
           <a  id="arjn" class="active nav-item" href="./eventPage/arjuna.html">
             <span></span>
             <span></span>
@@ -35,10 +41,12 @@
             <span></span> 
             ARJUNA
           </a>
-          <a href="./index.html" class="active nav-item">HOME</a>
+          
+          <a href="./index.html" class="active nav-item hom">HOME</a>
           <a href="./eventPage/event.html" class="nav-item">EVENTS</a>
           <a href="./projectPage/project.html" class="nav-item">PROJECTS</a>
           <a href="./blogPage/blog.html" class="nav-item">BLOG</a>
+
           <a id="contact" href="./contactPage/contact.html" clas="nav-item">CONTACT US</a>
         </div>
       
@@ -110,7 +118,7 @@
           </p>
           
         </div>
-        <div>
+        <div class="gapDo">
           <div class="header-team">
             <h3>OUR TEAMS</h3>
 
@@ -564,7 +572,7 @@
   
 
 </script>
-
+<script src="app.js"></script>
 
 
 </body>
