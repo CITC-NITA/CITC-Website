@@ -689,8 +689,9 @@ form button{
   }
 
   .about #header-para p{
-    font-size: 8px;
+    font-size: 7px;
     line-height: 18px;
+    font-weight: 900;
 
   }
   
