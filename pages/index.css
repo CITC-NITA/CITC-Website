@@ -689,7 +689,8 @@ form button{
   }
 
   .about #header-para p{
-    font-size: 5px;
+    text-align: left;
+    font-size: 10px;
     line-height: 18px;
     font-weight: 600;
 
@@ -819,10 +820,10 @@ form button{
   
   .about h2{
     font-size: 41px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     color: #ed7e23;
     position: relative;
-    bottom: 58px;
+    bottom: 10px;
   }
   .header-team{
     display: flex;
