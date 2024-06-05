@@ -1384,7 +1384,7 @@ color: #e6660c;
 }
 
 .gray-background {
-  background-image: url(../pages/images/5.png);
+  background-image: url(./images/5.png);
   background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
