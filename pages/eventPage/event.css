@@ -160,7 +160,7 @@ html,body{
 }
 
 .home {
-  height: 110vh;
+  height: 105vh;
   display: flex;
   align-items:center;
   padding: 0 10%;
@@ -172,7 +172,7 @@ html,body{
   width: 1090px;
   margin-left: 10px;
   margin-bottom: 0px;
-  margin-top: 150px;
+  margin-top: 160px;
   transition:0.5s ;
   z-index: 1000;
   
@@ -180,7 +180,7 @@ html,body{
 
 .item1 img:hover{
   transform: translateY(-8px);
-  width: 1030px;
+  width: 1080px;
 
 }
 
@@ -193,8 +193,8 @@ html,body{
 }
 
 .Divider .don img{
-  width: 500px;
-  height: 200px;
+  width: 450px;
+  height: 180px;
   border-radius: 20px;
   
 }
@@ -218,9 +218,11 @@ html,body{
   display: inline-block;
   text-decoration: none;
   opacity: 0.75;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 900;
   margin: 5px 5px;
   transition: 0.3s;
+  width: 400;
 
 }
 
@@ -230,9 +232,11 @@ html,body{
 }
 
 .don2 p{
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(50, 49, 49);
   margin-left: 5px;
+  width: 400px;
+  font-weight: 400;
 }
 
 #mango1{
