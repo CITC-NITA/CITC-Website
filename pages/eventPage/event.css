@@ -157,7 +157,7 @@ html,body{
   width: 1000px;
   margin-left: 20px;
   margin-top: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .home {
@@ -192,11 +192,8 @@ html,body{
 .Divider{
   width: 500px;
   transition: 0.5s;
-  background-color: #eceaea ;
+  background-color: transparent;
   border-radius: 30px;
- 
-
-
 }
 
 .Divider .don img{
@@ -208,15 +205,15 @@ html,body{
 
 
 
-.Divider:hover{
+/* .Divider:hover{
   transform: translateY(-10px);
   
-}
+} */
 
 
 .Divider{
   margin-top: 50px;
-  text-align: center;
+  
   
  
 }
@@ -229,6 +226,7 @@ html,body{
   opacity: 0.75;
   font-size: 20px;
   margin: 5px 5px;
+  transition: 0.3s;
 
 }
 
@@ -240,6 +238,7 @@ html,body{
 .don2 p{
   font-size: 15px;
   color: rgb(50, 49, 49);
+  margin-left: 5px;
 }
 
 
@@ -247,18 +246,23 @@ html,body{
 .btn{
   width: 110px;
   background-color: transparent;
-  height: 50px;
-  border-radius: 30px;
+  height: 40px;
+  border-radius: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   font-size: 15px;
-  transition: 0.7s;
+  transition: 0.2s;
   border-width: .2px;
+  font-weight:600;
+  text-align: center;
+}
+
+#mango{
+  margin-bottom: 38px;
 }
 
 .btn:hover{
   background-color: #ed7e23;
-  transform: translateY(-5px);
   color: white;
   border-color: #ed7e23;
 }
