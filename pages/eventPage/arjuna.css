@@ -1109,7 +1109,7 @@ p , li , ol li{
 @media(max-width:600px) {
  
     .header{
-      height:70px;
+      height:36px;
     }
     .logo img{
       border-radius: 50%;
@@ -1125,7 +1125,8 @@ p , li , ol li{
       margin: 0;
     }
     .hamburger {
-        display: block;
+      display: block;
+      padding-right: 14px;
     }
   
     .hamburger.active .bar:nth-child(2) {
@@ -1158,11 +1159,13 @@ p , li , ol li{
     }
   
     .nav-menu.active {
-        left: 0;
+      left: 0;
+      /* bottom: 13px; */
+      top: 76px;
     }
   
     #contact {
-        width: 9rem;
+        width: 8rem;
     }
   
   
@@ -1197,17 +1200,7 @@ p , li , ol li{
       height: 51%;
   }
 
-  .nav-item {
-      margin: 16px 0;
-  }
-
-  .nav-menu.active {
-      left: 0;
-  }
-
-  #contact {
-      width: 9rem;
-  }
+  
 
   .background {
     background-image: url('../images/eventbg.png');

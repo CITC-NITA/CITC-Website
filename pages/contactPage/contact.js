@@ -21,7 +21,7 @@ function myFunction(x) {
     document.querySelector(".logo img").setAttribute("src","../images/citc.png")
   }
   else{
-      document.querySelector(".logo img").setAttribute("src","../images/logo.png")
+      document.querySelector(".logo img").setAttribute("src","../images/Logo.png")
   }
 }
 

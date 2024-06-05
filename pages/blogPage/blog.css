@@ -874,6 +874,14 @@ textarea {
 }
 .blog-text {
   color: #000;
+  
+}
+.poster{
+  display:flex;
+  position:relative;
+  left:100px;
+  width:100px;
+  height:100px;
 }
 .blog-text ul,ol{
   padding: 1rem;

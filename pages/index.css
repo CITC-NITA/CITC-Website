@@ -428,7 +428,7 @@ form button{
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
   .home-content {
     display: flex;
     flex-direction: column;
@@ -497,9 +497,25 @@ form button{
     
   }
 
-}
+}*/
 
 @media (max-width: 576px) {
+  .custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    display: flex;
+  }
+  .item0{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: -12px;
+    grid-row-start: 1;
+    grid-row-end: 1.5;
+    position: relative;
+    right: 32px;
+  }
+  
   .home {
     padding: 0 5%;
   }
@@ -507,28 +523,71 @@ form button{
   .home-content {
     display: flex;
     flex-direction: column;
+  
+    
+    align-items: center;
+    text-align: center;
+  
+  
+    
     order: 2;
+    margin: 10px;
+    margin-top: 70px;
   }
-
-  .item1 {
+  .item1{
     order: 1;
+    position: relative;
+    bottom: 90px;
+
   }
+  
 
   .home-content h1 {
-    font-size: 35px;
+    font-size: 36px;
+    position: relative;
+    left: 10px;
   }
 
   .home-content p {
-    font-size: 16px;
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+    padding-bottom: 1px;
+
   }
 
   .Divider {
     margin-top: 10px;
   }
-
+  
   #customSelectInput, #goButton {
     margin-top: 10px;
     height: 40px;
+    position: relative;
+    right: 15px;
+    /* padding: 20px; */
+    bottom: -48px;
+  }
+  .item1 img {
+    margin-left: 50px;
+    margin-top: 0px;
+    position: relative;
+   
+    width: 555px;
+    right: 5px;
+  }
+  #customSelectDropdown{
+    width: 266px;
+    margin-left: 10px;
+    position: relative;
+    right: 18px;
+    top: 50px;
+  }
+  
+ #customSelectInput {
+  width: 276px;
+  padding: 10px;
+  box-sizing: border-box;
   }
 }
 /* ---------------------------------------our team section starts------------------------------------------------ */
@@ -606,6 +665,10 @@ form button{
   text-align: center;
   line-height: 25px;
 }
+#header-para p{
+  font-size: 30px;
+  line-height: 1.5;
+}
 
 .team-box img{
   width: 100%;
@@ -624,6 +687,9 @@ form button{
   margin-bottom: 20px;
   color: #ed7e23;
 }
+.gapDo{
+  margin-top: 160px;
+}
 
 .header-team{
   display: flex;
@@ -635,7 +701,52 @@ form button{
   
 }
 
-
+@media(max-width:576px){
+  .about{
+    margin: 30px;
+  }
+  
+  .about h2{
+    font-size: 41px;
+    margin-bottom: 20px;
+    color: #ed7e23;
+    position: relative;
+    bottom: 58px;
+  }
+  .header-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #ed7e23;
+    margin: 15px 15px;
+    
+  }
+  
+  #header-para{
+  text-align: center;
+  line-height: 25px;
+  font-size:10px;
+  }
+  #header-para p{
+    font-size: 21px;
+    line-height: 1;
+    position: relative;
+    bottom: 31px;
+  }
+  .gapDo{
+    margin-top:81px;
+  }
+  .Ourteam{
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* align-items: center; */
+    /* gap: 2.5rem; */
+    margin-left: 10px;
+  
+  }
+}
 
 
 /* --------------------footer section  -------------------------- */
@@ -753,6 +864,7 @@ footer .menu li a:hover {
   color: white;
   font-size: 1.5em;
   text-decoration: none;
+
 }
 
 
@@ -807,6 +919,10 @@ footer .menu li a:hover {
 .footer-container3 ul {
   list-style: none;
   padding: 0;
+}
+.fca{
+  text-decoration: none;
+  color:#fff;
 }
 
 .footer-container3 li {
@@ -947,10 +1063,13 @@ footer .menu li a:hover {
       width: 20%;
   }
 
-  .footer-container3 ul {
+  .footer-container3 ul  {
       text-align: center;
+      text-decoration:none;
+      color:#fff;
 
   }
+ 
 
   .footer-container3 li {
     display: inline-block;
@@ -1090,7 +1209,21 @@ footer .menu li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
 
   }
-
+  @media(max-width:576px){
+    .container .box{
+      position: relative;
+      width: 400px;
+      padding: 27px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+      border-radius: 4px;
+      margin: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      height: 410px;
+      font-size: 16px;
+    }
+  }
  
 
   /* ------------------------------testimonial wala section ka css---------------------- */
@@ -1183,7 +1316,105 @@ footer .menu li a:hover {
   .client-data-details p:last-child {
     color: #666;
   }
-  
+  @media(max-width:576px){
+    .swiper-section {
+      margin: 40px;
+    }
+    
+    .swiper-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: #ed7e23;
+      margin-bottom: 20px; /* Added margin-bottom for better spacing */
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent; /* Make the background transparent */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .swiper-wrapper{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+      box-sizing: content-box;
+    }
+    .swiper-client-msg {
+      padding: 20px 30px;
+      background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    .swiper-client-msg::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: rgba(248, 249, 250, 0.9) transparent transparent transparent;
+    }
+    
+    .swiper-client-msg p::before, .swiper-client-msg p::after {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #ced3ff;
+      font-size: 24px;
+    }
+    
+    .swiper-client-msg p::before {
+      content: "\f10d";
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+    
+    .swiper-client-msg p::after {
+      content: "\f10e";
+      position: absolute;
+      bottom: -10px;
+      right: 10px;
+    }
+    
+    .swiper-client-data {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    
+    .swiper-client-data img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ced3ff;
+      object-fit: cover;
+    }
+    
+    .client-data-details p:first-child {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .client-data-details p:last-child {
+      color: #666;
+    }
+  }
   /*--------------------------------- Events------------------- */
   .alex{
     display: grid;
@@ -1227,7 +1458,7 @@ footer .menu li a:hover {
 
 
 #customSelectInput {
-    width: 320px;
+   width: 276px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -1280,18 +1511,13 @@ footer .menu li a:hover {
       align-items: center;
 }
 
-.gapDo{
-  margin-top: 160px;
-}
+
 
 .section-2 , .swiper-section{
   margin-top: 160px;
 
 }
-#header-para p{
-  font-size: 30px;
-  line-height: 1.5;
-}
+
 
 .swiper-section{
   margin-bottom: 150px;

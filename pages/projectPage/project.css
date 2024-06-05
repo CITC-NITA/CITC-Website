@@ -457,7 +457,7 @@ button:focus {
         display: flex;
         position: fixed;
         left: -100%;
-        top: 100px;
+        top: 71px;
         gap: 4px;
         flex-direction: column;
         background-color: #ffffff;
@@ -869,7 +869,7 @@ button:focus {
         display: flex;
         position: fixed;
         left: -100%;
-        top: 100px;
+        top: 71px;
         gap: 4px;
         flex-direction: column;
         background-color: #ffffff;
