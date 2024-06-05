@@ -1384,7 +1384,7 @@ color: #e6660c;
 }
 
 .gray-background {
-  background-image: url(./images/5.png);
+  background-image: url(./images/blackbg.png);
   background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -1407,8 +1407,22 @@ color: #e6660c;
   /* color: #23e629; */
   /* z-index: ; */
 }
+
+.gray-background .header{
+  background-color: rgba(0, 0, 0, 0.711);
+
+
+}
+
+
 .black-background .nav-menu a{
   color: #23e629;
+}
+
+
+.gray-background .nav-menu a{
+  color: #23e629;
+
 }
 
 .white-background{
@@ -1416,7 +1430,3 @@ color: #e6660c;
   
 }
  
-.grey-background .header{
-  background-color: #000;
-  color: white;
-}
