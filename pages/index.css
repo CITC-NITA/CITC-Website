@@ -305,6 +305,10 @@ body {
   margin-top: 100px;
 }
 
+.about #header-para p{
+  font-size: 25px;
+}
+
 
 #customSelectDropdown{
   width: 320px;
@@ -334,6 +338,7 @@ span {
 .home-content h1{
   font-size: 65px;
   font-weight: 700;
+
   color:#ed7e23;
   line-height: 1.2;
 }
@@ -493,8 +498,9 @@ form button{
   .custom-select-container {
     position: relative;
     display: inline-block;
-    width: 200px;
+    width: 170px;
     display: flex;
+    margin-left: 30px;
   }
   .item0{
     width: 100%;
@@ -539,7 +545,7 @@ form button{
   }
 
   .home-content p {
-    font-size: 15px;
+    font-size: 14px;
     position: relative;
     left: 10px;
     padding-bottom: 1px;
@@ -579,6 +585,13 @@ form button{
   padding: 10px;
   box-sizing: border-box;
   }
+
+  .about #header-para p{
+    font-size: 8px;
+    line-height: 18px;
+
+  }
+  
 }
 /* ---------------------------------------our team section starts------------------------------------------------ */
 
@@ -692,13 +705,18 @@ form button{
 }
 
 @media(max-width:576px){
+
+  .Ourteam .team-box{
+    height: 200px;
+
+  }
   .about{
     margin: 30px;
   }
   
   .about h2{
     font-size: 41px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: #ed7e23;
     position: relative;
     bottom: 58px;
@@ -718,14 +736,14 @@ form button{
   line-height: 25px;
   font-size:10px;
   }
-  #header-para p{
+  /* #header-para p{
     font-size: 21px;
     line-height: 1;
     position: relative;
     bottom: 31px;
-  }
+  } */
   .gapDo{
-    margin-top:81px;
+    margin-top:60px;
   }
   .Ourteam{
     display: flex;
@@ -1202,7 +1220,7 @@ footer .menu li a:hover {
   @media(max-width:576px){
     .container .box{
       position: relative;
-      width: 400px;
+      width: 300px;
       padding: 27px;
       background: #fff;
       box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
