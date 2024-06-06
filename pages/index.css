@@ -140,6 +140,7 @@ html{
 body{
   overflow: auto;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 .header {
   position: fixed;
