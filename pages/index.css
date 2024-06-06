@@ -605,6 +605,7 @@ form button{
     overflow-x: hidden;
     overscroll-behavior: none;
     background-attachment: fixed;
+    padding-top:70px;
   }
   .custom-select-container {
     position: relative;
