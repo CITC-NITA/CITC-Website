@@ -267,6 +267,7 @@ html,body{
 
 .Home{
   margin-top: 0px;
+  overflow: hidden;
 }
 
 #main img{
@@ -303,6 +304,7 @@ body {
   max-width: 600px;
   margin-left: 20px;
   margin-top: 100px;
+
 }
 
 .about #header-para p{
@@ -612,18 +614,14 @@ form button{
   
   .home {
     padding: 0 5%;
+    overflow: hidden;
   }
 
   .home-content {
     display: flex;
-    flex-direction: column;
-  
-    
+    flex-direction: column; 
     align-items: center;
     text-align: center;
-  
-  
-    
     order: 2;
     margin: 10px;
     margin-top: 70px;
@@ -705,6 +703,7 @@ form button{
   align-items: center;
   gap: 2.5rem;
   margin-left: 10px;
+  overflow: hidden;
 
 
 }
@@ -1342,6 +1341,7 @@ footer .menu li a:hover {
 
   .swiper-section {
     margin: 40px;
+    overflow: hidden;
   }
   
   .swiper-container {
@@ -1435,13 +1435,13 @@ footer .menu li a:hover {
       justify-content: center;
       font-size: 40px;
       color: #ed7e23;
-      margin-bottom: 20px; /* Added margin-bottom for better spacing */
+      margin-bottom: 20px; 
     }
     
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: transparent; /* Make the background transparent */
+      background: transparent; 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1617,6 +1617,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .conta{
