@@ -131,7 +131,7 @@ html,body{
   height:100%;
   color: black;
   background-color: #ffffff;
-  margin-top: 0;
+  /*margin-top: 0;*/
   overflow-x: hidden;
 }
 html{
@@ -605,7 +605,7 @@ form button{
     overflow-x: hidden;
     overscroll-behavior: none;
     background-attachment: fixed;
-    padding-top:70px;
+    padding-top:45px;
   }
   .custom-select-container {
     position: relative;
