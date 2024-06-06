@@ -132,7 +132,7 @@ html,body{
   color: black;
   background-color: #ffffff;
   margin-top: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .header {
   position: fixed;
@@ -267,7 +267,7 @@ html,body{
 
 .Home{
   margin-top: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #main img{
@@ -614,7 +614,7 @@ form button{
   
   .home {
     padding: 0 5%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .home-content {
@@ -703,7 +703,7 @@ form button{
   align-items: center;
   gap: 2.5rem;
   margin-left: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 
 }
@@ -1219,7 +1219,7 @@ footer .menu li a:hover {
     border-radius: 4px;
     margin: 20px;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     height: 410px;
   }
@@ -1341,7 +1341,7 @@ footer .menu li a:hover {
 
   .swiper-section {
     margin: 40px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .swiper-container {
@@ -1616,7 +1616,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .conta{
