@@ -141,6 +141,7 @@ body{
   overflow: auto;
   overflow-x: hidden;
   overscroll-behavior: none;
+  background-attachment: fixed;
 }
 .header {
   position: fixed;
@@ -596,6 +597,15 @@ form button{
 }*/
 
 @media (max-width: 576px) {
+  html{
+    overflow: hidden;
+  }
+  body{
+    overflow: auto;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    background-attachment: fixed;
+  }
   .custom-select-container {
     position: relative;
     display: inline-block;
