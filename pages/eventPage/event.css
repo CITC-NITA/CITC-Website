@@ -25,7 +25,13 @@ html,body{
   margin-top: 0;
   overflow-x: hidden;
 }
-
+html{
+  overflow: hidden;
+}
+body{
+  overflow: auto;
+  overflow-x: hidden;
+}
 
 .header {
   position: fixed;

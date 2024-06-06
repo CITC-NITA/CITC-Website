@@ -16,6 +16,13 @@ html,body{
   color: black;
   background-color: #ffffff;
 }
+html{
+  overflow: hidden;
+}
+body{
+  overflow: auto;
+  overflow-x: hidden;
+}
 .header {
   position: fixed;
   height: 100px;
