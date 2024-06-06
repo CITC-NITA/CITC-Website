@@ -1350,12 +1350,13 @@ footer .menu li a:hover {
     justify-content: center;
     font-size: 40px;
     color: #ed7e23;
-    margin-bottom: 20px; 
+    margin-bottom: 20px; /* Added margin-bottom for better spacing */
+  }
   
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: transparent; 
+    background: transparent; /* Make the background transparent */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1365,7 +1366,7 @@ footer .menu li a:hover {
   
   .swiper-client-msg {
     padding: 20px 30px;
-    background-color: rgba(248, 249, 250, 0.9); 
+    background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
     border-radius: 10px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1459,7 +1460,7 @@ footer .menu li a:hover {
     }
     .swiper-client-msg {
       padding: 20px 30px;
-      background-color: rgba(248, 249, 250, 0.9); 
+      background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
       border-radius: 10px;
       text-align: left;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1621,6 +1622,8 @@ body {
 
 .conta{
   text-align: center;
+  /* padding: 50px; */
+  /* margin: 10px; */
   margin-left: 20px;
   padding: 0%;
   margin: 0px;
@@ -1679,16 +1682,16 @@ input:checked + .slider:before {
 
 
 .black-background {
-background-color: rgba(0, 0, 0, 0.958);
+  background-color: rgba(0, 0, 0, 0.958);
 color: #e6660c;
 }
 
 .gray-background {
   background-image: url(./images/blackbg.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
   color: #e6660c;
 
 
@@ -1704,7 +1707,8 @@ color: #e6660c;
 
 .black-background .header{
   background-color: rgba(0, 0, 0, 0.711);
- 
+  /* color: #23e629; */
+  /* z-index: ; */
 }
 
 .gray-background .header{
