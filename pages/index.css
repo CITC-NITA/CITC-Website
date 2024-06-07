@@ -1628,12 +1628,6 @@ footer .menu li a:hover {
 
   
 
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 .conta{
   text-align: center;

@@ -9,16 +9,12 @@
 }
 
 
-#box-shadow{
-  box-shadow: inset 0px 0px 170px  #ed7e23;
-  z-index: 5;
-}
 
 html,body{
   width:100%;
   height:100%;
   color: black;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 html{
   overflow: hidden;
@@ -178,7 +174,7 @@ body{
     top: 100px;
     gap: 4px;
     flex-direction: column;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     width: 55%;
     /* text-align: center; */
     transition: 0.3s;
@@ -1181,3 +1177,131 @@ footer .menu li a:hover {
   box-shadow: inset 0px 0px 170px  #ed7e23;
   z-index: 5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+.conta{
+  text-align: center;
+  /* padding: 50px; */
+  /* margin: 10px; */
+  margin-left: 20px;
+  padding: 0%;
+  margin: 0px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #861313;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(255, 255, 255, 0.967);
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #f39f21;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.white-background {
+  background-color: white;
+  color: black;
+}
+
+
+
+.black-background {
+  background-color: rgba(0, 0, 0, 0.958);
+color: #e6660c;
+}
+
+.gray-background {
+  background-image: url(./images/blackbg.png);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+  color: #e6660c;
+
+
+}
+
+
+.white-background .container,
+.black-background .container,
+.gray-background .container {
+  background-color: inherit;
+  color: inherit;
+}
+
+.black-background .header{
+  background-color: rgba(0, 0, 0, 0.711);
+  /* color: #23e629; */
+  /* z-index: ; */
+}
+
+.gray-background .header{
+  background-color: rgba(0, 0, 0, 0.711);
+
+
+}
+
+
+.black-background .nav-menu a{
+  color: #23e629;
+}
+
+
+.gray-background .nav-menu a{
+  color: #23e629;
+
+}
+
+.white-background{
+  box-shadow: inset 0px 0px 170px  #ed7e23;
+  
+}
+ 

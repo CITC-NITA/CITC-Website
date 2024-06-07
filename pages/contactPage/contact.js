@@ -70,3 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+const body = document.body;
+const toggleSwitch = document.getElementById('toggleSwitch');
+const colors = ['white-background', 'black-background', 'gray-background'];
+let currentIndex = 0;
+
+toggleSwitch.addEventListener('change', function() {
+    body.classList.remove(colors[currentIndex]);
+    currentIndex = (currentIndex + 1) % colors.length;
+    body.classList.add(colors[currentIndex]);
+});
+
+// Initialize the background to white
+body.classList.add('white-background');
+
