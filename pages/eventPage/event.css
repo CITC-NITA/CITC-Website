@@ -93,7 +93,7 @@ body{
   background-color: #ed7e23;
 }
 
-@media(max-width:576px){
+@media(max-width:1024px){
   .header{
     height:70px;
   }
@@ -269,6 +269,91 @@ body{
   background-color: #ed7e23;
   color: white;
   border-color: #ed7e23;
+}
+
+
+
+/* Responsive Design for Tablets and Phones */
+@media (max-width: 1024px) and (min-width: 577px){
+  .home {
+    display: block;
+    padding: 0 5%;
+    
+  }
+
+  .home-content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .Divider {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .Divider .don img {
+    width: 100%;
+    height: auto;
+  }
+
+  .don2 a h2 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .don2 p {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 1.2em;
+  }
+
+  .item1 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .home{
+    height: 80vh;
+  }
+  .home-content {
+    margin-top: 0px;
+    
+  }
+
+  .Divider {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .Divider .don img {
+    width: 100%;
+    
+  }
+
+  .don2 a h2 {
+    font-size: 1.0em;
+  }
+
+  .don2 p {
+    width: 300px;
+    font-size: 0.9em;
+  }
+
+  .btn {
+    height: 35px;
+    font-size: 0.9em;
+  }
 }
 
 
