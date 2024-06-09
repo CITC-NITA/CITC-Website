@@ -1288,3 +1288,86 @@ footer .menu li a:hover {
   }
    
   
+
+
+
+  
+@media(max-width:1576px) and (min-width:600px){
+    .header{
+        height:70px;
+      }
+    .logo img{
+        border-radius: 50%;
+        /* height: 100px; */
+        /* padding: 14px 0; */
+        /* margin-top: 3rem; */
+        /* padding-left: 17px; */
+        right: 10p;
+        /* position: fixed; */
+        top: -2rem;
+        width: 11rem;
+        height: 9rem;
+        margin: 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 71px;
+        gap: 4px;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 55%;
+        /* text-align: center; */
+        transition: 0.3s;
+        height: 51%;
+    }
+    
+    .nav-item {
+        margin: 16px 0;
+    
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    #contact {
+        width: 9rem;
+        margin-left: 2.5rem;
+    }
+    .cardList__btn.btn--left {
+        left: 29%;
+    }
+    .cardList__btn.btn--right {
+        right: 29%;
+    }
+    .card__content {
+        padding: 0.5rem;
+    }
+    
+    :root {
+        --card-width: 270px;
+        --card-height: 460px;
+        /* --card-transition-duration: ;
+        --card-transition-easing: ease; */
+        
+    }
+   
+    
+}

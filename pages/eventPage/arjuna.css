@@ -1215,7 +1215,7 @@ p , li , ol li{
     background-attachment: fixed;
     background-position: left;
     padding-top: 40px;
-    background-position-y: 100px;
+    background-position-y: 60px;
     height: calc(100% - 50px);
     overflow-y: scroll;
     scroll-snap-type: none;
@@ -1422,7 +1422,7 @@ section{
 }
 
 .about{
-  height: 110vh;
+  height: 90vh;
 }
 
 .processnext h3{
@@ -1430,7 +1430,7 @@ section{
   font-size: 15px;
 }
 .processnext{
-  height: 140vh;
+  height: 120vh;
 
 }
 
@@ -1472,14 +1472,15 @@ margin-top : 1px;
 }
 .process{
   padding-left: 0px;
-  height: 140vh;
+  height: 120vh;
 }
 
 .finale{
-  height: 150vh;
+  height: 100vh;
 }
 .faq{
-  height: 130vh;
+  height: 100vh;
+ 
 }
 
 .content .arjuna {
