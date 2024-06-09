@@ -5,7 +5,7 @@ html, body {
   font-family: Arial, sans-serif;
 }
 html{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 body{
   overflow: auto;
@@ -1113,7 +1113,7 @@ p , li , ol li{
 }
 
 
-@media(max-width:600px) {
+@media(max-width:1576px) {
  
     .header{
       height:36px;

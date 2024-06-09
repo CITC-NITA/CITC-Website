@@ -240,7 +240,7 @@ body{
 }
 
 #mango1{
-  margin-top: 48px;
+  margin-top: 15%;
   margin-bottom: 10px;
 }
 
@@ -321,7 +321,7 @@ body{
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1276px) {
 
   .home{
     height: 80vh;
@@ -550,7 +550,7 @@ footer .menu li a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 576px) {
+@media (max-width: 1276px) {
 
   .footer-container2,
   .footer-center,
