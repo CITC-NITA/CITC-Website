@@ -1653,12 +1653,17 @@ align-items: center;
 padding-left: 50px;
 }
 
+.arjuna{
+  width: 80vw;
+}
 
-
+.main button{
+  margin-left: 70px;
+}
 
 .arjuna , .main h2 {
   padding-left: 80px;
-  font-size:54px;
+  font-size: 5vw;
 }
 
 section{
