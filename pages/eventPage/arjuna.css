@@ -1113,7 +1113,7 @@ p , li , ol li{
 }
 
 
-@media(max-width:1576px) {
+@media(max-width:600px) {
  
     .header{
       height:36px;
@@ -1490,4 +1490,204 @@ margin-top : 1px;
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) and (min-width: 600px){
+ 
+  .header{
+    height:36px;
+  }
+  .logo img{
+    border-radius: 50%;
+    /* height: 100px; */
+    /* padding: 14px 0; */
+    /* margin-top: 3rem; */
+    /* padding-left: 17px; */
+    /* right: 10p; */
+    /* position: fixed; */
+    top: -2rem;
+    width: 12rem;
+    height: 10rem;
+    /* margin: 10 */
+  }
+  .hamburger {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+      display: flex;
+      position: fixed;
+      left: -100%;
+      top: 100px;
+      gap: 4px;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 55%;
+      transition: 0.3s;
+      height: 51%;
+  }
+
+  .nav-item {
+      margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    /* bottom: 13px; */
+    top: 76px;
+  }
+
+  #contact {
+      width: 8rem;
+  }
+
+
+
+
+.hamburger {
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+
+.background {
+  background-image: url('../images/eventbg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+  padding-top: 40px;
+  background-position-y: 60px;
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+  scroll-snap-type: none;
+  scroll-behavior: smooth;
+  margin-top: 40px;
+  overflow: hidden;
+  /* background-color: #000; */
+  /* animation: fadeIn 1s ease-in-out; */
+  /* background-color: #000; */
+}
+
+
+.time{
+left: 10px;
+}
+
+
+
+
+
+
+
+
+section{
+padding-left: 0px;
+
+}
+
+
+.timeline-header{
+  width: 60%;
+  /* padding-top :16px; */
+  margin-left: 0px;
+  font-size: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* position: relative; */
+  /* left: -140px; */
+  /* padding: ; */
+  /* padding: 1px; */
+  padding: 0px;
+
+}
+.timeline-line , .timeline-vertical{
+display: none;
+}
+.time{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-left: 50px;
+}
+
+
+
+
+.arjuna , .main h2 {
+  padding-left: 80px;
+  font-size:54px;
+}
+
+section{
+padding: 0px;
+margin: 0px;
+/* height: 200vh; */
+}
+
+
+.timeline-header{
+padding: 5px;
+}
+
+.dates{
+height: 160vh;
+}
+
+
+.main{
+  height: 80vh;
+}
+.about{
+  height: 60vh;
+  padding-top: 90px;
+}
+.process , .processnext{
+  height: 100vh;
+}
+
+.finale , .faq{
+  height: 90vh;
+}
 }
