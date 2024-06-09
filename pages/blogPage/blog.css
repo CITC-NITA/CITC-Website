@@ -521,17 +521,8 @@ textarea {
   color: #6A6D78;
   font-size: 1.31rem;
 }
-@media screen and (max-width: 1000px) {
-  .wrapper .carousel{
-    width:1000px;
-  }
-  
-}
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    width: 100%;
-  }
-}
+
+
 
 /*--------------------------------------------------------
 #Blogs
@@ -904,97 +895,6 @@ textarea {
   width: 20rem;
   height: 20rem;
   padding: 1rem 1rem;
-}
-
-@media(max-width:576px){
-  .main-blog-content{
-    padding:0rem;
-  }
-  .main-image{
-        
-    padding: 3rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    width: 100%;
-  }
-  .cImage{
-    display: flex;
-    /* grid-template-columns: 0.5fr 0.5fr; */
-    /* grid-template-rows: 1fr 1fr; */
-    gap: 1rem;
-    padding-left: 3rem;
-    flex-direction: column;
-    top: 7rem;
-    position: relative;
-  }
-  .main-image img{
-    width: 22rem;
-    position: relative;
-    left: -1rem;
-    height: 10rem;
-  }
-  .cImage img{
-    position: relative;
-    width: 15rem;
-    height: 12rem;
-  }
-  .mImage{
-    top: 6rem;
-    width: 41rem;
-    height: 15rem;
-  }
-  
-  
-  .blog-title{
-    color: #ed7e23;
-    letter-spacing: 0.5px;
-    text-transform: none;
-    margin-left: 20px;
-    margin-right: 3px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 42px;
-    padding-bottom: 5rem;
-    padding-top: 3rem;
-    position: relative;
-    top: 3rem;
-    right: 1rem;
-  }
-  .blog-text h3{
-    color:#738da8;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-  }
-  .blog-text {
-    color: #000;
-    position: relative;
-    left: 1px;
-    font-size: 0.7rem;
-    padding-bottom: 2rem;
-    padding: 1rem;
-    padding-bottom: 2rem;
-  }
-  .blog-text ul,ol{
-    padding: 1rem;
-    padding-left: 3rem;
-  }
-  .content-image{
-    width: 100%;
-   
-    display: flex;
-    flex-direction: row;
-  }
-  .content-image img{
-    width: 20rem;
-    height: 20rem;
-    padding: 1rem 1rem;
-  }
 }
 
 footer {
@@ -1471,3 +1371,146 @@ color: #e6660c;
   
 }
  
+
+
+
+
+@media (max-width:1256px) and (min-width:576px){
+  .header{
+    height:70px;
+  }
+  .logo img{
+    border-radius: 50%;
+    /* height: 100px; */
+    /* padding: 14px 0; */
+    /* margin-top: 3rem; */
+    /* padding-left: 17px; */
+    /* right: 10p; */
+    /* position: fixed; */
+    top: -2rem;
+    width: 12rem;
+    height: 9rem;
+    margin: 0;
+  }
+  .hamburger{
+    display:block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 4px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 55%;
+    /* text-align: center; */
+    transition: 0.3s;
+    height: 51%;
+  }
+  .nav-item{
+    margin:16px 0;
+
+  }
+  .nav-menu.active{
+    left: 0;
+    top: 70px;
+  }
+  #contact{
+    width: 9rem;
+    margin-left: 2.5rem;
+  }
+  
+
+    .blog-container{
+      width:100vw;
+      /* flex:0 0 auto; */
+    }
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .right-column {
+        display: none;
+    }
+    
+    .blog-post {
+      padding: 0 1rem;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0.8rem;
+    }
+    .blog-post a {
+      position: relative;
+      left: -30px;
+    }
+   
+  
+  
+  /* CSS */
+  
+    .blog-post-img {
+      width: 60vw;
+      height: 238px;
+      position: relative;
+      /* left: -3rem; */
+      margin-left: 0px;
+      padding-left: 0px;
+    
+    }
+    .blog-post-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      border-radius: 0.8rem;
+      position: relative;
+      left: 0px;
+    }
+    .blog-post-date{
+      display: block;
+      color: rgba(0,0,0,0.5);
+      font-size: 0.9rem;
+      font-weight: 800;
+      margin: 0.5rem 0;
+      position: relative;
+      right: 2rem;
+    }
+    .blog-post-tittle{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #4facfe;
+      position: relative;
+      right: 2rem;
+    }
+    .blog-post-text{
+      margin-bottom: 3rem;
+      font-size: 1.09rem;
+      color: rgba(0,0,0,0.7);
+      position: relative;
+      /* right: 2rem; */
+    }
+  
+
+  
+
+
+
+
+
+
+
+
+}

@@ -443,7 +443,7 @@ button:focus {
     background-color: #ed7e23;
 }
 
-@media(max-width:576px) {
+@media(max-width:600px) {
     .hamburger {
         display: block;
     }
@@ -840,7 +840,7 @@ button:focus {
   color: #738da8;
 }
 
-@media(max-width:576px){
+@media(max-width:600px){
     .header{
         height:70px;
       }
@@ -1106,7 +1106,7 @@ footer .menu li a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     .footer-container2,
     .footer-center,
@@ -1292,7 +1292,7 @@ footer .menu li a:hover {
 
 
   
-@media(max-width:1576px) and (min-width:600px){
+@media(max-width:1276px) and (min-width:600px){
     .header{
         height:70px;
       }
