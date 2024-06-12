@@ -889,7 +889,7 @@ color: #e6660c;
 
 
 /* Responsive Design */
-@media (max-width:1156px) and (min-width: 576px) {
+@media (max-width:1256px) and (min-width: 576px) {
 
   
   .header{
@@ -966,15 +966,12 @@ color: #e6660c;
     transform: translateY(-10px);
   }
   
-  footer .footer-container1 li a {
-    font-size: 2em;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
+
+  
+  footer{
+    display: flex;
+    flex-direction: column;
   }
-  
-  
 .home{
   /* width: 700px; */
   overflow: scroll;

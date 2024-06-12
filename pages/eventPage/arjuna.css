@@ -97,7 +97,7 @@ body{
 
 
 .typing-demo {
-  width: 900px;
+  /* width: 100%; */
   animation: typing 1s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -385,7 +385,7 @@ top: -14px;
   padding-left: 0px;
   padding-right: 0%;
   margin-right: 0%;
-  max-width: 980px;
+  /* max-width: 980px; */
   /* animation: textFadeIn 1s ease-in-out; */
 }
 
@@ -437,7 +437,7 @@ ol li {
   height: 449px;
   position: absolute;
   left: 845px;
-  top: 200px;
+  top: 165px;
 }
 
 footer {
@@ -447,7 +447,9 @@ footer {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+
   padding: 50px;
 }
 
@@ -464,7 +466,9 @@ section {
 
 .finale {
   /* padding-top: 70px; */
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+
 }
 
 .finale ol {
@@ -498,14 +502,18 @@ ol {
 .process {
   /* padding-top: 140px; */
   padding-bottom: 100px;
-  height: 110vh;
+  /* height: 110vh; */
+  height: 100%;
+
   padding-left: 50px;
   scroll-snap-align: start;
 }
 
 .processnext {
   /* padding-top: 70px; */
-  height: 90vh;
+  /* height: 90vh; */
+  height: 100%;
+
   scroll-snap-align: start;
 }
 
@@ -516,13 +524,17 @@ ol {
 
 
 .main {
-  height: 75vh;
+  /* height: 75vh; */
+  height: 100%;
+
   scroll-snap-align: start;
   /* padding-top: 140px; */
 }
 
 .dates {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+
   padding-left: 0px;
   /* padding-top: 100px; */
   position: relative;
@@ -834,20 +846,30 @@ footer:hover {
 
 
 .process , .dates {
-  height: 77vh;
+  /* height: 77vh; */
+  height: 100%;
+
 }
 .about{
-  height: 45vh;
+  /* height: 45vh; */
+  height: 100%;
+
 }
 .processnext{
-  height: 60vh;
+  /* height: 60vh; */
+  height: 100%;
+
 }
 
 .faq{
-  height: 60vh;
+  /* height: 60vh; */
+  height: 100%;
+
 }
 .finale{
-  height: 50vh;
+  /* height: 50vh; */
+  height: 100%;
+
 }
 /**/
 .man {
@@ -1265,19 +1287,11 @@ section{
   padding-top: 100px;
 }
 .typing-demo{
-  width: 100px;
-  font-size: 20px;
+  /* width: 100% */
+  /* font-size: 20px; */
   /* left: ; */
 }
-p{
-    font-size: 18px;
-}
-ol{
-    font-size: 18px;
-}
-h2 h3{
-    font-size: 24px;
-}
+
 .main{
     /* width: 100vw; */
     /* display: grid; */
@@ -1285,7 +1299,7 @@ h2 h3{
     padding: 0%;
     /* padding-top: 100px; */
     margin: 0%;
-    height: 100vh;
+    height: 100%;
 }
 
 .main button {
@@ -1298,7 +1312,7 @@ h2 h3{
   justify-content: center;
   text-transform: none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   /* padding: 4px 28px; */
   height: 56px;
   border-radius: 0;
@@ -1317,22 +1331,24 @@ h2 h3{
 .about{
     padding: 0%;
     margin: 0%;
-    height: 50vh;
+    height: 100%;
     /* padding-top: 1000px; */
+    padding-bottom: 100px;
 }
 section{
     padding: 10px;
     /* padding-top: 80px; */
 }
 .main img{
-width: 300px;
+/* width: 100%; */
+width: 80%;
 }
 .process-header{
     width: 80%;
     margin-left: 0px;
     padding-left: 100px;
     left: -70px;
-    font-size: 17px;
+    font-size: 20px;
     padding-right: 0px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -1344,7 +1360,7 @@ width: 300px;
     width: 60%;
     /* padding-top :16px; */
     margin-left: 0px;
-    font-size: 25px;
+    font-size: 30px;
     padding-top: 0px;
     padding-bottom: 0px;
     /* position: relative; */
@@ -1352,11 +1368,11 @@ width: 300px;
     /* padding: ; */
     /* padding: 1px; */
     padding: 0px;
+    position: relative;
+    left: -10px;
   
 }
- .processnext h3{
-font-size: 35px;
-}
+
 .cash-prize{
     font-size: 32px;
     display: flex;
@@ -1364,23 +1380,23 @@ font-size: 35px;
     align-items: center;
 }
 .process ol li{
-    font-size: 15px;
+    font-size: 18px;
 }
 .process{
-    height: 110vh;
+    height: 100%;
     position: relative;
     left: -15px;
 }
 .processnext{
-    height: 140vh;
+   height: 100%;
     /* padding-top: 100px; */
 }
 .processnext ol {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .finale ol{
-    font-size: 15px;
+    font-size: 18px;
 }
 .faq h3{
     font-size: 25px;
@@ -1390,7 +1406,7 @@ font-size: 35px;
   
 }
 .faq ol {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .arrowman2{
@@ -1409,42 +1425,38 @@ font-size: 35px;
 
 
 
-
-
-section{
-  padding: 0px;
-  margin: 0px;
-  /* height: 200vh; */
-}
-
-.main , .about , .dates , .process , .processnext, .faq , .finale{
+/* .main , .about , .dates , .process , .processnext, .faq , .finale{
   height: 170vh;
-}
+} */
 
 .about{
-  height: 90vh;
+  height: 100%;
 }
 
 .processnext h3{
-  width: 100%;
-  font-size: 15px;
+  width: 90%;
+  /* font-size: 3px; */
 }
 .processnext{
-  height: 120vh;
+  height: 100%;
 
 }
 
 .main h2{
 width: 100%;
 font-size: 22px;
-margin-left: px;
+/* margin-left: px; */
 word-spacing: 0px;
 word-wrap: break-word;
-font-weight: 1000;
+/* font-weight: 1000; */
+font-weight: 900;
 }
 .main{
 margin-top : 1px;
-  height: 70vh;
+  /* height: 70vh; */
+  height: 100%;
+  padding-bottom: 100px;
+
   /* display: flex; */
 
 }
@@ -1453,14 +1465,17 @@ margin-top : 1px;
   color: #000;
   border-radius: 10px;
   border: none;
+  font-size: 25px;
+  
+  /* justify-content: ; */
 }
 .arjuna{
   padding-top: 80px;
 
 }
-
-.content h2, .content h3, .content p, .content a, .timeline-header, .content .cash-prize{
+.content h3, .content p, .content a, .timeline-header, .content .cash-prize{
   padding: 20px;
+
 }
 
 .timeline-header{
@@ -1468,19 +1483,28 @@ margin-top : 1px;
 }
 
 .dates{
-  height: 130vh;
+  height: 100%;
+  justify-content: center;
+  padding: 5px;
+  padding-bottom: 100px;
+
 }
 .process{
   padding-left: 0px;
-  height: 120vh;
+  height: 100%;
+  padding-bottom: 100px;
+
 }
 
 .finale{
-  height: 100vh;
+  height: 140%;
+  padding-bottom: 100px;
+
 }
 .faq{
-  height: 100vh;
- 
+  height: 100%;
+  padding-bottom: 100px;
+
 }
 
 .content .arjuna {
@@ -1489,7 +1513,45 @@ margin-top : 1px;
   left: 30px;
 }
 
+section p , section ol{
+  text-align: justify;
+}
 
+
+p{
+  font-size: 18px;
+}
+.finale li{
+  font-size: 18px;
+}
+
+
+
+p , li , ol li{
+  font-size: 18px;
+}
+
+.processnext p{
+  font-size: 18px;
+}
+
+h3{
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.processnext ol , .finale ol , .faq ol{
+  padding-left: 0px;
+  margin-left: 0%;
+  margin: 30px;
+}
+
+
+
+.main h2{
+  /* align-items: center; */
+  margin: 20px;
+}
 
 }
 
@@ -1651,6 +1713,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding-left: 50px;
+
 }
 
 .arjuna{
@@ -1678,22 +1741,49 @@ padding: 5px;
 }
 
 .dates{
-height: 160vh;
+/* height: 160vh; */
+height: 100%;
+padding-bottom: 100px;
+
+
 }
 
 
 .main{
-  height: 80vh;
+  /* height: 80vh; */
+  height: 100%;
+  padding-bottom: 100px;
+
 }
 .about{
-  height: 60vh;
+  /* height: 60vh; */
+  height: 100%;
+  padding-bottom: 100px;
+
   padding-top: 90px;
 }
 .process , .processnext{
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+  padding-bottom: 100px;
+
 }
 
-.finale , .faq{
-  height: 90vh;
+
+.main h2{
+  width: 100%;
 }
+.finale , .faq{
+  /* height: 90vh; */
+  height: 100%;
+  padding-bottom: 100px;
+
+}
+}
+
+
+.about{
+  padding-bottom: 100px;
+  padding-bottom: 100px;
+
 }
