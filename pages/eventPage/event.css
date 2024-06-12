@@ -105,7 +105,7 @@ body{
 }
 
 .home {
-  height: 105vh;
+  height: 100%;
   display: flex;
   align-items:center;
   padding: 0 10%;
@@ -408,6 +408,15 @@ footer .menu li a:hover {
 
 }
 
+
+.home{
+  /* width: 700px; */
+  overflow: scroll;
+  height: 100%;
+  margin-top: 70px;
+  padding: 0px;
+  }
+
 /* Responsive Design */
 @media (max-width: 576px) {
 
@@ -498,7 +507,8 @@ footer .menu li a:hover {
 .home{
   /* width: 700px; */
   overflow: scroll;
-  height: 120vh;
+  height: 100%;
+  margin-top: 70px;
   padding: 0px;
   }
   
@@ -898,6 +908,8 @@ color: #e6660c;
 
 
 
+
+
 /* Responsive Design */
 @media (max-width:1256px) and (min-width: 576px) {
 
@@ -985,7 +997,7 @@ color: #e6660c;
 .home{
   /* width: 700px; */
   overflow: scroll;
-  height: 120vh;
+  height: 100%;
   padding: 0px;
   }
   
@@ -1134,3 +1146,9 @@ color: #e6660c;
 
 
 
+
+
+
+p{
+  text-align: justify;
+}
