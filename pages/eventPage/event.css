@@ -407,6 +407,142 @@ footer .menu li a:hover {
   margin: 0;
 
 }
+/* Responsive Design */
+@media (max-width: 576px) {
+
+  .footer-container2,
+  .footer-center,
+  .footer-container3 {
+    display: block;
+    width: 68%;
+    text-align: center;
+    left: 17px;
+    position: relative;
+  }
+  .footer-center{
+    width: 19rem;
+    height: 9rem;
+  }
+  .footer-container3 {
+        /* bottom: 10px; */
+      top: -45px;
+  }
+  .footer-container1 li a:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer .footer-container1 li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  
+  
+  footer .menu li a {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 9px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    /* margin-right: -26px; */
+    position: relative;
+    bottom: 25px;
+  }
+  
+  footer .menu li a:hover {
+    opacity: 1.5;
+  }
+  
+  .footer-container1 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left: 5px;
+    bottom: 42px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left: 5px;
+    font-size: 12px;
+  }
+  
+  
+  
+.menu a {
+  
+  font-size: 1em;
+}
+  .footer-container1 li {
+    margin: 0 10px;
+  }
+  
+  .footer-container1 a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .footer-container2 h3,
+  .footer-container3 h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+    left: 2rem;
+  }
+  .fp{
+    position:relative;
+    left:31px;
+  }
+  .footer-container2 p,
+  .footer-container3 p {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+
+
+  .footer-container2 form {
+      flex-direction: row;
+      justify-content: center;
+  }
+  footer .footer-container2 form button {
+   
+    height: 40px;
+    margin-left: -5px;
+   
+  }
+
+  .footer-container2 input.box {
+      width: 70%;
+      margin-right: 10px;
+  }
+
+  .footer-container2 button {
+      width: 20%;
+  }
+
+  .footer-container3 ul {
+      text-align: center;
+
+  }
+
+  .footer-container3 li {
+    display: inline-block;
+    margin: 6px 10px;
+    position: relative;
+    left: 31px;
+    font-size: 1rem;
+
+  }
+}
 
 
 .home{
@@ -467,6 +603,7 @@ footer .menu li a:hover {
   .nav-menu.active{
     left: 0;
     top: 70px;
+    height: 23rem;
   }
   #contact{
     width:9rem;
@@ -474,7 +611,7 @@ footer .menu li a:hover {
   }
 
 
-  .footer-container2,
+  /*.footer-container2,
   .footer-center,
   .footer-container3 , form{
     display: block;
@@ -489,7 +626,7 @@ footer .menu li a:hover {
   }
   .footer-container3 {
         /* bottom: 10px; */
-      top: -45px;
+      /*top: -45px;
   }
   .footer-container1 li a:hover {
     transform: translateY(-10px);
@@ -501,7 +638,7 @@ footer .menu li a:hover {
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
-  }
+  }*/
   
   
 .home{
@@ -551,7 +688,7 @@ footer .menu li a:hover {
   
   
   
-  footer .menu li a {
+  /*footer .menu li a {
     font-size: 14px;
     color: #fff;
     margin: 0 9px;
@@ -559,7 +696,7 @@ footer .menu li a:hover {
     text-decoration: none;
     opacity: 0.75;
     /* margin-right: -26px; */
-    position: relative;
+    /*position: relative;
     bottom: 25px;
   }
   
@@ -649,7 +786,7 @@ footer .menu li a:hover {
     position: relative;
     left: 31px;
     font-size: 1rem;
-  }
+  }*/
 }
 
 

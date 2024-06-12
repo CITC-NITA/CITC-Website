@@ -16,13 +16,14 @@ html,body{
   color: black;
   /* background-color: #ffffff; */
 }
-html{
+/*html{
   overflow: hidden;
-}
-body{
-  overflow: auto;
-  overflow-x: hidden;
-}
+}*/
+/*body{
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
+}*/
 /*.header {
   position: fixed;
   height: 100px;
@@ -174,11 +175,11 @@ body{
     top: 100px;
     gap: 4px;
     flex-direction: column;
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     width: 55%;
     /* text-align: center; */
     transition: 0.3s;
-    height: 51%;
+    
   }
   .nav-item{
     margin:16px 0;
@@ -298,6 +299,7 @@ form button{
   display:flex;
   flex-direction:column;
   overflow:hidden;
+  min-height: 100vh;
 }
 .contact-container .hero-container{
   display:flex;
@@ -841,6 +843,9 @@ footer {
   padding: 20px 0;
   text-align: center;
   font-family: Arial, sans-serif;
+  margin-top: auto;
+  height:363px;
+ 
   
   padding: 1rem;
 }
@@ -1019,6 +1024,8 @@ footer .menu li a:hover {
 
 .bottom-footer {
   margin-top: 20px;
+  position:relative;
+  bottom:24rem;
 }
 
 .bottom-footer p {
@@ -1028,6 +1035,9 @@ footer .menu li a:hover {
 
 /* Responsive Design */
 @media (max-width: 576px) {
+  footer{
+    height:783px;
+  }
 
   .footer-container2,
   .footer-center,
@@ -1057,7 +1067,11 @@ footer .menu li a:hover {
     display: inline-block;
     transition: 0.5s;
   }
-  
+  .bottom-footer {
+    margin-top: 20px;
+    position:relative;
+    bottom:2rem;
+  }
   
   
   footer .menu li a {
@@ -1162,6 +1176,14 @@ footer .menu li a:hover {
     font-size: 1rem;
 
   }
+}
+@media (max-width:1024px){
+  .bottom-footer {
+    margin-top: 20px;
+    position:relative;
+    bottom:28rem;
+  }
+
 }
 
 
@@ -1346,7 +1368,7 @@ color: #e6660c;
     top: 100px;
     gap: 4px;
     flex-direction: column;
-    /* background-color: #ffffff; */
+    background-color: #ffffff; 
     width: 55%;
     /* text-align: center; */
     transition: 0.3s;
