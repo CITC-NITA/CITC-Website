@@ -1177,11 +1177,11 @@ footer .menu li a:hover {
 
   }
 }
-@media (max-width:1024px){
+@media (min-width:1024px){
   .bottom-footer {
     margin-top: 20px;
     position:relative;
-    bottom:2rem;
+    bottom:28rem;
   }
 
 }
