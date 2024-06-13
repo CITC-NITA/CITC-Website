@@ -100,7 +100,7 @@ body{
   align-items: center;
   width: 1000px;
   margin-left: 20px;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   margin-bottom: 30px;
 }
 
@@ -1020,7 +1020,7 @@ color: #e6660c;
   color: white;
 }
 .black-background span{
-  color: white;
+  color: #ed7e23;
 }
 
 

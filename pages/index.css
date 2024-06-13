@@ -1953,6 +1953,9 @@ footer .menu li a:hover {
   
 
 
+ 
+
+
 .conta{
   text-align: center;
   /* padding: 50px; */
@@ -1982,7 +1985,7 @@ footer .menu li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #861313;
+  background-color: #f29408;
   transition: .4s;
   border-radius: 34px;
 }
@@ -2007,10 +2010,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.white-background {
-  background-color: white;
-  color: black;
-}
 
 
 
@@ -2018,7 +2017,7 @@ input:checked + .slider:before {
   background-color: rgba(0, 0, 0, 0.958);
 color: #e6660c;
 }
-
+/* 
 .gray-background {
   background-image: url(./images/blackbg.png);
   background-repeat: no-repeat;
@@ -2028,7 +2027,15 @@ color: #e6660c;
   color: #e6660c;
 
 
+} */
+
+
+.white-background {
+  /* background-color: white; */
+  box-shadow: inset 0px 0px 170px  #ed7e23;
+  color: black;
 }
+
 
 
 .white-background .container,
@@ -2039,30 +2046,39 @@ color: #e6660c;
 }
 
 .black-background .header{
-  background-color: rgba(0, 0, 0, 0.711);
+
+  background-color: rgba(0, 0, 0, 0.858);
   /* color: #23e629; */
   /* z-index: ; */
 }
-
-.gray-background .header{
-  background-color: rgba(0, 0, 0, 0.711);
-
-
+.black-background #box-shadow{
+  background-color:black;
+  color: white;
 }
+
+.black-background p  {
+  color: white;
+}
+.black-background span{
+  color: white;
+}
+
+
 
 
 .black-background .nav-menu a{
-  color: #23e629;
+  color: #ed7e23;
 }
 
 
-.gray-background .nav-menu a{
-  color: #23e629;
 
-}
 
-.white-background{
+.white-background #box-shadow{
+  /* box-shadow: inset 0px 0px 170px  #ed7e23; */
   box-shadow: inset 0px 0px 170px  #ed7e23;
   
 }
  
+
+
+

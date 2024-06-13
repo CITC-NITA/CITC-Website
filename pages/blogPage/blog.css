@@ -1463,8 +1463,14 @@ color: #e6660c;
 }
 
 
+.black-background h1{
+  color: #FFC319;
+}
 
 
+.black-background .recent-post-title{
+  color: #FFC319 ;
+}
 .white-background #box-shadow{
   /* box-shadow: inset 0px 0px 170px  #ed7e23; */
   box-shadow: inset 0px 0px 170px  #ed7e23;
