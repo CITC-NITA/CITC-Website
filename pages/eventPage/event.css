@@ -99,9 +99,10 @@ body{
   justify-content: center;
   align-items: center;
   width: 1000px;
-  margin-left: 20px;
+  margin-left: 100px;
   /* margin-top: 120px; */
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .home {
@@ -647,6 +648,7 @@ footer .menu li a:hover {
   height: 100%;
   margin-top: 70px;
   padding: 0px;
+  
   }
   
   .item1 img{
@@ -1136,6 +1138,7 @@ color: #e6660c;
   overflow: scroll;
   height: 100%;
   padding: 0px;
+  
   }
   
   .item1 img{
