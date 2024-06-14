@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Our Team Section</title>
     <link rel="stylesheet" href="./main-team.css">
-    <!-- font awesome cdn  -->
-    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <section>
-    <div >
+    <div>
         <div class="header">
             <h1>Our Tech Titans Team</h1>
         </div>
         <div class="header-para">
-            <p> We design the future, IT builds it, and engineering <br>makes it last.</p>
+            <p> Expertise across every phase, from concept to <br>completion.</p>
         </div>
-        
-        
     </div>
 
     <div class="card">
@@ -30,13 +28,9 @@
                 <h2>Siddharth Kumar</h2>
                 <p>Core Team Lead</p>
             </div>
-            
-            <div>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-            <div>
-
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <div class="card">
@@ -46,13 +40,9 @@
                     <h2>Mounadip Malakar</h2>
                     <p>Core Team Lead</p>
                 </div>
-               
-                <div>
-                    <a href=""></a>
-                    <a href=""></a>
-                </div>
-                <div>
-    
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -63,21 +53,43 @@
                     <h2>Udayan Das</h2>
                     <p>Core Team Lead</p>
                 </div>
-               
-                <div>
-                    <a href=""></a>
-                    <a href=""></a>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                
             </div>
         </div>
     </div>
 
-    <div  class="para">
+    <div class="para">
         We're excited to learn, collaborate, and achieve great things together! <br> Stay tuned for more updates from <strong>The Civil Innovation & Technology cell.</strong>
     </div>
   </section>
 
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('.card');
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('fade-out');
+                    entry.target.classList.add('fade-in');
+                } else {
+                    entry.target.classList.remove('fade-in');
+                    entry.target.classList.add('fade-out');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
+    
 </body>
 </html>

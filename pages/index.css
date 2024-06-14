@@ -364,8 +364,13 @@ border-radius: 10px;
 
 .custom-select-container #goButton{
 
-height: 40px;
-border-radius: 10px;
+  height: 43px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 
@@ -399,34 +404,27 @@ border-radius: 10px;
 }
 
 #goButton {
-  /* margin-top: 10px; */
-  
-  
+ 
   cursor: pointer;
   background:#ed7e23;
   padding: 10px 30px;
-  /* margin-left: 5px; */
   border:none;
   outline: none;
   color: #fff;
-  /* letter-spacing: 1px; */
   font-size: 25px;
   font-weight: bold;
-  cursor: pointer;
-   /* margin-top: 10px; */
-    padding: 10px;
-    /* width: 100%; */
-    cursor: pointer;
-    height: 43px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 10px;
+  
+  /* height: 43px; */
+ 
 }
 
 
 
+
+
 .section-2 , .swiper-section{
-margin-top: 160px;
+  margin-top: 160px;
 
 }
 
@@ -440,7 +438,6 @@ margin-bottom: 150px;
 .home-content h1{
   font-size: 65px;
   font-weight: 700;
-
   color:#ed7e23;
   line-height: 1.2;
 }
@@ -449,7 +446,6 @@ margin-bottom: 150px;
 
 .home-content p{
   margin-top: 20px;
-  /* margin-bottom: 30px; */
   margin-left: 5px;
   font-size: 20px;
 }
@@ -801,7 +797,7 @@ form button{
 
 .Ourteam{
   display:grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(5,1fr);
   align-items: center;
   gap: 2.5rem;
   margin-left: 10px;
@@ -815,7 +811,7 @@ form button{
   box-shadow: 0 0 1rem #738da8;
   overflow: hidden;
   display: flex;
-  height: 350px;
+  height: 250px;
 
 }
 
@@ -841,7 +837,7 @@ form button{
 }
 
 .team-layer h4{
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #fff;
 
 }
@@ -856,8 +852,8 @@ form button{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   background:white ;
   border-radius: 50%;
 

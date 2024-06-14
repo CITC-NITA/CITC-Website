@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Our Team Section</title>
-    <link rel="stylesheet" href="main-team.css">
+    <link rel="stylesheet" href="./main-team.css">
     <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
 
@@ -25,51 +26,32 @@
 
     <div class="card">
         <div class="layer">
-            <div class="cards">
+            <div>
                 <img src="./images/shivam kumar.jpg" alt="">
-                <div class="div0">
-                    <h2>Shivam Kumar</h2>
-                <p>Developer</p>
-                <div class="social">
-
-                    <div class="icon">
-                        <a href=""><i></i></a>
-                    </div>
-                    <div class="icon">
-                        <a href=""><i></i></a>
-                    </div>
-
-                </div>
-                </div>
-                
+                <h2>Shivam Kumar</h2>
+                <p>IT Team Lead</p>
             </div>
             
-            
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
             <div>
 
             </div>
         </div>
         <div class="card">
             <div class="layer">
-                <div class="cards">
-                    <img src="./images/vivek.jpg" alt="">
-                    <div class="div0">
-                        <h2>Vivek Anand Ram</h2>
-                    <p> Developer</p>
-                    <div class="social">
-                        <div class="icon">
-                            <a href=""><i></i></a>
-                        </div>
-                        <div class="icon">
-                            <a href=""><i></i></a>
-                        </div>
-                    </div>
-                    
-                    </div>
-                    
+                <div>
+                    <img src="./images/udayan banik.jpg" alt="">
+                    <h2>Udayan Banik</h2>
+                    <p>IT Team Lead</p>
                 </div>
                
-                
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
                 <div>
     
                 </div>
@@ -77,22 +59,17 @@
         </div>
         <div class="card">
             <div class="layer">
-                <div class="cards">
-                    <img src="./images/udayan banik.jpg" alt="">
-                    <div class="div0">
-                        <h2>Udayan Banik</h2>
-                    <p>Developer</p>
-                    <div class="social">
-                        <div class="icon">
-                            <a href=""><i></i></a>
-                        </div>
-                        <div class="icon">
-                            <a href=""><i></i></a>
-                        </div>
-                    </div>
-                    </div>
-                    
+                <div>
+                    <img src="./images/vivek.jpg" alt="">
+                    <h2>Vivek Anand Ram</h2>
+                    <p>IT Team Lead</p>
                 </div>
+               
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -101,6 +78,31 @@
         We're excited to learn, collaborate, and achieve great things together! <br> Stay tuned for more updates from <strong>The Civil Innovation & Technology cell.</strong>
     </div>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('.card');
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('fade-out');
+                    entry.target.classList.add('fade-in');
+                } else {
+                    entry.target.classList.remove('fade-in');
+                    entry.target.classList.add('fade-out');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
+    
 
 
 </body>
