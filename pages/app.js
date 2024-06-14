@@ -1,6 +1,8 @@
+
+  
 const body = document.body;
 const toggleSwitch = document.getElementById('toggleSwitch');
-const colors = ['black-background', 'white-background'];
+const colors = ['white-background', 'black-background'];
 let currentIndex = 0;
 
 toggleSwitch.addEventListener('change', function() {
@@ -10,7 +12,7 @@ toggleSwitch.addEventListener('change', function() {
 });
 
 // Initialize the background to white
-body.classList.add('black-background');
+body.classList.add('white-background');
 
 
 let lastScrollY = window.scrollY;
