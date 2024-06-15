@@ -18,14 +18,10 @@ html,body{
   background-color: #ffffff;
   margin-top: 0;
   overflow-x: hidden;
+  
 }
-html{
-  overflow: hidden;
-}
-body{
-  overflow: auto;
-  overflow-x: hidden;
-}
+
+
 
 .header {
   position: fixed;
@@ -548,7 +544,7 @@ footer .menu li a:hover {
 
 .home{
   /* width: 700px; */
-  overflow: scroll;
+  
   height: 100%;
   margin-top: 70px;
   padding: 0px;
@@ -561,11 +557,14 @@ footer .menu li a:hover {
   .header{
     height:70px;
   }
+
+  
+  p{
+    text-align: justify;
+  }
   .logo img{
     border-radius: 50%;
-   
     right: 10px;
-    
     top: -2rem;
     width: 4rem;
     height: 4rem;
@@ -610,41 +609,14 @@ footer .menu li a:hover {
     width:9rem;
     margin-left:2rem;
   }
-
-
-  /*.footer-container2,
-  .footer-center,
-  .footer-container3 , form{
-    display: block;
-    width: 68%;
-    text-align: center;
-    left: 47px;
-    position: relative;
-  }
-  .footer-center{
-    width: 23rem;
-    height: 9rem;
-  }
-  .footer-container3 {
-        /* bottom: 10px; */
-      /*top: -45px;
-  }
-  .footer-container1 li a:hover {
-    transform: translateY(-10px);
-  }
   
-  footer .footer-container1 li a {
-    font-size: 2em;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-  }*/
-  
+  .Divider .don2 p{
+    width: 300px;
+    text-align: justify;
+  }
+    
   
 .home{
-  /* width: 700px; */
-  overflow: scroll;
   height: 100%;
   margin-top: 70px;
   padding: 0px;
@@ -660,20 +632,22 @@ footer .menu li a:hover {
   }
   
   .home-content{
-  /* width: 100px; */
   margin: 0px;
   padding: 0px;
 
   }
   
   .Divider{
-  /* width: 50%; */
-  /* overflow: scroll; */
   width: 90%;
   padding: 0px;
-
   }
   
+  
+  .Divider p{
+    text-align: justify;
+  }
+
+
   .don{
   /* width: 100%; */
   width: 50%;
@@ -686,9 +660,6 @@ footer .menu li a:hover {
     width: 310px;
     
   }
-  
-  
-  
   
   /*footer .menu li a {
     font-size: 14px;
@@ -792,21 +763,6 @@ footer .menu li a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .arjn{
 	position: absolute;
 	top: 50%;
@@ -834,6 +790,7 @@ footer .menu li a:hover {
 	content: '';
 	background: rgb(142 255 240 / 10%);
 }
+
 .arjn span:nth-child(1) {
 	position: absolute;
 	width: 100%;
@@ -843,6 +800,7 @@ footer .menu li a:hover {
 	background: linear-gradient(to right,#ed7e23 , #002b9d, #34ffea);
 	animation: animate1 2s linear infinite;
 }
+
 @keyframes animate1{
 	0%{
 		transform: translateX(-100%);
@@ -851,6 +809,7 @@ footer .menu li a:hover {
 		transform: translateX(100%);
 	}
 }
+
 .arjn span:nth-child(2) {
 	position: absolute;
 	width: 5px;
@@ -861,6 +820,7 @@ footer .menu li a:hover {
 	animation: animate2 2s linear infinite;
 	animation-delay: 1s;
 }
+
 @keyframes animate2{
 	0%{
 		transform: translateY(-100%);
@@ -878,6 +838,7 @@ footer .menu li a:hover {
 	background: linear-gradient(to left,#ed7e23 , #002b9d, #34ffea);
 	animation: animate3 2s linear infinite;
 }
+
 @keyframes animate3{
 	0%{
 		transform: translateX(100%);
@@ -886,6 +847,7 @@ footer .menu li a:hover {
 		transform: translateX(-100%);
 	}
 }
+
 .arjn span:nth-child(4) {
 	position: absolute;
 	width: 5px;
@@ -896,6 +858,7 @@ footer .menu li a:hover {
 	animation: animate4 2s linear infinite;
 	animation-delay: 1s;
 }
+
 @keyframes animate4{
 	0%{
 		transform: translateY(100%);
@@ -906,25 +869,8 @@ footer .menu li a:hover {
 }
 
 
-
- 
-
-
-
-
-
-
-
-
-
-
- 
-
-
 .conta{
   text-align: center;
-  /* padding: 50px; */
-  /* margin: 10px; */
   margin-left: 20px;
   padding: 0%;
   margin: 0px;
@@ -976,7 +922,7 @@ input:checked + .slider:before {
 }
 
 .white-background {
-  /* background-color: white; */
+
   box-shadow: inset 0px 0px 170px  #ed7e23;
   color: black;
 }
@@ -987,17 +933,6 @@ input:checked + .slider:before {
   background-color: rgba(0, 0, 0, 0.958);
 color: #e6660c;
 }
-/* 
-.gray-background {
-  background-image: url(./images/blackbg.png);
-  background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: center;
-  color: #e6660c;
-
-
-} */
 
 
 .white-background .container,
@@ -1010,9 +945,8 @@ color: #e6660c;
 .black-background .header{
 
   background-color: rgba(0, 0, 0, 0.858);
-  /* color: #23e629; */
-  /* z-index: ; */
 }
+
 .black-background #box-shadow{
   background-color:black;
   color: white;
@@ -1135,7 +1069,7 @@ color: #e6660c;
   }
 .home{
   /* width: 700px; */
-  overflow: scroll;
+  /* overflow: scroll; */
   height: 100%;
   padding: 0px;
   
@@ -1167,7 +1101,6 @@ color: #e6660c;
   .don , .don2{
   /* width: 100%; */
   width: 100%;
-
   padding: 0px;
 
   }
@@ -1188,7 +1121,6 @@ color: #e6660c;
     display: inline-block;
     text-decoration: none;
     opacity: 0.75;
-    /* margin-right: -26px; */
     position: relative;
     bottom: 25px;
   }
@@ -1219,9 +1151,9 @@ color: #e6660c;
   
   
 .menu a {
-  
   font-size: 1em;
 }
+
   .footer-container1 li {
     margin: 0 10px;
   }
