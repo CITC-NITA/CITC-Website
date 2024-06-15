@@ -680,6 +680,7 @@ form button{
   html{
     overflow: hidden;
   }
+
   body{
     overflow: auto;
     overflow-x: hidden;
@@ -693,33 +694,25 @@ form button{
     width: 170px;
     display: flex;
     margin-left: 5px;
+    margin-top: -40px;
   }
-  
-
   .item0{
     width: 100%;
     margin-left: 20px;
-    margin-top: -12px;
+    margin-top: -42px;
     grid-row-start: 1;
     grid-row-end: 1.5;
     position: relative;
     right: 32px;
   }
-  
   .home {
     padding: 0 5%;
   }
-
   .home-content {
     display: flex;
     flex-direction: column;
-  
-    
     align-items: center;
     text-align: center;
-  
-  
-    
     order: 2;
     margin: 10px;
     margin-top: 70px;
@@ -730,7 +723,6 @@ form button{
     bottom: 90px;
 
   }
-  
 
   .home-content h1 {
     font-size: 36px;
@@ -745,11 +737,9 @@ form button{
     padding-bottom: 1px;
 
   }
-
   .Divider {
     margin-top: 10px;
   }
-  
   #customSelectInput, #goButton {
     margin-top: 10px;
     height: 38px;
@@ -758,7 +748,6 @@ form button{
     /* padding: 20px; */
     bottom: -48px;
   }
-
   #goButton{
     height: 40px;
   }
@@ -766,10 +755,10 @@ form button{
     margin-left: 50px;
     margin-top: 0px;
     position: relative;
-   
     width: 555px;
     right: 5px;
   }
+
   #customSelectDropdown{
     width: 266px;
     margin-left: 10px;
@@ -1013,6 +1002,8 @@ form button{
   text-align: center;
   line-height: 25px;
   font-size:10px;
+
+  /* width: 300px;  */
   }
   /* #header-para p{
     font-size: 21px;
