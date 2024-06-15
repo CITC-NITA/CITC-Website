@@ -42,6 +42,11 @@
 	font-weight: bold;
 	box-shadow: 0 20px 50px rgb(255 255 255 / 5%)
 }
+@media screen and (min-width:767px) and (max-width:1256px){
+  #arjn{
+    display: none;
+  }
+}
 #arjn:before{
 	position: absolute;
 	width: 50%;
@@ -212,7 +217,7 @@ body{
   transition: all 0.3s ease-in-out;
   background-color: #ed7e23;
 }
-@media(max-width:1024px){
+@media(max-width:576px){
   .header{
     height:70px;
   }
@@ -250,15 +255,18 @@ body{
     width: 55%;
     /* text-align: center; */
     transition: 0.3s;
-    height: 89%;
+    height: 64%;
   }
   .nav-item{
     
     margin:16px 0;
   }
 
-  .nav-menu #arjn{
-    left: 50px;
+   #arjn{
+    left: 52px;
+    position: relative;
+    top: 22px;
+    width: 105px;
   }
   .nav-menu.active{
     left: 0;
@@ -268,7 +276,72 @@ body{
     width: 16rem;
     margin-left: 3.5rem;
   }
+  .conta{
+    text-align: center;
+    /* padding: 50px; */
+    /* margin: 10px; */
+    margin-left: 20px;
+    padding: 0%;
+    margin: 0px;
+    position: relative;
+    left: -6rem;
+  }
   
+}
+@media screen and (min-width:767px) and (max-width:1256px){
+  .header {
+    position: fixed;
+    height: 131px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 3%;
+    background: transparent;
+    border-bottom: #ed7e23 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.4s ease-in-out; 
+  }
+  
+  .header.scrolled {
+    background: white; 
+  }
+  
+  
+  
+  .logo img{
+    display: flex;
+    width: 320px;
+    height: 190px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  
+  #contact{
+    background: #ed7e23;
+    margin-left: 34px;
+    color: #fff;
+    border-radius:5px;
+    padding: 10px 10px;
+  
+  }
+  
+  .navbar a{
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+  
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #738da8;
+  }
 }
 
 .Home{

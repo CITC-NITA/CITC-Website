@@ -609,6 +609,16 @@ footer .menu li a:hover {
     width:9rem;
     margin-left:2rem;
   }
+  .conta{
+    text-align: center;
+    /* padding: 50px; */
+    /* margin: 10px; */
+    margin-left: 20px;
+    padding: 0%;
+    margin: 0px;
+    position: relative;
+    left: -3rem;
+  }
   
   .Divider .don2 p{
     width: 300px;
@@ -760,6 +770,63 @@ footer .menu li a:hover {
     left: 31px;
     font-size: 1rem;
   }*/
+}
+
+/*tab navbar*/
+@media screen and (min-width:767px) and (max-width:1256px){
+  .header {
+    position: fixed;
+    height: 131px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 3%;
+    background: transparent;
+    border-bottom: #ed7e23 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.4s ease-in-out; 
+  }
+  
+  .header.scrolled {
+    background: white; 
+  }
+  
+  
+  
+  .logo img{
+    display: flex;
+    width: 320px;
+    height: 190px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  
+  #contact{
+    background: #ed7e23;
+    margin-left: 34px;
+    color: #fff;
+    border-radius:5px;
+    padding: 10px 10px;
+  
+  }
+  
+  .navbar a{
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+  
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #738da8;
+  }
 }
 
 
@@ -987,7 +1054,7 @@ color: #e6660c;
 @media (max-width:1256px) and (min-width: 576px) {
 
   
-  .header{
+  /*.header{
     height:70px;
   }
   .logo img{
@@ -1037,7 +1104,7 @@ color: #e6660c;
   #contact{
     width:9rem;
     margin-left:2rem;
-  }
+  }*/
 
 
   .footer-container2,

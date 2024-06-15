@@ -1555,6 +1555,62 @@ h3{
 
 }
 
+/*tab navbar*/
+@media screen and (min-width:767px) and (max-width:1256px){
+  .header {
+    position: fixed;
+    height: 131px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 3%;
+    background: transparent;
+    border-bottom: #ed7e23 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.4s ease-in-out; 
+  }
+  
+  .header.scrolled {
+    background: white; 
+  }
+  
+  
+  
+  .logo img{
+    display: flex;
+    width: 320px;
+    height: 190px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  
+  #contact{
+    background: #ed7e23;
+    margin-left: 34px;
+    color: #fff;
+    border-radius:5px;
+    padding: 10px 10px;
+  
+  }
+  
+  .navbar a{
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+  
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #738da8;
+  }
+}
 
 
 
@@ -1572,7 +1628,7 @@ h3{
 
 @media (max-width: 1024px) and (min-width: 600px){
  
-  .header{
+  /*.header{
     height:36px;
   }
   .logo img{
@@ -1583,11 +1639,11 @@ h3{
     /* padding-left: 17px; */
     /* right: 10p; */
     /* position: fixed; */
-    top: -2rem;
+   /* top: -2rem;
     width: 12rem;
     height: 10rem;
     /* margin: 10 */
-  }
+ /* }
   .hamburger {
     display: block;
     padding-right: 30px;
@@ -1625,7 +1681,7 @@ h3{
   .nav-menu.active {
     left: 0;
     /* bottom: 13px; */
-    top: 76px;
+    /*top: 76px;
   }
 
   #contact {
@@ -1649,7 +1705,7 @@ h3{
 
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-}
+}*/
 
 
 
