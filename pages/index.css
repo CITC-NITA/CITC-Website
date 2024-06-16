@@ -666,6 +666,7 @@ form button{
 }*/
 
 
+
 @media (max-width: 1024px) and (min-width: 577px) {
   .custom-select-container {
     width: 250px;
@@ -1102,12 +1103,15 @@ form button{
 /* --------------------footer section  -------------------------- */
 
 footer {
+  width: 100%;
   background-color: #ed7e23;
   color: white;
   padding: 20px 0;
   text-align: center;
   font-family: Arial, sans-serif;
 }
+
+
 
 .footer-container2,
 .footer-center,
@@ -1292,6 +1296,10 @@ footer .menu li a:hover {
   margin: 0;
 
 }
+
+
+
+
 
 /* Responsive Design */
 
@@ -2139,6 +2147,30 @@ color: #e6660c;
   
 }
  
+.about  #header-para p{
+  animation: fade linear ;
+  animation-timeline: view();
+  animation-range: entry 50% cover 40%;
+}
 
+h1,
+h2,
+h3
+{
+  animation: fade linear ;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
 
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  0%{
+    opacity: 0;
+  }
+}
 
