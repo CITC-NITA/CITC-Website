@@ -1071,14 +1071,33 @@ form button{
     margin: 15px 15px;
     
   }
+
+  .about #header-para p{
+  text-align:center !important;
+  line-height: 20px;
+  font-size:9px;
+  align-content: left;
+  width: 400px;
+  margin-left: -21px;
+
   
-  #header-para{
-  text-align: center;
+  }
+
+  /* #header-para br {
+    display: none;
+  } */
+  
+  /* #header-para{
+  text-align: left !important;
   line-height: 25px;
   font-size:10px;
+  white-space: nowrap;
+  
+  
 
   /* width: 300px;  */
-  }
+  /* } */ */
+ 
   /* #header-para p{
     font-size: 21px;
     line-height: 1;
