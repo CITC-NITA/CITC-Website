@@ -995,8 +995,14 @@ input:checked + .slider:before {
 
 .white-background {
 
-  box-shadow: inset 0px 0px 170px  #ed7e23;
-  color: black;
+  /* box-shadow: inset 0px 0px 170px  #ed7e23; */
+  background-image: url(../images/5.png);
+  background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+     background-position: center;
+     color: white;
+  /* color: black; */
 }
 
 
@@ -1045,11 +1051,18 @@ color: #e6660c;
 
 .white-background #box-shadow{
   /* box-shadow: inset 0px 0px 170px  #ed7e23; */
-  box-shadow: inset 0px 0px 170px  #ed7e23;
+  /* box-shadow: inset 0px 0px 170px  #ed7e23; */
+  color: white;
   
 }
  
+.white-background p{
+  color: white;
+}
 
+.white-background button{
+  color: white;
+}
 
 
 
