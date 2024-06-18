@@ -5,6 +5,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     
   <meta charset="UTF-8">
@@ -65,7 +66,7 @@
   
     <section class="Home"  >
       <div class="home-content">
-        <div class="Divider">
+        <div class="Divider" data-aos="fade-up" data-aos-duration="8000">
           <div class="item0">
             <p class="bold"> <b>Unleashing the future of civil engineering.</b></p>
             
@@ -95,7 +96,7 @@
         
         
 
-        <div class="item1">
+        <div class="item1" data-aos="fade-up" data-aos-duration="1000">
           <img  src="./images/hero.png" alt="image\hero.png">
          </div>
       
@@ -108,10 +109,10 @@
 
   
     
-    <section class="about">
+    <section class="about"  >
       <div>
-        <div class="header-about"><h2>ABOUT US</h2></div>
-        <div id="header-para">
+        <div class="header-about" ><h2>ABOUT US</h2></div>
+        <div id="header-para" >
           <p>
             Welcome to the Civil Innovation & Technology Cell! <br> We have three specialized teams: the Tech Titans, Core Crew, and the Design Dynamos. <br> Join us in achieving groundbreaking success through collaboration.
           </p>
@@ -617,6 +618,11 @@
 
 </script>
 <script src="app.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 
