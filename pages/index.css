@@ -1073,12 +1073,17 @@ form button{
   }
 
   .about #header-para p{
-  text-align:center !important;
+  text-align:left !important;
   line-height: 20px;
   font-size:11px;
+  font-weight: 300;
   /* align-content: left; */
   /* width: 500px; */
   /* margin-left: -90px; */
+
+  margin-left: 13px;
+
+  width: 300px;
 
   
   }
