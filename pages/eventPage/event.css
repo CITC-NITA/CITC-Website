@@ -996,7 +996,7 @@ input:checked + .slider:before {
 .white-background {
 
   /* box-shadow: inset 0px 0px 170px  #ed7e23; */
-  background-image: url(../images/5.png);
+  background-image: url(../images/blackbg.png);
   background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: 100% 100%;
