@@ -385,7 +385,7 @@ button:focus {
 }
 
 .header {
-    /* position: fixed; */
+    position: fixed;
     height: 15%;
     top: 0;
     left: 0;
