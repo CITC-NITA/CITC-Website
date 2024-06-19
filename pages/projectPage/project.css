@@ -31,7 +31,7 @@ html , body {
     background: #ffffff;
     background: rgb(255,255,255);
 /* background-image:url(./images/5.png); */
-background-image: url(../images/5.png);
+background-image: url(../images/blackbg.png);
 overflow-x: hidden;
     /* overflow: hidden; */
     /* overflow: scroll; */
@@ -967,7 +967,7 @@ footer {
   .white-background {
     /* background-color: white; */
     /* box-shadow: inset 0px 0px 170px  #ed7e23; */
-    background-image: url(../images/5.png);
+    background-image: url(../images/blackbg.png);
  background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -1048,6 +1048,7 @@ footer {
   .logo{
     display: flex;
     align-items: center;
+    width: 50%;
   }
     .logo img{
         border-radius: 50%;
@@ -1431,6 +1432,7 @@ margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* margin: 1px; */
 }
 
 .fp{
@@ -1442,13 +1444,13 @@ margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  width: 100%;
+  /* margin: 80px; */
+  width: 90%;
 }
 
 
 .footer-center{
-  width: 100%;
+  width: 80%;
   display: flex;
 flex-direction: column;
 align-items: center;
@@ -1457,8 +1459,12 @@ align-items: center;
 
 }
 
+.menu li{
+  margin: 0%;
+}
+
 .footer-container3{
-  width: 100%;
+  width: 90%;
 }
 
 
