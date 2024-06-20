@@ -758,8 +758,7 @@ form button{
   body{
     overflow: auto;
     overflow-x: hidden;
-    overscroll-behavior: none;
-    background-attachment: fixed;
+ 
     padding-top:45px;
   }
   .custom-select-container {
