@@ -9,7 +9,22 @@
 }
 
 
+/* Header slide-in animation */
+.header {
+  position: relative;
+  animation: slideDown 1s ease-out;
+}
 
+@keyframes slideDown {
+  from {
+      top: -100px;
+      opacity: 0;
+  }
+  to {
+      top: 0;
+      opacity: 1;
+  }
+}
 
 #box-shadow{
   box-shadow: inset 0px 0px 170px  #ed7e23;
@@ -2009,3 +2024,6 @@ align-items: center;
 
 
 }
+
+
+

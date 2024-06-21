@@ -1547,3 +1547,21 @@ align-items: center;
 
 
 
+
+
+/* Header slide-in animation */
+.header {
+  position: relative;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+      top: -100px;
+      opacity: 0;
+  }
+  to {
+      top: 0;
+      opacity: 1;
+  }
+}
