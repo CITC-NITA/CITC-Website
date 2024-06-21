@@ -437,7 +437,6 @@ border-radius: 10px;
 
 .custom-select-container #goButton{
 
-  height: 43px;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -448,7 +447,7 @@ border-radius: 10px;
 
 
 #customSelectInput {
- width: 276px;
+  width: 276px;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -487,6 +486,7 @@ border-radius: 10px;
   font-size: 25px;
   font-weight: bold;
   padding: 10px;
+  height: 43px;
   
   
   /* height: 43px; */
@@ -816,7 +816,7 @@ form button{
   .Divider {
     margin-top: 10px;
   }
-  #customSelectInput, #goButton {
+  #customSelectInput {
     margin-top: 10px;
     height: 38px;
     position: relative;
@@ -825,8 +825,14 @@ form button{
     bottom: -48px;
   }
   #goButton{
-    height: 40px;
+    margin-top: 10px;
+    height: 39px;
+    position: relative;
+    right: 18px;
+    /* padding: 20px; */
+    bottom: -46px;
   }
+  
   .item1 img {
     margin-left: 50px;
     margin-top: 12px;
@@ -1085,7 +1091,7 @@ form button{
   /* width: 500px; */
   /* margin-left: -90px; */
 
-  margin-left: 24px;
+  margin-left: 14px;
 
   width: 300px;
 
