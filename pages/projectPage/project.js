@@ -25,6 +25,27 @@ document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click" ,
 // });
 
 
+function myFunction(x) {
+    if (x.matches) {
+      document.querySelector(".logo img").setAttribute("src","../images/citc.png")
+    }
+    else{
+        document.querySelector(".logo img").setAttribute("src","../images/Logo.png")
+    }
+}
+  
+  
+  var x = window.matchMedia("(max-width: 576px)");
+
+  myFunction(x);
+
+  x.addEventListener("change", function () {
+    myFunction(x);
+  });
+
+
+
+
 
 const selectElement = (selector) => {
     const element = document.querySelector(selector);

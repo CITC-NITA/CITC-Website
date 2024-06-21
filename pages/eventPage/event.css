@@ -9,21 +9,21 @@
 }
 
 
-
-
 html,body{
   width:100%;
   height:100%;
-  /* color: black; */
-  background-color: #ffffff;
+  color: black;
+  /* background-color: #ffffff; */
   margin-top: 0;
   overflow-x: scroll;
-  background-image: url(../images/blackbg.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/blackbg.png); */
+  /* background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: 100% 100%;
-     background-position: center;
-     color: white;
+     background-position: center; */
+     /* color: white; */
+     box-shadow: inset 0px 0px 170px  #ed7e23;
+
 }
 
 
@@ -186,7 +186,7 @@ html,body{
 .don2 p{
   font-size: 14px;
   /* color: rgb(50, 49, 49); */
-  color: white;
+  /* color: white; */
   margin-left: 5px;
   /* width: 400px; */
   font-weight: 400;
@@ -627,10 +627,6 @@ color: #e6660c;
   color: #ed7e23;
 }
 
-.black-background button{
-  color: white;
-}
-
 
 .white-background #box-shadow{
   /* box-shadow: inset 0px 0px 170px  #ed7e23; */
@@ -866,9 +862,6 @@ p{
   }
 }
 
-.btn{
-  color: white;
-}
 
 
 
