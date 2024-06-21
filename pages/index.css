@@ -768,7 +768,7 @@ form button{
     display: inline-block;
     width: 170px;
     display: flex;
-    margin-left: 5px;
+    margin-left: 1px;
     margin-top: -40px;
   }
   .item0{
@@ -828,6 +828,7 @@ form button{
     margin-top: 10px;
     height: 39px;
     position: relative;
+    
     right: 20px;
     /* padding: 20px; */
     bottom: -46px;
@@ -1089,7 +1090,7 @@ form button{
   font-weight: 300;
   /* align-content: left; */
   /* width: 500px; */
-  /* margin-left: -90px; */
+  margin-left: 3px;
 
  
 
