@@ -820,7 +820,7 @@ form button{
     margin-top: 10px;
     height: 38px;
     position: relative;
-    right: 15px;
+    right: 19px;
     /* padding: 20px; */
     bottom: -48px;
   }
@@ -828,11 +828,11 @@ form button{
     margin-top: 10px;
     height: 39px;
     position: relative;
-    right: 18px;
+    right: 20px;
     /* padding: 20px; */
     bottom: -46px;
   }
-  
+
   .item1 img {
     margin-left: 50px;
     margin-top: 12px;
@@ -1091,7 +1091,7 @@ form button{
   /* width: 500px; */
   /* margin-left: -90px; */
 
-  margin-left: 14px;
+ 
 
   width: 300px;
 
