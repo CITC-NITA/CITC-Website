@@ -1300,6 +1300,17 @@ align-items: center;
 }
 
 
+
+.cardList__btn.btn--left {
+  left: 29%;
+}
+.cardList__btn.btn--right {
+  right: 29%;
+}
+.card__content {
+  padding: 0.5rem;
+}
+
 }
 
 
@@ -1308,7 +1319,7 @@ align-items: center;
 @media(min-width:576px) and (max-width:1100px){
   
   .header{
-    height:12%;
+    height:90px;
   }
 
   
@@ -1372,16 +1383,6 @@ align-items: center;
     position: relative;
     left: -3rem;
   }
-
-  .cardList__btn.btn--left {
-    left: 29%;
-}
-.cardList__btn.btn--right {
-    right: 29%;
-}
-.card__content {
-    padding: 0.5rem;
-}
 }
 
 
@@ -1478,7 +1479,7 @@ align-items: center;
 
     .header {
       /* position: fixed; */
-      height: 11%;
+      height: 12%;
       top: 0;
       left: 0;
       width: 100%;
