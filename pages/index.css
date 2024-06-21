@@ -409,7 +409,7 @@ span {
 }
 
 #goButton{
-  margin-top: 55px;
+  margin-top: 59px;
   
 }
 
@@ -443,7 +443,7 @@ border-radius: 10px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  /* align-content: center; */
 }
 
 
@@ -487,6 +487,7 @@ border-radius: 10px;
   font-size: 25px;
   font-weight: bold;
   padding: 10px;
+  
   
   /* height: 43px; */
  
@@ -944,7 +945,7 @@ form button{
 }
 
 .about{
-  margin: 30px;
+  margin: 10px;
 }
 
 .about h2{
@@ -953,7 +954,7 @@ form button{
   color: #ed7e23;
 }
 .gapDo{
-  margin-top: 160px;
+  margin-top: 120px;
 }
 
 .header-team{

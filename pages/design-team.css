@@ -53,8 +53,8 @@ h1 {
     justify-content: center;
     align-items: center;
     /* margin: 10px; */
-    /* gap: 100px; */
-    /* margin-right: 50px; */
+    gap: 160px;
+    margin-top: 40px;
     animation: slideIn 1s ease-in-out;
 }
 
@@ -176,19 +176,29 @@ h1 {
     transform: scale(1.05);
 }
 
+
+
+#lemon img{
+    width: 340px; 
+    height: 280px;
+    
+}
+
+
  .atabi101 {
     position: absolute;
-    right: 3px;
-    top: -27px;
-    height: 100px;
+    left: -10px;
+    top: -18px;
+    
    
 }
 
 
 .dakoji101{
     position: absolute;
-    left: 10px;
-    top: -27px;
+    left: -10px;
+    top: -18px;
+   
 }
 
 
@@ -229,7 +239,7 @@ h1 {
 .social-icons a:hover {
     background-color: rgb(30, 152, 246);
     color: black;
-    transform: scale(1.1);
+    /* transform: scale(1); */
 }
 
 .social-icons a i {
