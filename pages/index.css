@@ -375,7 +375,6 @@ body {
   
 }
 .home-content {
-
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 1fr;
@@ -386,6 +385,7 @@ body {
 
 .about #header-para p{
   font-size: 25px;
+  
 }
 
 
@@ -747,6 +747,7 @@ form button{
   .about #header-para p {
     font-size: 16px;
     line-height: 24px;
+   
   }
 }
 
@@ -781,6 +782,7 @@ form button{
   }
   .home {
     padding: 0 5%;
+    
   }
   .home-content {
     display: flex;
@@ -788,7 +790,7 @@ form button{
     align-items: center;
     text-align: center;
     order: 2;
-    margin: 10px;
+    height: 590px;
     margin-top: 70px;
   }
   .item1{
@@ -827,7 +829,7 @@ form button{
   }
   .item1 img {
     margin-left: 50px;
-    margin-top: 0px;
+    margin-top: 12px;
     position: relative;
     width: 555px;
     right: 5px;
@@ -852,6 +854,8 @@ form button{
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
+    align-items: justify;
+    margin-left: 30px;
 
   }
   
@@ -954,7 +958,7 @@ form button{
   color: #ed7e23;
 }
 .gapDo{
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 .header-team{
@@ -1073,7 +1077,7 @@ form button{
   }
 
   .about #header-para p{
-  text-align:left !important;
+  text-align:justify !important;
   line-height: 20px;
   font-size:11px;
   font-weight: 300;
@@ -1081,7 +1085,7 @@ form button{
   /* width: 500px; */
   /* margin-left: -90px; */
 
-  margin-left: 13px;
+  margin-left: 24px;
 
   width: 300px;
 
@@ -1110,7 +1114,7 @@ form button{
     bottom: 31px;
   } */
   .gapDo{
-    margin-top:60px;
+    margin-top:10px;
   }
   .Ourteam{
     display: flex;
