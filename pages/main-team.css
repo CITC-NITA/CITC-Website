@@ -142,14 +142,14 @@ h1 {
 .layer h2{
     color: rgb(142, 223, 228);
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 10px;
 }
 
 .layer p{
     color: aliceblue;
     text-align: center;
-    font-size: 18px;
+    font-size: 21.3px;
     margin-top: 3px;
 }
 
@@ -157,7 +157,7 @@ h1 {
     text-align: center;
     font-size: 25px;
     color: aliceblue;
-    margin-top: 100px;
+    margin-top: 40px;
     animation: fadeIn 1s ease-in-out;
     
 }
@@ -177,7 +177,6 @@ h1 {
     width: 500px;
     height: 330px;
     border-radius: 50px;
-    /* margin-top: 50px; */
     transition: transform 0.3s ease-in-out;
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
@@ -186,23 +185,22 @@ h1 {
     border-width: 0px;
 }
 
-.card:hover img {
+/* .card:hover img {
     transform: scale(1.05);
-}
+} */
 
 
 #apple{
-    margin-top: 70px;
+    margin-top: 36px;
+    gap: 220px;
 
     
 }
 
 #apple img{
-    width: 223px; 
-    height: 220px;
-    margin-left: 20px;
-
-
+    width: 340px; 
+    height: 290px;
+    
 }
 
 #lemon img{
@@ -218,8 +216,8 @@ h1 {
 
 .founders101{
     position: absolute;
-    top: -10px;
-    left: -20px;
+    top: -15px;
+    left: -15px;
 }
 
 .tech101{
@@ -247,7 +245,7 @@ h1 {
     left: -4px;
 }
 
-.social-icons {
+/* .social-icons {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -258,10 +256,46 @@ h1 {
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 2;
     border-radius: 20px;
+     
+}
+*/
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
     
 }
 
-.social-icons a {
+
+
+.social-icons a{
+    text-decoration: none;
+    color: ghostwhite;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    transition:transform 0.3s ease;
+    padding-top:2px ;
+    
+}
+
+
+.social-icons a:hover {
+    color: #e4405f; /* Instagram color */
+    transform: translateY(-2px);
+    
+  }
+  
+  
+  
+.social-icons a:hover:nth-child(2) {
+    color: #0077b5; /* LinkedIn color */
+    
+  }
+/* .social-icons a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -272,23 +306,23 @@ h1 {
     color: rgb(58, 56, 56);
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px transparent;
-}
+} */
 
-.social-icons a:hover {
+/* .social-icons a:hover {
     background-color:  rgb(30, 152, 246);
     color: black ;
     transform: scale(1);
-}
+} */
 
-.social-icons a i {
+/* .social-icons a i {
     font-size: 18px;
     align-items: center;
-}
-
+} */
+/* 
 .card:hover .social-icons {
     opacity: 1;
     transform: translateX(-50%) translateY(-70px);
-}
+} */
 
 
 @keyframes fadeIn {
@@ -330,13 +364,14 @@ h1 {
 
 @media (max-width: 576px) {
     .header h1 {
-        font-size: 30px;
+        font-size: 23px;
         margin-top: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
 
     .header-para {
         font-size: 18px;
+        margin-top: 5px;
     }
 
     .card {
@@ -345,9 +380,18 @@ h1 {
         /* margin: 20px 10px; */
     }
 
-    .card img {
-        width: 150px;
-        height: auto;
+    .founders101{
+        top: -9px;
+        left: -4px;
+    }
+
+    #apple{
+        gap: 50px;
+    }
+
+    #apple img{
+        width: 180px;
+        height: 140px;
         margin-top: 10px;
     }
 
@@ -356,13 +400,18 @@ h1 {
     }
 
     .layer p {
-        font-size: 14px;
+        font-size: 17px;
+        margin-top: 5px;
+    
     }
 
     .para {
-        font-size: 12px;
-        margin: 20px 10px;
-        white-space: nowrap;
+        font-size: 17px;
+        margin: 20px 60px;
+        /* white-space: nowrap; */
         line-height: 1.5;
+        text-align:justify ;
+
+        margin-top: 70px;
     }
 }
