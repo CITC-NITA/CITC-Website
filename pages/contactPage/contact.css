@@ -1506,3 +1506,53 @@ color: #e6660c;
   }
   
 }*/
+
+
+
+
+
+.navbar a:hover {
+  color: #ed7e23;
+}
+
+
+
+@keyframes linkHover {
+  from {
+      color: black;
+  }
+  to {
+      color: #ed7e23;
+  }
+}
+
+
+
+.navbar a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ed7e23;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ed7e23;
+}
