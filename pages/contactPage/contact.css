@@ -353,7 +353,7 @@ form {
   
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 39rem;
+  width: 80%;
   height: 29rem;
   display: flex;
   flex-direction: column;
@@ -388,6 +388,7 @@ form button{
   min-height: 100vh;
 }
 .contact-container .hero-container{
+  width: 100%;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -405,6 +406,7 @@ form button{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 .hero-container p {
   color:black;
@@ -1556,3 +1558,78 @@ color: #e6660c;
 .navbar a.active {
   color: #ed7e23;
 }
+
+
+
+@media(min-width:576px) and (max-width:1100px){
+  
+  .header{
+    height:90px;
+  }
+
+  
+  p{
+    text-align: justify;
+  }
+  /* .logo img{
+    border-radius: 50%;
+    right: 10px;
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+  } */
+  .hamburger{
+    display:block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 4px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 55%;
+    transition: 0.3s;
+    height: 51%;
+    
+  }
+  .nav-item{
+    margin:16px 0;
+
+  }
+  .nav-menu.active{
+    left: 0;
+    top: 70px;
+    height: 23rem;
+  }
+  #contact{
+    width:9rem;
+    margin-left:2rem;
+  }
+  .conta{
+    text-align: center;
+    /* padding: 50px; */
+    /* margin: 10px; */
+    margin-left: 20px;
+    padding: 0%;
+    margin: 0px;
+    position: relative;
+    left: -3rem;
+  }
+}
+
+
+
+
