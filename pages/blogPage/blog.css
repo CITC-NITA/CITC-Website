@@ -224,7 +224,7 @@ body{
 }
 
 /*tab navbar*/
-@media screen and (min-width:576px) and (max-width:1256px){
+@media screen and (min-width:576px) and (max-width:1356px){
   .header {
     position: fixed;
     height: 131px;
@@ -643,9 +643,9 @@ textarea {
   padding: 2rem;
 }
 
-/* .blog-post-img img{
+.blog-post-img img{
   width: 100%;
-} */
+}
 
 .recent-popst-img img{
   width: 100%;
@@ -721,7 +721,7 @@ textarea {
   position: relative;
   right: -23px;
 }
-/* 
+
 
 .blog-post-img{
   width:100%;
@@ -731,7 +731,7 @@ textarea {
   justify-content: center;
   position: relative;
 
-} */
+}
 .recent-post-img{
   min-width: 9.2rem;
   max-width:9.2rem;
@@ -740,20 +740,25 @@ textarea {
   position: relative;
 }
 
-/* .blog-post-img img{
+.blog-post{
+  margin: 10px;
+  padding: 10px;
+}
+
+.blog-post-img img{
   width: 100%;
   height:100%;
   object-fit:cover;
   display: block;
   border-radius: 0.8rem;
-} */
-/*.recent-popst-img img{
+} 
+.recent-popst-img img{
   width: 100%;
   height:100%;
   object-fit: cover;
   display:flex;
   border-radius: 0.8rem;
-}*/
+}
 
 .recent-post-img img{
   width: 70%;
@@ -775,14 +780,15 @@ textarea {
   border-radius:  0.8rem;
 }
 
-/* 
+
+
 .blog-post-date,.recent-post span{
   display:block;
   color: rgba(0,0,0,0.5);
   font-size:0.6rem;
   font-weight: 800;
   margin: 0.5rem 0;
-} */
+}
 
 .blog-post-tittle{
   font-size: 1.5rem;
@@ -798,7 +804,7 @@ textarea {
 }
 
 .blog-post-text{
-  /* margin-bottom: 3rem; */
+  margin-bottom: 3rem;
   font-size:1.09rem;
   color: rgba(0,0,0,0.7);
   margin-right: 10px;
@@ -883,7 +889,7 @@ text-align: justify;
 
 /*tab blog page*/
 
-@media screen and (min-width:576px) and (max-width:1256px){
+@media screen and (min-width:576px) and (max-width:1356px){
   .left-column {
         /* float: left; */
         width: 100%;
@@ -1149,7 +1155,7 @@ text-align: justify;
     padding: 1rem 1rem;
   }
 }
-@media screen and (min-width:576px) and (max-width:1256px){
+@media screen and (min-width:576px) and (max-width:1356px){
   .main-blog-content{
     padding:0rem;
   }
@@ -1667,7 +1673,7 @@ color: #e6660c;
 
 
 
-@media (max-width:1256px) and (min-width:576px){
+@media (max-width:1356px) and (min-width:576px){
   /*.header{
     height:70px;
   }
