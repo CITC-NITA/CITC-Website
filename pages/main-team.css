@@ -387,6 +387,9 @@ h1 {
         left: -4px;
         
     }
+    .social-icons{
+        font-size: 13px;
+    }
 
     #apple{
         gap: 5px;
@@ -416,6 +419,6 @@ h1 {
         line-height: 1.5;
         text-align:justify ;
 
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
