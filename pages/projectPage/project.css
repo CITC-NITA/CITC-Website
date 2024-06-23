@@ -1059,11 +1059,19 @@ footer {
 /* -------------footer section  -------------------------- */
 
 footer {
+/*background-color: #ed7e23;
+color: white;
+padding: 20px 0;
+text-align: center;
+font-family: Arial, sans-serif;
+height:275px;*/
 background-color: #ed7e23;
 color: white;
 padding: 20px 0;
 text-align: center;
 font-family: Arial, sans-serif;
+margin-top: auto;
+height: 275px;
 }
 
 .footer-container2,
@@ -1075,10 +1083,10 @@ margin: 10px;
 }
 
 .footer-container2 {
-width: 25%;
-text-align: left;
-position: relative;
-top: 17px;
+  width: 25%;
+  text-align: left;
+  position: relative;
+  top: 20px;
 }
 
 .footer-container2 h3,
@@ -1093,17 +1101,21 @@ margin: 10px 0;
 }
 
 .footer-container2 form {
-display: flex;
-flex-direction: row;
-width:300px;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  position: relative;
+  bottom: 26px;
+  
 }
 
 .footer-container2 input.box {
-padding: 10px;
-border: none;
-/* margin-bottom: 10px; */
-border-radius: 5px;
-width: 300px;
+  padding: 10px;
+  border: none;
+  margin-right: 6px;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 26px;
 }
 
 .footer-container2 button {
@@ -1113,6 +1125,7 @@ color: white;
 padding: 10px;
 border-radius: 10px;
 cursor: pointer;
+margin-top:26px ;
 }
 
 .footer-container2 button:hover {
@@ -1138,9 +1151,10 @@ transition: 0.5s;
 }
 
 .footer-center {
-width: 35%;
-position: relative;
-/* left: 59px; */
+  width: 35%;
+  position: relative;
+  left: 37px;
+  bottom: 37px;
 }
 
 footer .menu li a {
@@ -1211,38 +1225,32 @@ font-size: 1em;
 }
 
 .footer-container3 {
-/*font-size: 20px;
-width: 30%;
-text-align: center;*/
-font-size: 20px;
-width: 30%;
-text-align: center;
-position: relative;
-/* left: 36px; */
-/* overflow-x: hidden; */
-top: 17px;
+  font-size: 20px;
+  width: 30%;
+  text-align: left;
+  position: relative;
+  left: 36px;
+  /* overflow-x: hidden; */
+  top: 20px;
 }
 
-.footer-container3 ul {
-list-style: none;
-padding: 0;
-}
 
-.footer-container3 li {
-margin-bottom: 10px;
-}
-
-.footer-container3 li svg {
-vertical-align: middle;
-margin-right: 5px;
+.footer-container3 p{
+  font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .bottom-footer {
-margin-top: 20px;
+  margin-top: 20px;
+  
 }
 
+
+
 .bottom-footer p {
-margin: 0;
+  margin: 0;
+  position: relative;
+  top: 14px;
 
 }
 
@@ -1628,7 +1636,7 @@ body {
   text-align: center;
   background: #ed7e23;
     /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .footer-waves-content {

@@ -955,10 +955,8 @@ footer {
   text-align: center;
   font-family: Arial, sans-serif;
   margin-top: auto;
-  height:363px;
- 
+  height: 275px;
   
-  padding: 1rem;
 }
 
 .footer-container2,
@@ -973,7 +971,7 @@ footer {
   width: 25%;
   text-align: left;
   position: relative;
-  top: 17px;
+  top: 20px;
 }
 
 .footer-container2 h3,
@@ -990,7 +988,9 @@ footer {
 .footer-container2 form {
   display: flex;
   flex-direction: row;
-  width:300px;
+  width: 300px;
+  position: relative;
+  bottom: 41px;
 }
 
 .footer-container2 input.box {
@@ -1000,6 +1000,7 @@ footer {
   border-radius: 5px;
   width: 300px;
   height:44px;
+  margin-right:-75px;
 }
 
 .footer-container2 button {
@@ -1036,7 +1037,8 @@ footer .footer-container1 li a {
 .footer-center {
   width: 35%;
   position: relative;
-  left: 59px;
+  left: 37px;
+  bottom: 37px;
 }
 
 footer .menu li a {
@@ -1107,41 +1109,33 @@ footer .menu li a:hover {
 }
 
 .footer-container3 {
-  /*font-size: 20px;
-  width: 30%;
-  text-align: center;*/
   font-size: 20px;
   width: 30%;
-  text-align: center;
+  text-align: left;
   position: relative;
   left: 36px;
   /* overflow-x: hidden; */
-  top: 17px;
+  top: 37px;
 }
 
-.footer-container3 ul {
-  list-style: none;
-  padding: 0;
-}
 
-.footer-container3 li {
-  margin-bottom: 10px;
-}
-
-.footer-container3 li svg {
-  vertical-align: middle;
-  margin-right: 5px;
-}
 
 .bottom-footer {
-  margin-top: 20px;
-  position:relative;
-  bottom:24rem;
+    /* width: 100%; */
+    margin-top: 20px;
+    position: relative;
+    bottom: 30.5rem;
+  
 }
+.footer-container3 p{
+  font-size: 16px;
+}
+
 
 .bottom-footer p {
   margin: 0;
-
+  position: relative;
+  top: 10px;
 }
 
 /* Responsive Design */
@@ -1646,7 +1640,7 @@ body {
   text-align: center;
   background: #ed7e23;
     /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .footer-waves-content {
