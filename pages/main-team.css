@@ -364,54 +364,58 @@ h1 {
 
 @media (max-width: 576px) {
     .header h1 {
-        font-size: 23px;
+        font-size: 18px;
         margin-top: 20px;
         margin-bottom: 5px;
     }
 
     .header-para {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 5px;
     }
 
     .card {
         flex-direction: column;
-        gap: 2px;
+        justify-items: center;
+        align-items: center;
+        
         /* margin: 20px 10px; */
     }
 
     .founders101{
-        top: -9px;
+        top: -10px;
         left: -4px;
+        
     }
 
     #apple{
-        gap: 50px;
+        gap: 5px;
     }
 
     #apple img{
-        width: 180px;
-        height: 140px;
+        width: 140px;
+        height: 110px;
         margin-top: 10px;
+        
     }
 
     .layer h2 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .layer p {
-        font-size: 17px;
+        font-size: 13px;
         margin-top: 5px;
     
     }
 
     .para {
-        font-size: 17px;
-        margin: 20px 60px;
+        font-size: 14px;
+        margin: 20px 50px;
         /* white-space: nowrap; */
         line-height: 1.5;
         text-align:justify ;
 
-        margin-top: 70px;
+        margin-top: 30px;
     }
 }
