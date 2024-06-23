@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -381,7 +381,16 @@ h1 {
         
         /* margin: 20px 10px; */
     }
-
+    #lemon img{
+        width: 140px;
+        height: 110px;
+        margin-top: 10px;
+    }
+    .tech101{
+        top: -10px;
+        left: -4px;
+    }
+    
     .founders101{
         top: -10px;
         left: -4px;
@@ -393,6 +402,7 @@ h1 {
 
     #apple{
         gap: 5px;
+        margin-top: 10px;
     }
 
     #apple img{
