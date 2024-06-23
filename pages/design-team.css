@@ -189,7 +189,7 @@ h1 {
 }
 
 
- .atabi101 {
+.atabi101 {
     position: absolute;
     left: -10px;
     top: -18px;
@@ -351,11 +351,27 @@ h1 {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        gap: 18px;
-        margin-top: 10px;
+        gap: 7px;
+        margin-top: 5px;
        
         
         /* margin: 20px 10px; */
+    }
+
+    .atabi101 {
+        
+        left: -8px;
+        top: -7px;
+        
+       
+    }
+    
+    
+    .dakoji101{
+        
+        left: -8px;
+        top: -7px;
+       
     }
     
 
