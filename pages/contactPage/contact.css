@@ -367,7 +367,7 @@ form input{
 }
 
 form button{
-  background:#ed7e23;
+  background:#00154c;
   padding: 10px 30px;
   margin-left: 80px;
   border:none;
@@ -564,7 +564,7 @@ textarea {
   }
   .btn{
    
-    left:5rem;
+    left: 0rem;
   }
 }
 
@@ -1141,10 +1141,10 @@ footer .menu li a:hover {
 /* Responsive Design */
 @media (max-width: 576px) {
   footer{
-    height:783px;
+    height:574px;
   }
 
-  .footer-container2,
+ /* .footer-container2,
   .footer-center,
   .footer-container3 {
     display: block;
@@ -1152,14 +1152,26 @@ footer .menu li a:hover {
     text-align: center;
     left: 17px;
     position: relative;
-  }
+  }*/
   .footer-center{
-    width: 19rem;
+    width: 18rem;
     height: 9rem;
+    position: relative;
+    /* right: 56px; */
+    bottom: 138px;
+    left: 12px;
+  }
+  .footer-container2 {
+    width: 84%;
+    text-align: center;
+    position: relative;
+    top: 8px;
+    left: -33px;
   }
   .footer-container3 {
         /* bottom: 10px; */
-      top: -45px;
+        top: -210px;
+        width: 84%;
   }
   .footer-container1 li a:hover {
     transform: translateY(-10px);
@@ -1174,8 +1186,8 @@ footer .menu li a:hover {
   }
   .bottom-footer {
     margin-top: 20px;
-    position:relative;
-    bottom:2rem;
+    position: relative;
+    bottom: 14rem;
   }
   
   
@@ -1236,6 +1248,10 @@ footer .menu li a:hover {
     position: relative;
     left: 2rem;
   }
+  .footer-container3 h3{
+       /* right: 41px; */
+       left: 3rem;
+  }
   .fp{
     position:relative;
     left:31px;
@@ -1245,12 +1261,18 @@ footer .menu li a:hover {
     margin: 10px 0;
     font-size: 15px;
   }
+  .footer-container3 p{
+    position: relative;
+    right: 21px;
+  }
 
 
   .footer-container2 form {
-      flex-direction: row;
-      justify-content: center;
-      height:50px;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+    left: 35px;
   }
   footer .footer-container2 form button {
    
