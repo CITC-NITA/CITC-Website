@@ -35,6 +35,7 @@ html , body {
     justify-content: center;
     align-items: center;
     /* background: #ffffff; */
+    background-image: url(../images/bgi.avif);
     /* background: rgb(255,255,255); */
 /* background-image:url(./images/5.png); */
 /* background-image: url(../images/blackbg.png); */
@@ -1865,3 +1866,4 @@ body {
     min-height:40px;
   }
 }
+
