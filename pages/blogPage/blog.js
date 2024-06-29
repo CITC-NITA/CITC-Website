@@ -20,6 +20,7 @@ document.querySelectorAll(".nav-item").forEach((n) =>
 function myFunction(x) {
     if (x.matches) {
       document.querySelector(".logo img").setAttribute("src","../images/citc.png")
+      
     }
     else{
         document.querySelector(".logo img").setAttribute("src","../images/Logo.png")
@@ -33,7 +34,7 @@ function myFunction(x) {
 
   x.addEventListener("change", function () {
     myFunction(x);
-  });
+});
 
 
 
