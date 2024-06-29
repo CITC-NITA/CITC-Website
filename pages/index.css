@@ -43,9 +43,10 @@
 #arjn{
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 57%;
 	transform: translate(-50%, -50%);
-	color: #121615;
+	/* color: #121615; */
+  color: rgb(2, 2, 35);
 	overflow: hidden;
 	padding: 9px 13px;
 	font-size: 30;
@@ -2373,6 +2374,8 @@ body {
     min-height:40px;
   }
 }
+
+
 
 
 
