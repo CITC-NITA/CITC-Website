@@ -30,7 +30,7 @@ html,body{
   color: black;
   /* background-color: #ffffff; */
   margin-top: 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
   /* background-image: url(../images/blackbg.png); */
   /* background-repeat: no-repeat;
      background-attachment: fixed;
@@ -116,14 +116,14 @@ html,body{
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-left: 100px;
+  margin-left: 60px;
   /* margin-top: 120px; */
   margin-bottom: 30px;
   margin-top: 20px;
 }
 
 .item1{
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 .home {
@@ -135,28 +135,31 @@ html,body{
 }
 
 .item1 img{
-  margin-bottom: 100px;
-  width: 1090px;
+  /* margin-bottom: 100px; */
+  /* width: 1090px; */
   margin-left: 10px;
   margin-bottom: 0px;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   transition:0.5s ;
   z-index: 1000;
+  width: 90%;
+  height: 90%;
   
 }
 
 .item1 img:hover{
   transform: translateY(-8px);
-  width: 1080px;
+  /* width: 1080px; */
 
 }
 
 
 .Divider{
-  width: 100%;
+  width: 80%;
   transition: 0.5s;
   background-color: transparent;
   border-radius: 30px;
+  
 }
 
 .Divider .don img{
@@ -239,7 +242,9 @@ html,body{
   border-color: #ed7e23;
 }
 
-
+p{
+  text-align: justify;
+}
 
 
 .home{
@@ -259,9 +264,9 @@ html,body{
   }
 
   
-  /*p{
+  p{
     text-align: justify;
-  }*/
+  }
   .logo img{
     border-radius: 50%;
     right: 10px;
@@ -890,6 +895,7 @@ footer {
   background-color:rgb(236, 90, 17);
   text-align: center;
   /*padding: 1rem;*/
+  width: 100%;
   
 }
 /* -------------footer section  -------------------------- */

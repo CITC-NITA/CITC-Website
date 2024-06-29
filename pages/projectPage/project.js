@@ -14,6 +14,13 @@ document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click" ,
 }))
 
 
+
+
+
+
+
+
+
   
   
 //   var x = window.matchMedia("(max-width: 576px)");

@@ -1,43 +1,27 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-  
-const body = document.body;
-const toggleSwitch = document.getElementById('toggleSwitch');
-const colors = ['white-background', 'black-background'];
-let currentIndex = 0;
+const logo = document.querySelector(".logo");
 
-toggleSwitch.addEventListener('change', function() {
-    body.classList.remove(colors[currentIndex]);
-    currentIndex = (currentIndex + 1) % colors.length;
-    body.classList.add(colors[currentIndex]);
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
 
-// Initialize the background to white
-body.classList.add('white-background');
-
-
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', () => {
-    const head = document.getElementById('head');
-
-    if (window.scrollY > lastScrollY) {
-        // Scrolling down
-        head.style.transform = 'translateY(-100%)';
-    } else {
-        // Scrolling up
-        head.style.transform = 'translateY(0)';
-    }
-
-    lastScrollY = window.scrollY;
-});
-
+document.querySelectorAll(".nav-item").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
 
 function myFunction(x) {
     if (x.matches) {
-      document.querySelector(".logo img").setAttribute("src","../images/citc.png")
+      
+      document.querySelector(".logo img").setAttribute("src","images/citc.png")
     }
     else{
-        document.querySelector(".logo img").setAttribute("src","../images/Logo.png")
+        document.querySelector(".logo img").setAttribute("src","images/Logo.png")
     }
 }
   
@@ -50,4 +34,4 @@ function myFunction(x) {
     myFunction(x);
   });
 
-
+  
