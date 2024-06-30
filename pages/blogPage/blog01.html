@@ -37,7 +37,7 @@
         </nav>
     </header>
     
-    <div class="main-blog-content" id="box-shadow">
+    <div class="main-blog-content b1" id="box-shadow">
         <div class="main-image">
             <img class="mImage" src="../images/Main Image_Blog 1.png" alt="mainimg01">
             <div class="cImage">
@@ -78,6 +78,9 @@
                             <p>This creative group uses their expertise to analyze and design innovative solutions for the future.</p>
                         </li>
                     </ul>
+                    <div class=" p-mobile">
+                        <img src="../images/posterBlog1.png" alt="blog1poster">
+                    </div>
                     <h3><strong>Our Mission:</strong></h3>
                     <ul>
                         <li>
@@ -123,7 +126,7 @@
                     <img src="../images/posterBlog1.png" alt="blog1poster">
                 </div>
             </div>
-        </div>
+       </div>
         <!--<div class="blog-text">
             <div class="poster">
                 <img src="../images/posterBlog1.png" alt="blog1poster">
@@ -239,10 +242,7 @@
         <div class="footer-container3">
           
           <h3>Address</h3>
-          <p>Civil Engineering Department
-            National Institute of Technology, Agartala
-            PO - NIT Agartala, Jirania Agartala
-            West Tripura, 799046</p>
+          <p>Civil Engineering Department, NIT Agartala, Barjala, Jirania, Agartala, West Tripura, 799046</p>
         </div>
       
         <div class="bottom-footer">
@@ -268,6 +268,30 @@
         </div>
       
     </div>
+<script>
+    function myFunction(x) {
+            if (x.matches) {
+               
+                document.querySelector(".main-blog-content").style.maxHeight="481vh";
+                document.querySelector(".main-blog-content").style.removeProperty('min-height');
+
+
+            }
+            else {
+                document.querySelector(".main-blog-content").style.padding="6rem";
+            }
+        }
+
+
+        var x = window.matchMedia("(max-width: 576px)");
+
+        myFunction(x);
+
+        x.addEventListener("change", function () {
+            myFunction(x);
+        }
+    );
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

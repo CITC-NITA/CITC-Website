@@ -206,7 +206,7 @@ body{
   }
   .nav-menu.active{
     left: 0;
-    top: 70px;
+    top: 69px;
   }
   #contact{
     width: 9rem;
@@ -722,7 +722,7 @@ textarea {
   flex-direction: row;
   border-radius: 0.8rem;
   position: relative;
-  right: -23px;
+  right: -10px;
 }
 
 
@@ -1063,6 +1063,9 @@ text-align: justify;
   color: #000;
   
 }
+.p-mobile{
+  display:none;
+}
 .poster{
   display: flex;
   position: relative;
@@ -1088,6 +1091,33 @@ text-align: justify;
 }
 
 @media(max-width:576px){
+  
+  .main-blog-content{
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    
+    min-height:471%;
+  }
+  .row{
+    display:flex;
+    flex-direction: column;
+  }
+  .p-mobile{
+    display: flex;
+    position: relative;
+    left: -16px;
+    width: 551px;
+    height: 433px;
+    bottom: 0rem;
+  }
+  
+  .left-column-blogcontent{
+    width:100%;
+  }
+  .right-column-blogcontent{
+    visibility: hidden;
+  }
   .main-blog-content{
     padding:0rem;
   }
