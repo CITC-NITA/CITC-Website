@@ -240,14 +240,20 @@ body{
   .header{
     height:70px;
   }
+  .logo{
+    display: flex;
+    align-items: center;
+    /* width: 30%; */
+ 
+  }
   .logo img{
     /* border-radius: 50%; */
     
     right: 10px;
   
     top: -2rem;
-    width: 70%;
-    height: 3.5rem;
+    width: 90%;
+    height: 6rem;
     margin: 0;
   }
   .hamburger{
