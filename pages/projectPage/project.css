@@ -1590,12 +1590,12 @@ align-items: center;
   .logo{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 30%;
   }
     .logo img{
         /* border-radius: 50%; */
 
-        height: 100px;
+        /* height: 100px; */
         /* padding: 14px 0; */
         /* margin-top: 3rem; */
         /* padding-left: 17px; */
