@@ -241,13 +241,13 @@ body{
     height:70px;
   }
   .logo img{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     
     right: 10px;
   
     top: -2rem;
-    width: 7rem;
-    height: 7rem;
+    width: 70%;
+    height: 3.5rem;
     margin: 0;
   }
   .hamburger{

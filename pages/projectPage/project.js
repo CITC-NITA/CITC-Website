@@ -34,7 +34,7 @@ document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click" ,
 
 function myFunction(x) {
     if (x.matches) {
-      document.querySelector(".logo img").setAttribute("src","../images/citc.png")
+      document.querySelector(".logo img").setAttribute("src","../images/newlogo.png")
     }
     else{
         document.querySelector(".logo img").setAttribute("src","../images/Logo.png")

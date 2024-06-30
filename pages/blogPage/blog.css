@@ -113,7 +113,7 @@ body{
 
 .logo img{
   display: flex;
-  width: 320px;
+  /* width: 320px; */
   height: 190px;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -160,16 +160,18 @@ body{
     height:70px;
   }
   .logo img{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* height: 100px; */
     /* padding: 14px 0; */
     /* margin-top: 3rem; */
+    width:70%;
+/* height: 10%; */
     /* padding-left: 17px; */
     right: 10p;
     /* position: fixed; */
     top: -2rem;
-    width: 4rem;
-    height: 4rem;
+    /* width: 4rem; */
+    height: 3.5rem;
     margin: 0;
   }
   .hamburger{
@@ -249,7 +251,7 @@ body{
   
   .logo img{
     display: flex;
-    width: 320px;
+    /* width: 4400px; */
     height: 190px;
     margin-top: 40px;
     margin-bottom: 30px;

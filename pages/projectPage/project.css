@@ -1593,7 +1593,7 @@ align-items: center;
     width: 50%;
   }
     .logo img{
-        border-radius: 50%;
+        /* border-radius: 50%; */
 
         height: 100px;
         /* padding: 14px 0; */
@@ -1602,8 +1602,8 @@ align-items: center;
        right: 10p;
         /* position: fixed; */
         top: -2rem;
-        width: 4rem;
-        height: 4rem;
+        width: 70%;
+        height: 3.5rem;
         margin: 0;
     }
     .hamburger {
