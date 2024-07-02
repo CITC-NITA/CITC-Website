@@ -19,9 +19,9 @@
 
 
 #box-shadow{
-    /* box-shadow: inset 0px 0px 170px  #ed7e23; */
+    box-shadow: inset 0px 0px 170px  #e96c07;
     z-index: 5;
-    background-image: url(../images/5.png);
+    /* background-image: url(../images/5.png); */
     background-repeat: no-repeat;
        background-attachment: fixed;
        background-size: 100% 100%;
