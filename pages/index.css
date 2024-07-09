@@ -12,7 +12,7 @@
 #box-shadow{
   box-shadow: inset 0px 0px 170px  #ed7e23;
   z-index: 1000;
-  height: 100%;
+  height: 200%;
   position: fixed;
 }
 
@@ -2179,102 +2179,6 @@ input:checked + .slider:before {
 
 
 
-
-.black-background {
-  background-color: rgba(0, 0, 0, 0.958);
-color: #e6660c;
-}
-/* 
-.gray-background {
-  background-image: url(./images/blackbg.png);
-  background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: center;
-  color: #e6660c;
-
-
-} */
-
-
-.white-background {
-  /* background-color: white; */
-  box-shadow: inset 0px 0px 170px  #ed7e23;
-  color: black;
-}
-
-
-
-.white-background .container,
-.black-background .container,
-.gray-background .container {
-  background-color: inherit;
-  color: inherit;
-}
-
-.black-background .header{
-
-  background-color: rgba(0, 0, 0, 0.858);
-  /* color: #23e629; */
-  /* z-index: ; */
-}
-.black-background #box-shadow{
-  background-color:black;
-  color: white;
-}
-
-.black-background p  {
-  color: white;
-}
-.black-background span{
-  color: white;
-}
-
-
-
-
-.black-background .nav-menu a{
-  color: #ed7e23;
-}
-
-
-
-
-.white-background #box-shadow{
-  /* box-shadow: inset 0px 0px 170px  #ed7e23; */
-  box-shadow: inset 0px 0px 170px  #ed7e23;
-  
-}
-/*  
-.about  #header-para p{
-  animation: fade linear ;
-  animation-timeline: view();
-  animation-range: entry 50% cover 40%;
-}
-
-h1,
-h2,
-h3
-{
-  animation: fade linear ;
-  animation-timeline: view();
-  animation-range: entry 0% cover 50%;
-}
-
-@keyframes fade{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-  0%{
-    opacity: 0;
-  }
-}
- */
-
-
  .navbar a:hover {
   color: #ed7e23;
 }
@@ -2382,8 +2286,6 @@ body {
     min-height:40px;
   }
 }
-
-
 
 
 
