@@ -26,7 +26,7 @@
 
 html,body{
   width:100%;
-  height:100%;
+  height:200%;
   color: black;
   /* background-color: #ffffff; */
   margin-top: 0;
@@ -38,6 +38,7 @@ html,body{
      background-position: center; */
      /* color: white; */
      box-shadow: inset 0px 0px 170px  #ed7e23;
+
 
 }
 
