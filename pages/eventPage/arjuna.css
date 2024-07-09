@@ -165,7 +165,7 @@ body{
 .content {
   /* height: 100%; */
   /* padding-top: 200px; */
-  max-width: 1560px;
+  max-width: 100%;
   color: #fff;
   /* animation: fadeInUp 1s ease-in-out; */
 }
@@ -1150,7 +1150,7 @@ p , li , ol li{
 }
 
 
-@media(max-width:600px) {
+@media(max-width:560px) {
  
     .header{
       height:36px;
@@ -1571,15 +1571,15 @@ h3{
 }
 
 /*tab navbar*/
-@media screen and (min-width:767px) and (max-width:1256px){
+@media screen and (min-width:560px) and (max-width:1456px){
   .header {
     position: fixed;
-    height: 131px;
+    height: 6%;
     top: 0;
     left: 0;
     width: 100%;
-    padding:20px 3%;
-    background: transparent;
+    /* padding:20px 3%; */
+    /* background: transparent; */
     border-bottom: #ed7e23 1px;
     display: flex;
     justify-content: space-between;
@@ -1592,14 +1592,97 @@ h3{
     background: white; 
   }
   
-  
+ 
+  .hamburger {
+    display: block;
+    padding-right: 14px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+      display: flex;
+      position: fixed;
+      left: -100%;
+      top: 100px;
+      gap: 4px;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 55%;
+      transition: 0.3s;
+      height: 51%;
+  }
+
+
+
+  .nav-item {
+      margin: 16px 0;
+  }
+
+
+  .nav-menu.active {
+    left: 0;
+    /* bottom: 13px; */
+    top: 76px;
+  }
+
+
+
+  #contact {
+      width: 8rem;
+  }
+
+
+
+
+.hamburger {
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 4px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 55%;
+    transition: 0.3s;
+    height: 51%;
+}
+
+
+
   
   .logo img{
     display: flex;
     width: 320px;
     height: 190px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    /* margin-top: 40px; */
+    /* margin-bottom: 30px; */
   }
   
   
