@@ -11,7 +11,9 @@
 
 #box-shadow{
   box-shadow: inset 0px 0px 170px  #ed7e23;
-  z-index: 5;
+  z-index: 1000;
+  height: 100%;
+  position: fixed;
 }
 
 
