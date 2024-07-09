@@ -10,8 +10,9 @@
 }
 
 #box-shadow{
-  /* box-shadow: inset 0px 0px 170px  #ed7e23; */
-  background: linear-gradient(to left,#ed7e23 , #002b9d, #34ffea);
+  box-shadow: inset 0px 0px 170px  #ed7e23;
+  /* background: linear-gradient(to left,#ed7e23 , #002b9d, #34ffea); */
+  height: 110%;
 
   z-index: 1000;
   /* height: 200%; */
