@@ -121,6 +121,7 @@ body{
   /* font-size: 2em; */
   gap: 0px;
   word-spacing: -15px;
+  left: 0px;
 }
 
 @keyframes typing {
@@ -225,7 +226,7 @@ body{
 
 
 .timeline-line{
-  width: 1300px;
+  width: 150%;
   height: 20px;
   border-radius: 10px;
     background-color: white;
@@ -253,7 +254,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 400px;
+    left: 300px;
     gap: 20px;
   }
  
@@ -345,7 +346,10 @@ top: -14px;
 .timeline-header {
   padding: 5px;
   background-color: white;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   margin-top: 40px;
   /* margin-left: 45px; */
   font-size: 35px;
@@ -354,10 +358,15 @@ top: -14px;
   color: #1D426A;
 }
 
+
+
 .process-header {
   padding: 5px;
   background-color: white;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   margin-top: 40px;
   /* margin-left: 45px; */
   font-size: 35px;
@@ -451,8 +460,8 @@ ol li {
   width: 660px;
   height: 449px;
   position: absolute;
-  left: 845px;
-  top: 165px;
+  left: 800px;
+  top: 105px;
 }
 
 footer {
@@ -465,7 +474,7 @@ section {
   /* height: 100vh; */
   height: 100%;
 
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .faq h3 {
@@ -553,7 +562,7 @@ ol {
   padding-left: 0px;
   /* padding-top: 100px; */
   position: relative;
-  left: -15px;
+  /* left: -15px; */
  
 }
 
@@ -1146,7 +1155,7 @@ p , li , ol li{
 
 .process{
   position: relative;
-  left: -15px;
+  /* left: -15px; */
 }
 
 
@@ -1155,6 +1164,7 @@ p , li , ol li{
     .header{
       height:36px;
     }
+   
     .logo img{
       /* border-radius: 50%; */
       /* height: 100px; */
@@ -1185,6 +1195,7 @@ p , li , ol li{
         transform: translateY(-8px) rotate(-45deg);
     }
   
+    
     .nav-menu {
         display: flex;
         position: fixed;
@@ -1350,10 +1361,7 @@ section{
     /* padding-top: 1000px; */
     padding-bottom: 100px;
 }
-section{
-    padding: 10px;
-    /* padding-top: 80px; */
-}
+
 .main img{
 /* width: 100%; */
 width: 80%;
@@ -1388,6 +1396,7 @@ width: 80%;
   
 }
 
+
 .cash-prize{
     font-size: 32px;
     display: flex;
@@ -1400,7 +1409,7 @@ width: 80%;
 .process{
     height: 100%;
     position: relative;
-    left: -15px;
+    /* left: -15px; */
 }
 .processnext{
    height: 100%;
@@ -1499,13 +1508,15 @@ margin-top : 1px;
 
 .dates{
   height: 100%;
+  width: 100%;
   justify-content: center;
-  padding: 5px;
+  /* padding: 5px; */
   padding-bottom: 100px;
 
 }
 .process{
   padding-left: 0px;
+  width: 100%;
   height: 100%;
   padding-bottom: 100px;
 
@@ -1555,7 +1566,7 @@ h3{
   margin-left: 20px;
 }
 
-.processnext ol , .finale ol , .faq ol{
+.processnext ol , .finale ol , .faq ol, .process ol , .date ol{
   padding-left: 0px;
   margin-left: 0%;
   margin: 30px;
@@ -1565,7 +1576,9 @@ h3{
 
 .main h2{
   /* align-items: center; */
-  margin: 20px;
+  /* margin: 10px; */
+  /* align-items: jus; */
+  text-align: justify;
 }
 
 }
@@ -1592,11 +1605,21 @@ h3{
     background: white; 
   }
   
- 
+  .time{
+    left: 200px;
+  }
+  .timeline-line{
+    width: 120%;
+  }
+ .arrowman2{
+  display: none;
+ }
   .hamburger {
     display: block;
     padding-right: 14px;
   }
+
+
 
   .hamburger.active .bar:nth-child(2) {
       opacity: 0;
@@ -1940,4 +1963,34 @@ padding-bottom: 100px;
   padding-bottom: 100px;
   padding-bottom: 100px;
 
+}
+
+section{
+  /* padding: 20px; */
+  padding-top: 80px;
+  /* padding-bottom: 10%; */
+  padding-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.main{
+  padding: 20px;
+  /* padding-top: 10px; */
+}
+@media(max-width:560px) {
+  .main{
+    padding: 10px;
+    padding-top: 0px;
+
+  }
+  .main img{
+    width: 90%;
+
+  }
+
+   .content .arjuna{
+    position: relative;
+    left: 0px;
+  }
 }
