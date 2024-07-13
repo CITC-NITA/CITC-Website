@@ -219,7 +219,7 @@ body{
   color: black;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 28px;
+  margin-left: 20px;
 
 }
 
@@ -1912,6 +1912,39 @@ footer .menu li a:hover {
       color: #ed7e23;
       margin-bottom: 20px; /* Added margin-bottom for better spacing */
     }
+    #textarea {
+      display: none;
+
+    }
+    
+    #textAreaToggle:checked ~ #textarea {
+      display: block;
+      
+    }
+    
+    input[type="checkbox"] {
+      position: absolute;
+      left: -1000px;
+      
+    }
+
+    
+    
+    label {
+      display: block;
+      cursor: pointer;
+      margin-top: 10px;
+      color: #002b9d;
+    }
+    
+    #textAreaToggle + #textarea + label::before {
+      content: 'view more';
+    }
+    
+    #textAreaToggle:checked ~ #textarea + label::before {
+      content: 'Hide content';
+    }
+    
     
     .swiper-slide {
       text-align: center;

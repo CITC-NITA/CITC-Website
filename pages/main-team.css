@@ -15,6 +15,7 @@ body{
     background-attachment: fixed;
     background-size: 100% 100%;
     background-position: center;
+   
     
 }
 
@@ -79,6 +80,7 @@ h1 {
 .card .cards:hover:after{
     width: 100%;
 }
+
 
 
 
@@ -157,7 +159,7 @@ h1 {
     text-align: center;
     font-size: 25px;
     color: aliceblue;
-    margin-top: 40px;
+    margin-top: 30px;
     animation: fadeIn 1s ease-in-out;
     
 }
@@ -216,33 +218,58 @@ h1 {
 
 .founders101{
     position: absolute;
-    top: -15px;
-    left: -15px;
+    top: -35px;
+    left: -32px;
+    
 }
+
+.card .layer .founders101 {
+    width: 370px !important;
+    height: 310px !important;
+}
+
 
 .tech101{
     position: absolute;
-    top: -10px;
-    left: -4px;
+    top: -40px;
+    left: -70px;
+}
+
+#VAR{
+    width: 490px !important;
+    left: -98px;
+    height: 300px !important;
+    top: -50px;
+}
+
+.card .layer .tech101 {
+    width: 450px !important;
+    height: 290px !important;
 }
 
 .mounadip101{
     position: absolute;
-    top: -18px;
-    left: -4px;
+    top: -40px;
+    left: -40px;
+    width: 380px !important;
+    height: 290px !important;
     
 }
 
 .siddhardth101{
     position: absolute;
-    top: -18px;
-    left: -4px;
+    top: -40px;
+    left: -40px;
+    width: 380px !important;
+    height: 290px !important;
 }
 
 .udayanD101{
     position: absolute;
-    top: -18px;
-    left: -4px;
+    top: -70px;
+    left: -50px;
+    width: 400px !important;
+    height: 320px !important;
 }
 
 
@@ -362,7 +389,7 @@ h1 {
 
     #apple{
         gap: 5px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .mounadip101{

@@ -158,7 +158,7 @@ h1 {
     text-align: center;
     font-size: 25px;
     color: aliceblue;
-    margin-top: 40px;
+    margin-top: 30px;
     animation: fadeIn 1s ease-in-out;
     
 }
@@ -170,8 +170,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* margin: 10px;  */
-    /* gap: 25px; */
+   
 }
 
 .card img {
@@ -217,50 +216,23 @@ h1 {
 
 .founders101{
     position: absolute;
-    top: -15px;
-    left: -15px;
-}
-
-.tech101{
-    position: absolute;
-    top: -10px;
-    left: -4px;
-    /* height: 100px; */
-}
-
-.mounadip101{
-    position: absolute;
-    top: -18px;
-    left: -4px;
+    top: -35px;
+    left: -47px;
     
 }
 
-.siddhardth101{
-    position: absolute;
-    top: -18px;
-    left: -4px;
+#Dettol{
+    left: -34px !important;
+    width: 360px !important;
 }
 
-.udayanD101{
-    position: absolute;
-    top: -18px;
-    left: -4px;
+.card .layer .founders101 {
+    width: 340px !important;
+    height: 280px !important;
 }
 
-/* .social-icons {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 2;
-    border-radius: 20px;
-     
-}
-*/
+
+
 
 .social-icons{
     display: flex;
@@ -297,35 +269,8 @@ h1 {
     color: #0077b5; /* LinkedIn color */
     
   }
-/* .social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color:ghostwhite;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: rgb(58, 56, 56);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px transparent;
-} */
 
-/* .social-icons a:hover {
-    background-color:  rgb(30, 152, 246);
-    color: black ;
-    transform: scale(1);
-} */
-
-/* .social-icons a i {
-    font-size: 18px;
-    align-items: center;
-} */
-/* 
-.card:hover .social-icons {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-70px);
-} */
-
+ 
 
 @keyframes fadeIn {
     0% {

@@ -53,7 +53,7 @@ h1 {
     justify-content: center;
     align-items: center;
     /* margin: 10px; */
-    gap: 160px;
+    gap: 190px;
     margin-top: 40px;
     animation: slideIn 1s ease-in-out;
 }
@@ -68,10 +68,10 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
 }
-
+/* 
 .card img:hover {
     transform: scale(1.1);
-}
+} */
 
 .div0 {
     position: absolute;
@@ -141,7 +141,7 @@ h1 {
     text-align: center;
     font-size: 25px;
     color: aliceblue;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-right: 70px;
     animation: fadeIn 1s ease-in-out;
 }
@@ -171,10 +171,10 @@ h1 {
     z-index: 1;
     border-width: 0px;
 }
-
+/* 
 .card:hover img {
     transform: scale(1.05);
-}
+} */
 
 .layer {
     position: relative;
@@ -191,67 +191,22 @@ h1 {
 
 .atabi101 {
     position: absolute;
-    left: -10px;
-    top: -18px;
-    
+    top: -40px;
+    left: -70px;
+    width: 480px !important;
+    height: 310px !important;
    
 }
 
 
 .dakoji101{
     position: absolute;
-    left: -10px;
-    top: -18px;
+    top: -35px;
+    left: -39px;
+    width: 500px !important;
+    height: 310px !important;
    
 }
-
-
-
-
-
-
-/* 
-.social-icons {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 3;
-    border-radius: 40px;
-    
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: ghostwhite;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: rgb(58, 56, 56);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px grey;
-}
-
-.social-icons a:hover {
-    background-color: rgb(30, 152, 246);
-    color: black;
-    /* transform: scale(1); */
-/* } */
-/* 
-.social-icons a i {
-    font-size: 18px;
-}
-
-.card:hover .social-icons {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-90px);
-/* } */ 
 
 
 .social-icons{
