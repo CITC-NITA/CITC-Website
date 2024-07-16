@@ -1050,7 +1050,7 @@ font-size: 1em;
   .footer-container3 {
           /* bottom: 10px; */
     top: -126px;
-    width: 84%;
+    width: 79%;
   }
 
   .footer-container1 li a:hover {
@@ -1069,6 +1069,9 @@ font-size: 1em;
     margin-top: 20px;
     position: relative;
     bottom: 8rem;
+  }
+  .bottom-footer p{
+    left:3rem;
   }
 
 
@@ -1127,7 +1130,7 @@ font-size: 1em;
 
   .footer-container2 h3,
   .footer-container3 h3 {
-    font-size: 1.5em;
+    font-size: 24px;
     margin-bottom: 10px;
     position: relative;
     left: 2rem;
@@ -1135,7 +1138,7 @@ font-size: 1em;
 
   .footer-container3 h3 {
     /* right: 41px; */
-    left: 3rem;
+    left: 3.5rem;
   }
 
   .fp {
@@ -1147,11 +1150,12 @@ font-size: 1em;
   .footer-container3 p {
     margin: 10px 0;
     font-size: 15px;
+    text-align: unset;
   }
 
   .footer-container3 p {
     position: relative;
-    right: 21px;
+    right: 10px;
   }
 
 
@@ -1160,7 +1164,7 @@ font-size: 1em;
     justify-content: center;
     height: 50px;
     position: relative;
-    left: 35px;
+    left: 37px;
   }
 
   footer .footer-container2 form button {

@@ -1293,7 +1293,7 @@ font-size: 1em;
   .footer-container3 {
         /* bottom: 10px; */
         top: -110px;
-        width: 84%;
+        width: 79%;
   }
 
   .footer-container1 li a:hover {
@@ -1394,7 +1394,7 @@ font-size: 1em;
 
   .footer-container3 p {
     position: relative;
-    right: 21px;
+    right: 8px;
   }
 
 
@@ -1403,7 +1403,7 @@ font-size: 1em;
     justify-content: center;
     height: 50px;
     position: relative;
-    left: 35px;
+    left: 37px;
   }
 
   footer .footer-container2 form button {

@@ -811,7 +811,7 @@ textarea {
   font-size:1.09rem;
   color: rgba(0,0,0,0.7);
   margin-right: 10px;
-text-align: justify;
+/*text-align: justify;*/
 }
 .recent-post-info a{
   text-decoration: none;
@@ -828,6 +828,7 @@ text-align: justify;
     display: flex;
     flex-direction: column;
     width: 110%;
+    padding-left: 0px;
   }
   .right-column {
       display: none;
@@ -1551,7 +1552,7 @@ margin-bottom: 10px;
   .footer-container3 {
     /* bottom: 10px; */
     top: -210px;
-    width: 84%;
+    width: 79%;
   }
 
   .footer-container1 li a:hover {
@@ -1636,7 +1637,7 @@ margin-bottom: 10px;
 
   .footer-container3 h3 {
     /* right: 41px; */
-    left: 3rem;
+    left: 2.5rem;
   }
 
   .fp {
@@ -1652,7 +1653,7 @@ margin-bottom: 10px;
 
   .footer-container3 p {
     position: relative;
-    right: 21px;
+    right: 25px;
   }
 
 
@@ -1661,7 +1662,7 @@ margin-bottom: 10px;
     justify-content: center;
     height: 50px;
     position: relative;
-    left: 35px;
+    left: 37px;
   }
 
   footer .footer-container2 form button {

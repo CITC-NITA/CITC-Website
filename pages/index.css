@@ -1476,7 +1476,7 @@ footer .menu li a:hover {
   .footer-container3 {
          /* bottom: 10px; */
     top: -164px;
-    width: 84%;
+    width: 79%;
   }
 
   .footer-container1 li a:hover {
@@ -1564,7 +1564,7 @@ footer .menu li a:hover {
 
   .footer-container3 h3 {
         /* right: 41px; */
-        left: 6rem;
+        left: 6.5rem;
   }
 
   .fp {
@@ -1580,7 +1580,7 @@ footer .menu li a:hover {
 
   .footer-container3 p {
     position: relative;
-    right: 21px;
+    right: 10px;
   }
 
 
@@ -1589,7 +1589,7 @@ footer .menu li a:hover {
     justify-content: center;
     height: 50px;
     position: relative;
-    left: 35px;
+    left: 37px;
   }
 
   footer .footer-container2 form button {
@@ -1622,6 +1622,7 @@ footer .menu li a:hover {
     font-size: 1rem;
 
   }
+  
 }
 
   /*---------------------------------------------- our Mission----------------------------------- */

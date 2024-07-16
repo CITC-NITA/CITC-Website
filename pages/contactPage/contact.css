@@ -1171,7 +1171,7 @@ footer .menu li a:hover {
   .footer-container3 {
         /* bottom: 10px; */
         top: -210px;
-        width: 84%;
+        width: 79%;
   }
   .footer-container1 li a:hover {
     transform: translateY(-10px);
@@ -1250,7 +1250,7 @@ footer .menu li a:hover {
   }
   .footer-container3 h3{
        /* right: 41px; */
-       left: 3rem;
+       left: 3.2rem;
   }
   .fp{
     position:relative;
@@ -1263,7 +1263,7 @@ footer .menu li a:hover {
   }
   .footer-container3 p{
     position: relative;
-    right: 21px;
+    right: 10px;
   }
 
 
