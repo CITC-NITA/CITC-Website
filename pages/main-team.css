@@ -436,10 +436,8 @@ h1 {
     }
     
     .udayanD101{
-     
         top: -15px;
         left: -30px;
-        
     }
 
     .card .layer .udayanD101{
@@ -470,7 +468,6 @@ h1 {
         /* white-space: nowrap; */
         line-height: 1.5;
         text-align:justify ;
-
         margin-top: 10px;
     }
 }
