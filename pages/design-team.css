@@ -315,18 +315,26 @@ h1 {
 
     .atabi101 {
         
-        left: -8px;
-        top: -7px;
-        
-       
+        top: -15px;
+        left: -30px;
+    }
+
+    .card .layer .atabi101{
+        width: 200px !important;
+        height: 125px !important;
     }
     
     
-    .dakoji101{
+    .dakoji101{ 
         
-        left: -8px;
-        top: -7px;
+        top: -15px;
+        left: -30px;
        
+    }
+
+    .card .layer .dakoji101{
+        width: 200px !important;
+        height: 125px !important;
     }
     
 

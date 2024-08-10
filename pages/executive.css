@@ -325,9 +325,8 @@ h1 {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        
-        /* margin: 20px 10px; */
     }
+
     #lemon img{
         width: 140px;
         height: 110px;
@@ -338,11 +337,20 @@ h1 {
         left: -4px;
     }
     
-    .founders101{
-        top: -10px;
-        left: -4px;
-        
+    .card .layer .founders101 {
+        width: 200px !important;
+        height: 125px !important;
     }
+    .card .layer #Dettol {
+        width: 200px !important;
+        height: 125px !important;
+    }
+
+    .founders101{
+        top: -15px;
+        left: -30px;  
+    }
+
     .social-icons{
         font-size: 13px;
     }

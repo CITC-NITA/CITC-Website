@@ -373,14 +373,33 @@ h1 {
         height: 110px;
         margin-top: 10px;
     }
+
+    .card .layer .tech101 {
+        width: 230px !important;
+        height: 125px !important;
+    }
+    .card .layer #VAR{
+        width: 220px !important;
+        height: 125px !important;
+    }
+    #VAR{
+        top: -15px;
+        left: -40px;
+    }
+
     .tech101{
-        top: -10px;
-        left: -4px;
+        top: -15px;
+        left: -40px;
     }
     
+    .card .layer .founders101 {
+        width: 200px !important;
+        height: 125px !important;
+    }
+
     .founders101{
-        top: -10px;
-        left: -4px;
+        top: -15px;
+        left: -30px;
         
     }
     .social-icons{
@@ -394,22 +413,40 @@ h1 {
 
     .mounadip101{
        
-        top: -8px;
-        left: -4px;
+        top: -15px;
+        left: -30px;
         
+        
+    }
+
+    .card .layer .mounadip101{
+        width: 200px !important;
+        height: 125px !important;
     }
     
     .siddhardth101{
        
-        top: -8px;
-        left: -4px;
+        top: -15px;
+        left: -30px;
+        
+    }
+    .card .layer .siddhardth101{
+        width: 200px !important;
+        height: 125px !important;
     }
     
     .udayanD101{
      
-        top: -8px;
-        left: -4px;
+        top: -15px;
+        left: -30px;
+        
     }
+
+    .card .layer .udayanD101{
+        width: 200px !important;
+        height: 125px !important;
+    }
+
     #apple img{
         width: 140px;
         height: 110px;
