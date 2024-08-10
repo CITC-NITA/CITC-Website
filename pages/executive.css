@@ -310,6 +310,10 @@ h1 {
 
 
 @media (max-width: 576px) {
+    body{
+        background-image: url(./images/Members_mobile bg.png);
+    }
+
     .header h1 {
         font-size: 18px;
         margin-top: 20px;
