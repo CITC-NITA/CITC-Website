@@ -79,9 +79,9 @@ body{
   background: #d96a1d;
 }
 
-.about a{
+/*.about a{
   color: #00BDAE;
-}
+}*/
 .navbar a {
   font-size: 18px;
   color: black;
@@ -209,10 +209,42 @@ body{
   color: #1D426A;
   margin-left: 45px;
   transition: background 0.3s ease, transform 0.3s ease;
+
+
+  font-family: "alliance", mono, sans-serif;
+  position: relative;
+  z-index: 1;
+  
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center; 
+  text-transform: none; 
+  font-weight: 600; 
+  font-size: 24px; 
+  /* padding: 4px 28px;  */
+  height: 56px; 
+  border-radius: 10; 
+  overflow: hidden; 
+  background: transparent; 
+  letter-spacing: 0.07em;
+  background-color: #95E9F8;
+  text-transform: uppercase;
+  font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
+  /*color: #000; */
+  color:#622391;
+}
+.content a{
+  text-decoration: none;
 }
 
 .content button:hover {
   background-color: #82d4e1;
+  transform: scale(1.05);
+
+  background: linear-gradient(269.16deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
+  background-position: 58% 50%;
+  background-size: 500%;
+  color: black;
   transform: scale(1.05);
 }
 
@@ -586,7 +618,7 @@ ol {
   background-color: #95E9F8;
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
-  color: #000; 
+  /*color: #000;*/ 
   /* border: 2px solid #FF7571; */
   
   /* transition: background 0.3s ease, transform 0.3s ease; */
@@ -1347,7 +1379,7 @@ section{
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'ss01' on, 'ss02' on;
-  color: #fff;
+ /* color: #fff;*/
   border: 2px solid #FF7571;
  top: 0px;
  left: 0px;
@@ -1486,7 +1518,7 @@ margin-top : 1px;
 }
 .main button{
   background-color: #95E9F8;
-  color: #000;
+  /*color: #000;*/
   border-radius: 10px;
   border: none;
   font-size: 25px;
