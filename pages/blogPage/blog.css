@@ -1524,7 +1524,7 @@ margin-bottom: 10px;
 /* Responsive Design */
 @media (max-width: 576px) {
   footer {
-    height: 621px;
+    height: 689px;
   }
 
   /* .footer-container2,
@@ -1642,6 +1642,23 @@ margin-bottom: 10px;
   .footer-container3 h3 {
     /* right: 41px; */
     left: 2.5rem;
+  }
+  .devB h3{
+    position:relative;
+    left:-3px;
+  }
+  .dvb{
+    left:2px;
+  }
+  .advb{
+    position: relative;
+    left: -28px;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  .add h3{
+    position:relative;
+    left:32px;
   }
 
   .fp {

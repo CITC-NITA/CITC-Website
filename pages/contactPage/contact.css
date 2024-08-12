@@ -1145,7 +1145,7 @@ footer .menu li a:hover {
 /* Responsive Design */
 @media (max-width: 576px) {
   footer{
-    height:574px;
+    height:646px;
   }
 
  /* .footer-container2,
@@ -1255,6 +1255,24 @@ footer .menu li a:hover {
   .footer-container3 h3{
        /* right: 41px; */
        left: 3.2rem;
+  }
+
+  .devB h3{
+    position:relative;
+    left:0px;
+  }
+  .dvb{
+    left:2px;
+  }
+  .advb{
+    position: relative;
+    left: -28px;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  .add h3{
+    position:relative;
+    left:43px;
   }
   .fp{
     position:relative;

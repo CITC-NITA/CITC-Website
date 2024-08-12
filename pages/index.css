@@ -1450,7 +1450,7 @@ footer .menu li a:hover {
 /* Responsive Design */
 @media (max-width: 576px) {
   footer {
-    height: 621px;
+    height: 638px;
   }
 
   /* .footer-container2,
@@ -1505,6 +1505,7 @@ footer .menu li a:hover {
   }
   .bottom-footer p{
     font-size:16px;
+    top:-13px;
   }
 
 
@@ -1577,13 +1578,22 @@ footer .menu li a:hover {
   .footer-container2 a{
     font-size: 1.5rem;;
   }
+  .devB h3{
+    position:relative;
+    left:24px;
+  }
   .dvb{
     left:2px;
   }
   .advb{
+    position: relative;
+    left: -28px;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  .add h3{
     position:relative;
-    left:2px;
-    display:inline-block;
+    left:52px;
   }
 
   .fp {

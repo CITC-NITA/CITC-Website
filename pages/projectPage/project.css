@@ -1264,7 +1264,7 @@ font-size: 1em;
 /* Responsive Design */
 @media (max-width: 576px) {
   footer {
-    height: 574px;
+    height: 627px;
   }
 
   /* .footer-container2,
@@ -1382,6 +1382,24 @@ font-size: 1em;
   .footer-container3 h3 {
     /* right: 41px; */
     left: 3rem;
+  }
+
+  .devB h3{
+    position:relative;
+    left:8px;
+  }
+  .dvb{
+    left:2px;
+  }
+  .advb{
+    position: relative;
+    left: -28px;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  .add h3{
+    position:relative;
+    left:46px;
   }
 
   .fp {

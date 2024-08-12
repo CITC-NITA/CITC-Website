@@ -1180,7 +1180,7 @@ margin-bottom: 10px;
 /* Responsive Design */
 @media (max-width: 576px) {
   footer {
-    height: 621px;
+    height: 668px;
   }
 
   /* .footer-container2,
@@ -1300,6 +1300,24 @@ margin-bottom: 10px;
         left: 1rem;
   }
 
+  .devB h3{
+    position:relative;
+    left:-20px;
+  }
+  .dvb{
+    left:2px;
+  }
+  .advb{
+    position: relative;
+    left: -46px;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  .add h3{
+    position:relative;
+    left:19px;
+  }
+
   .fp {
     position: relative;
     left: 31px;
@@ -1313,7 +1331,7 @@ margin-bottom: 10px;
 
   .footer-container3 p {
     position: relative;
-    right: 53px;
+    right: 40px;
   }
 
 
