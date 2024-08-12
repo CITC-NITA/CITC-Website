@@ -1336,7 +1336,7 @@ margin: 10px;
   width: 25%;
   text-align: left;
   position: relative;
-  top: 46px;
+  top: -3px;
 }
 
 .footer-container2 h3,
@@ -1479,8 +1479,12 @@ font-size: 1em;
   position: relative;
   left: 45px;
   /* overflow-x: hidden; */
-  top: 34px;
+  top: -3px;
   text-align: left;
+}
+.footer-container3 a{
+  text-decoration: none;
+  color:#f1f1f1;
 }
 
 

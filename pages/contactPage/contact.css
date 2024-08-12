@@ -971,7 +971,7 @@ footer {
   width: 25%;
   text-align: left;
   position: relative;
-  top: 46px;
+  top: -3px;
 }
 
 .footer-container2 h3,
@@ -1115,7 +1115,11 @@ footer .menu li a:hover {
   position: relative;
   left: 36px;
   /* overflow-x: hidden; */
-  top: 34px;
+  top:-3px;
+}
+.footer-container3 a{
+  text-decoration: none;
+  color:#f1f1f1;
 }
 
 

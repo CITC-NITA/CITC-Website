@@ -851,7 +851,7 @@ margin: 10px;
   width: 25%;
   text-align: left;
   position: relative;
-  top: 16px;
+  top: -3px;
 }
 
 .footer-container2 h3,
@@ -915,7 +915,7 @@ transition: 0.5s;
   width: 35%;
   position: relative;
   left: 39px;
-  bottom: 62px;
+  bottom: 37px;
 }
 
 footer .menu li a {
@@ -992,9 +992,13 @@ font-size: 1em;
   position: relative;
   left: 36px;
   /* overflow-x: hidden; */
-  top: 16px;
+  top: -3px;
 }
 
+.footer-container3 a{
+  text-decoration: none;
+  color:#f1f1f1;
+}
 .footer-container3 p{
   font-size: 16px;
   line-height: 1.5rem;
@@ -1010,7 +1014,7 @@ font-size: 1em;
 .bottom-footer p {
   margin: 0;
   position: relative;
-  top: 8px;
+  top: -9px;
   left: 629px;
 
 }

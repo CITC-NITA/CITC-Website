@@ -1191,9 +1191,12 @@ footer {
   width: 25%;
   text-align: left;
   position: relative;
-  top: 46px;
+  top: -3px;
 }
-
+.address{
+  position:relative;
+  top:-89px;
+}
 .footer-container2 h3,
 .footer-container3 h3 {
   font-size: 1.5em;
@@ -1332,7 +1335,11 @@ footer .menu li a:hover {
   text-align: left;
   position: relative;
   left: 36px;
-  top: -40px;
+  top: -3px;
+}
+.footer-container3 a{
+  text-decoration: none;
+  color:#f1f1f1;
 }
 
 .footer-container3 p{
@@ -1343,13 +1350,13 @@ footer .menu li a:hover {
   margin-top: 20px;
  
   position: relative;
-  bottom: 84px;
+  bottom: 41px;
 }
 
 .bottom-footer p {
   margin: 0;
   position: relative;
-  top: 25px;
+  top: -37px;
 
 }
 
@@ -1561,10 +1568,22 @@ footer .menu li a:hover {
     position: relative;
     left: 3rem;
   }
+  
 
   .footer-container3 h3 {
         /* right: 41px; */
         left: 6.5rem;
+  }
+  .footer-container2 a{
+    font-size: 1.5rem;;
+  }
+  .dvb{
+    left:2px;
+  }
+  .advb{
+    position:relative;
+    left:2px;
+    display:inline-block;
   }
 
   .fp {
@@ -1622,6 +1641,7 @@ footer .menu li a:hover {
     font-size: 1rem;
 
   }
+  
   
 }
 
@@ -2126,6 +2146,8 @@ footer .menu li a:hover {
       }
     }
     
+
+       
     
     
   /*--------------------------------- Events------------------- */
