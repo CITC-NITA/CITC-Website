@@ -1025,9 +1025,9 @@ font-size: 1em;
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
+    padding: 20px;
     position: relative;
-    left: -13px;
+    /* left: -13px; */
     font-size: 12px;
     width: 100%;
   }
@@ -1171,6 +1171,18 @@ font-size: 1em;
 @media(min-width:576px) and (max-width:1100px){
   
 
+  .cardList__btn.btn--left {
+    left: 25%;
+}
+.cardList__btn.btn--right {
+    right: 25%;
+}
+.card__content {
+    padding: 0.5rem;
+}
+  .app{
+    height: 800px;
+  }
 
   .header{
     height:90px;
@@ -1240,7 +1252,6 @@ font-size: 1em;
 
 
 
-  
   
   .logo{
     display: flex;
