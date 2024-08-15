@@ -13,6 +13,8 @@
   animation: slideDown 1s ease-out;
 }
 
+
+
 @keyframes slideDown {
   from {
       top: -100px;
@@ -24,7 +26,11 @@
   }
 }
 
-html,body{
+
+
+
+
+html,body{   
   width:100%;
   height:100%;
   color: black;
@@ -356,11 +362,12 @@ p{
 
   .bottom-footer {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     /* padding: 40px; */
+    justify-content: center;
     width: 100%;
     position: relative;
-    left: 627px;
+    /* left: 627px; */
     /* margin-top: 20px; */
   }
   .Divider{
@@ -1023,17 +1030,17 @@ font-size: 1em;
 
 
 /* Responsive Design */
-@media (max-width: 576px) {
+@media (max-width: 576px) { 
   footer {
-    height: 627px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
   }
 
- 
+  
+
 
   .footer-container2 {
     width: 100%;
@@ -1043,6 +1050,8 @@ font-size: 1em;
    justify-content: space-around;
    bottom: 0px;
    text-align: justify;
+
+
 
     /* top: 8px; */
     /* left: -33px; */
@@ -1069,7 +1078,7 @@ font-size: 1em;
   footer .menu li a {
     font-size: 14px;
     color: #fff;
-    margin: 0 9px;
+    /* margin: 0 9px; */
     display: inline-block;
     text-decoration: none;
     opacity: 0.85;
@@ -1100,7 +1109,7 @@ font-size: 1em;
     list-style: none;
     padding: 0;
     position: relative;
-    left: -13px;
+    /* left: -13px; */
     font-size: 12px;
     width: 100%;
   }
@@ -1134,6 +1143,7 @@ font-size: 1em;
   justify-content: center;
   padding: 10px;
   margin: 20px;
+  
 }
 
 
