@@ -353,6 +353,16 @@ p{
 
   }
   
+
+  .bottom-footer {
+    display: flex;
+    justify-content: flex-start;
+    /* padding: 40px; */
+    width: 100%;
+    position: relative;
+    left: 627px;
+    /* margin-top: 20px; */
+  }
   .Divider{
   width: 100%;
   padding: 0px;
@@ -1011,51 +1021,173 @@ font-size: 1em;
 
 
 
-.bottom-footer p {
-  margin: 0;
-  position: relative;
-  top: -9px;
-  left: 629px;
-
-}
 
 /* Responsive Design */
 @media (max-width: 576px) {
   footer {
-    height: 607px;
+    height: 627px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
   }
 
-  /* .footer-container2,
-  .footer-center,
-  .footer-container3 {
-    display: block;
-    width: 68%;
-    text-align: center;
-    left: 17px;
-    position: relative;
-  }*/
-  .footer-center {
-    width: 18rem;
-    height: 9rem;
-    position: relative;
-    /* right: 56px; */
-    bottom: 41px;
-    left: 12px;
-  }
+ 
 
   .footer-container2 {
-    width: 84%;
-    text-align: center;
-    position: relative;
-    top: 8px;
-    left: -33px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: space-around;
+   bottom: 0px;
+
+    /* top: 8px; */
+    /* left: -33px; */
   }
 
-  .footer-container3 {
-          /* bottom: 10px; */
-    top: -126px;
-    width: 79%;
+
+  .footer-container1 li a:hover {
+    transform: translateY(-10px);
   }
+
+
+  footer .footer-container1 li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    /* justify-content: space-between; */
+  }
+
+ 
+
+
+  footer .menu li a {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 9px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.85;
+    position: relative;
+    /* bottom: 25px; */
+  }
+
+  footer .menu li a:hover {
+    opacity: 1.9;
+  }
+
+
+  .footer-container1 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* left: -13px; */
+    /* bottom: 42px; */
+    width: 100%;
+  }
+
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left: -13px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+
+
+  
+
+
+
+
+.footer-center{
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  bottom: 0px;
+  top: 0px;
+  justify-content: space-between;
+  margin: 20px;
+
+
+}
+
+.footer-container3{
+  left: 0px;
+  width: 100%;
+  padding: 40px;
+  bottom: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 1300px) {
+  footer {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+ 
+  .footer-center {
+    width: 50%;
+    display: inline-block;
+    /* text-align: left; */
+    margin: 10px 1%;
+    padding: 20px;
+  }
+
+  .footer-container2{
+    width: 40%;
+    display: inline-block;
+    /* text-align: left; */
+    margin: 10px 1%;
+    padding: 30px;
+  }
+  .footer-container2{
+    padding: 0px;
+
+  }
+
+  /* Adjust for the last container in the first row */
+
+
+  .footer-center{
+    padding-top: 60px;
+  }
+
+  .footer-container1 {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+.footer-container3{
+  width: 100%;
+}
 
   .footer-container1 li a:hover {
     transform: translateY(-10px);
@@ -1069,15 +1201,16 @@ font-size: 1em;
     transition: 0.5s;
   }
 
-  .bottom-footer {
-    margin-top: 20px;
-    position: relative;
-    bottom: 8rem;
-  }
-  .bottom-footer p{
-    left:3rem;
-  }
 
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
 
   footer .menu li a {
     font-size: 14px;
@@ -1085,142 +1218,26 @@ font-size: 1em;
     margin: 0 9px;
     display: inline-block;
     text-decoration: none;
-    opacity: 0.75;
-    /* margin-right: -26px; */
+    opacity: 0.85;
     position: relative;
-    bottom: 25px;
   }
 
   footer .menu li a:hover {
-    opacity: 1.5;
+    opacity: 1.9;
   }
 
-  .footer-container1 {
+  .footer-center {
+    margin-top: 20px;
+  }
+
+  .bottom-footer {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    position: relative;
-    left: -13px;
-    bottom: 42px;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    position: relative;
-    left: -13px;
-    font-size: 12px;
-  }
-
-
-
-  .menu a {
-
-    font-size: 1em;
-  }
-
-  .footer-container1 li {
-    margin: 0 10px;
-  }
-
-  .footer-container1 a {
-    color: white;
-    font-size: 1.5em;
-    text-decoration: none;
-  }
-
-  .footer-container2 h3,
-  .footer-container3 h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    position: relative;
-    left: 2rem;
-  }
-
-  .footer-container3 h3 {
-    /* right: 41px; */
-    left: 3.5rem;
-  }
-
-  .devB h3{
-    position:relative;
-    left:24px;
-  }
-  .dvb{
-    left:2px;
-  }
-  .advb{
-    position: relative;
-    left: -28px;
-    display: inline-block;
-    font-size: 0.9em;
-  }
-  .add h3{
-    position:relative;
-    left:52px;
-  }
-
-  .fp {
-    position: relative;
-    left: 31px;
-  }
-
-  .footer-container2 p,
-  .footer-container3 p {
-    margin: 10px 0;
-    font-size: 15px;
-    text-align: unset;
-  }
-
-  .footer-container3 p {
-    position: relative;
-    right: 10px;
-  }
-
-
-  .footer-container2 form {
-    flex-direction: row;
-    justify-content: center;
-    height: 50px;
-    position: relative;
-    left: 37px;
-  }
-
-  footer .footer-container2 form button {
-
-    height: 40px;
-    margin-left: -5px;
-
-  }
-
-  .footer-container2 input.box {
-    width: 70%;
-    margin-right: 10px;
-    height: 40px;
-  }
-
-  .footer-container2 button {
-    width: 20%;
-  }
-
-  .footer-container3 ul {
-    text-align: center;
-
-  }
-
-  .footer-container3 li {
-    display: inline-block;
-    margin: 6px 10px;
-    position: relative;
-    left: 31px;
-    font-size: 1rem;
-
+    justify-content: flex-start;
+    padding: 40px;
+    width: 100%;
+    margin-top: 20px;
   }
 }
-
 
 
 
@@ -1393,6 +1410,7 @@ body {
     min-height:40px;
   }
 }
+
 
 
 
