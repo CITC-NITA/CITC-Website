@@ -12,6 +12,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
   <title>CIT CELL - Unleashing the future of Civil Engineering</title>
+
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="./swiper-bundle.min.css" />
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css" />
+<!-- Boxicons CSS -->
+<link
+  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+  rel="stylesheet"
+/>
 </head>
 <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
@@ -242,171 +252,93 @@
 
 <!------------------------------------ SWIPER wala section ------------------------------------>
 
-
-<section class="swiper-section">
+<section class="container-testimonial">
   <div class="swiper-container">
     <h3>TESTIMONIAL</h3>
   </div>
-
-  <div class="swiper mySwiper container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="swiper-client-msg">
-          <p>The launch of the Civil Innovation and Technology Cell (CITC) has been a transformative experience for our
-            department. By fostering collaboration between traditional civil engineering expertise and the exciting
-            world of AI, ML, and digital integration, the CITC is truly pushing the boundaries of what's
-          </p>
-          <input id="textAreaToggle" type="checkbox" />
-
-          <p id="textarea">
-            possible. Their three specialized teams, each with unique strengths, ensure a holistic approach to every
-            project. The CITC doesn't just develop innovative solutions - they empower individuals within the department
-            to grow their skillsets and become leaders in this dynamic field. I wholeheartedly recommend the CITC to
-            anyone passionate about advancing civil engineering through the power of technology.
-          </p>
-
-          <label for="textAreaToggle"></label>
-
-        </div>
-        <div class="swiper-client-data grid grid-two-col">
-          <figure>
-            <img loading="lazy" src="images/rajib saha.jpg" alt="Dr. Rajib Saha">
-          </figure>
-          <div class="client-data-details">
-            <p>Dr. Rajib Saha</p>
-            <p>Dean Academic, NIT Agartala</p>
-          </div>
+  <div class="testimonial mySwiper">
+    <div class="testi-content swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="./images/rajib saha.jpg" alt="" class="image" />
+        <p>
+          The launch of the Civil Innovation and Technology Cell (CITC) has been a transformative experience for our department. By fostering collaboration between traditional civil engineering expertise and the exciting world of AI, ML, and digital integration, the CITC is truly pushing the boundaries of what's possible. Their three specialized teams, each with unique strengths, ensure a holistic approach to every project. The CITC doesn't just develop innovative solutions - they empower individuals within the department to grow their skillsets and become leaders in this dynamic field. I wholeheartedly recommend the CITC to anyone passionate about advancing civil engineering through the power of technology.
+        </p>
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
+        <div class="details">
+          <span class="name">Prof. Rajib Saha</span>
+          <span class="job">Dean Academic, NIT Agartala</span>
         </div>
       </div>
-
-      <!-- slide end  -->
-      <div class="swiper-slide">
-
-        <div class="swiper-client-msg">
-          <p>The CITC initiative has been a great opportunity for our department, giving our students a valuable
-            insights into industry practices. It strengthens the connection between classroom learning and real-world
-            experience, helping our future engineers develop the skills they need to succeed.
-
-          </p>
-          <input id="textAreaToggle" type="checkbox" />
-
-          <p id="textarea">
-
-          </p>
-
-          <label for="textAreaToggle"></label>
-        </div>
-        <div class="swiper-client-data grid grid-two-col ">
-          <figure>
-            <img loading="lazy" src="image/rajib saha.jpg" alt="">
-          </figure>
-          <div class="client-data-details">
-            <p>faculty 1</p>
-            <p>Civil Engineering Department</p>
-          </div>
+      <div class="slide swiper-slide">
+        <img src="./images/Debdulal sir.jpg" alt="" class="image" />
+        <p>
+          The CITC initiative has been a transformative opportunity for our department. It has provided our students with hands-on exposure to industry practices, offering insights that go far beyond textbooks. By directly engaging with real-world challenges, our students are not only learning technical skills but also developing problem-solving, teamwork, and adaptability—qualities essential for thriving in the competitive landscape of modern engineering. This program truly strengthens the bridge between academic learning and practical application, ensuring that our future engineers are equipped to meet the demands of the industry with confidence and competence.
+        </p>
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
+        <div class="details">
+          <span class="name">Prof. Deb Dulal Tripura</span>
+          <span class="job">HOD Civil Engineering Department</span>
         </div>
       </div>
-      <!-- slide end  -->
-      <!--<div class="swiper-slide">
-      
-        <div class="swiper-client-msg">
-          <p>The CITC fosters a truly collaborative environment.  Working alongside their tech specialists allows us to tackle complex civil engineering problems from entirely new angles.  This interdisciplinary approach is leading to groundbreaking solutions for the future of our field.
-
-          </p>
+      <div class="slide swiper-slide">
+        <img src="./images/dipankar sir.jpg" alt="" class="image" />
+        <p>
+          The addition of the CITC program has significantly transformed our department's approach to education. By integrating real-world industry challenges with academic learning, students are given a unique opportunity to apply their theoretical knowledge in practical settings. This immersive experience fosters critical skills beyond technical expertise, including effective problem-solving, teamwork, and innovative thinking. As a result, our graduates are not only well-prepared academically but also equipped with the confidence and skills to excel in their professional careers, bridging the gap between classroom theory and industry practice.
+        </p>
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
+        <div class="details">
+          <span class="name">Dr. Dipankar Sarkar</span>
+          <span class="job">Assistant Professor </span>
         </div>
-        <div class="swiper-client-data grid grid-two-col ">
-          <figure>
-          <img loading="lazy" src="image/rajib saha.jpg" alt="">
-          </figure>
-          <div class="client-data-details">
-            <p>faculty 2</p>
-            <p>Civil Engineering Department</p>
-          </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./images/Manu sir.jpg" alt="" class="image" />
+        <p>
+          The CITC initiative has brought a fresh and dynamic dimension to our department. It goes beyond the usual academic curriculum by immersing students in real-world industry settings, giving them a taste of what lies ahead in their professional lives. What sets this initiative apart is its emphasis on experiential learning, where students aren't just passive recipients of information—they are active participants in solving practical challenges. This hands-on approach has instilled a sense of confidence and curiosity in our students, equipping them with skills that are directly relevant to today’s fast-paced industry environment.
+        </p>
+        <i class="bx bxs-quote-alt-left quote-icon"></i>
+        <div class="details">
+          <span class="name">Dr. Manu S Nadesan</span>
+          <span class="job">Assistant Professor</span>
         </div>
-      </div>-->
-
+      </div>
     </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
     <div class="swiper-pagination"></div>
   </div>
 </section>
+<!-- Swiper JS -->
+<script src="./swiper-bundle.min.js"></script>
+<!-- JavaScript -->
+<script>
+   var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+  </script>
+  >
   
 
   <!-- -------------------------------------------------------------------------------------------------- -->
     
-  <!-- <script>
-    const header=document.querySelector('.header');
-    
-    header.addEventListener('scroll',()=>{
-     header.classList.remove('.scrolled');
-      
-    })
-  </script> -->
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      centeredSlides: true, // Center the active slide
-      autoplay: {
-        delay: 2500, // 2.5 seconds
-        disableOnInteraction: false, // Keep autoplay enabled after user interactions
-      },
-      breakpoints: {
-        576: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-        },
-      },
-    });
-  });
-</script>
+ 
 
-<!--<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      var swiper = new Swiper(".slide-content", {
-        slidesPerView: 3,
-        spaceBetween: 25,
-        loop: true,
-        centerSlide: true,
-        fade: true,
-        grabCursor: true,
-        autoplay: {
-          delay: 3, // Minimal delay to create continuous effect
-          disableOnInteraction: false, // Continue autoplay after user interaction
-        },
-        speed: 8000, // Speed of transition in milliseconds
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          520: {
-            slidesPerView: 2,
-          },
-          950: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    });
-</script>-->
+
+
 
 </main>
 
