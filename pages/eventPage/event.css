@@ -248,9 +248,6 @@ html,body{
   border-color: #ed7e23;
 }
 
-p{
-  text-align: justify;
-}
 
 
 .home{
@@ -400,6 +397,10 @@ p{
   }
   
   
+.bottom-footer{
+  justify-content: center;
+}
+
   /*footer .menu li a {
     font-size: 14px;
     color: #fff;
@@ -839,10 +840,12 @@ input:checked + .slider:before {
 
 
 footer {
+  height: auto;
   background-color:rgb(236, 90, 17);
   text-align: center;
-  /*padding: 1rem;*/
+  padding: 1rem;
   width: 100%;
+  /* text-wrap: wrap; */
   
 }
 /* -------------footer section  -------------------------- */
@@ -851,9 +854,9 @@ footer {
 background-color: #ed7e23;
 color: white;
 padding: 20px 0;
-text-align: center;
+/* text-align: center; */
 font-family: Arial, sans-serif;
-height:275px;
+/* height:275px; */
 }
 
 .footer-container2,
@@ -863,6 +866,8 @@ display: inline-block;
 vertical-align: top;
 margin: 10px;
 }
+
+
 
 .footer-container2 {
   width: 25%;
@@ -931,7 +936,7 @@ transition: 0.5s;
 .footer-center {
   width: 35%;
   position: relative;
-  left: 39px;
+  /* left: 39px; */
   bottom: 37px;
 }
 
@@ -1021,25 +1026,22 @@ font-size: 1em;
   line-height: 1.5rem;
 }
 
-.bottom-footer {
-  margin-top: 20px;
- 
-}
 
 
 
 
 /* Responsive Design */
-@media (max-width: 576px) { 
+@media (max-width: 676px) { 
   footer {
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    padding: 25px;
   }
 
-  
+
 
 
   .footer-container2 {
@@ -1047,7 +1049,7 @@ font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-   justify-content: space-around;
+   /* justify-content: space-around; */
    bottom: 0px;
    text-align: justify;
 
@@ -1106,7 +1108,7 @@ font-size: 1em;
   .menu {
     display: flex;
     justify-content: center;
-    list-style: none;
+    /* list-style: none; */
     padding: 0;
     position: relative;
     /* left: -13px; */
@@ -1122,13 +1124,13 @@ font-size: 1em;
 
 
 .footer-center{
-  left: 0px;
+  left: 1px;
   bottom: 0px;
   width: 100%;
   bottom: 0px;
-  top: 0px;
-  justify-content: space-between;
-  margin: 20px;
+  /* top: 0px; */
+  /* justify-content: space-between; */
+  margin: 25px;
 
 
 }
@@ -1150,7 +1152,7 @@ font-size: 1em;
 
 }
 
-@media (min-width: 576px) and (max-width: 1300px) {
+@media (min-width: 676px) and (max-width: 1200px) {
   footer {
     height: auto;
     display: flex;
@@ -1243,14 +1245,12 @@ font-size: 1em;
 
   .bottom-footer {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     padding: 40px;
     width: 100%;
     margin-top: 20px;
   }
 }
-
-
 
 
 /*@media (max-width: 1100px) {
