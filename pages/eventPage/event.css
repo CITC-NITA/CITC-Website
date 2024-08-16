@@ -857,13 +857,14 @@ font-family: Arial, sans-serif;
 /* height:275px; */
 }
 
-.footer-container2,
-.footer-center,
+.footer-container2, 
+.footer-center, 
 .footer-container3 {
 display: inline-block;
 vertical-align: top;
 margin: 10px;
 }
+
 
 
 
@@ -1045,7 +1046,7 @@ font-size: 1em;
 
 
   .footer-container2 {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
