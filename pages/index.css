@@ -1846,319 +1846,115 @@ footer .menu li a:hover {
 
   /* ------------------------------testimonial wala section ka css---------------------- */
 
-  .swiper-section {
-    margin: 40px;
+  .swiper-container h3{
+    font-size: 40px;
+    color: #ed7e23;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+    
   }
   
-  .swiper-container {
+
+  .container-testimonial {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
-    color: #ed7e23;
-    margin-bottom: 20px; /* Added margin-bottom for better spacing */
-  }
+    flex-direction: column;
+    
+}
+
+
+
+
+  .testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
   
-  .swiper-slide {
+  }
+  .testimonial .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+  .testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+  
+  }
+
+
+  .slide p {
     text-align: center;
-    font-size: 18px;
-    background: transparent; /* Make the background transparent */
+    padding: 0 160px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+  }
+  .slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+  }
+  .slide .details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
   }
-  
-  .swiper-client-msg {
-    padding: 20px 30px;
-    background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .swiper-client-msg::before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 10px;
-    border-style: solid;
-    border-color: rgba(248, 249, 250, 0.9) transparent transparent transparent;
-  }
-  
-  .swiper-client-msg p::before, .swiper-client-msg p::after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #ced3ff;
-    font-size: 24px;
-  }
-  
-  .swiper-client-msg p::before {
-    content: "\f10d";
-    position: absolute;
-    top: -10px;
-    left: 10px;
-  }
-  
-  .swiper-client-msg p::after {
-    content: "\f10e";
-    position: absolute;
-    bottom: -10px;
-    right: 10px;
-  }
-  
-  .swiper-client-data {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
-  }
-  
-  .swiper-client-data img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #ced3ff;
-    object-fit: cover;
-  }
-  
-  .client-data-details p:first-child {
-    font-weight: bold;
+  .details .name {
+    font-size: 18px;
+    font-weight: 700;
     color: #333;
   }
-  
-  .client-data-details p:last-child {
-    color: #666;
+  .details .job {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
   }
-  
-    .swiper-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      color: #ed7e23;
-      margin-bottom: 20px; /* Added margin-bottom for better spacing */
+  /* swiper button css */
+  .nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav-btn::after,
+  .nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4070f4;
+  }
+  @media screen and (max-width: 768px) {
+    .slide p {
+      padding: 0 20px;
     }
-    #textarea {
+    .nav-btn {
       display: none;
-
     }
-    
-    #textAreaToggle:checked ~ #textarea {
-      display: block;
-      
-    }
-    
-    input[type="checkbox"] {
-      position: absolute;
-      left: -1000px;
-      
-    }
-
-    
-    
-    label {
-      display: block;
-      cursor: pointer;
-      margin-top: 10px;
-      color: #002b9d;
-    }
-    
-    #textAreaToggle + #textarea + label::before {
-      content: 'view more';
-    }
-    
-    #textAreaToggle:checked ~ #textarea + label::before {
-      content: 'Hide content';
-    }
-    
-    
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: transparent; /* Make the background transparent */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .swiper-wrapper{
-      position: relative;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      transition-property: transform;
-      transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
-      box-sizing: content-box;
-    }
-    .swiper-client-msg {
-      padding: 20px 30px;
-      background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
-      border-radius: 10px;
-      text-align: left;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: relative;
-      margin-bottom: 20px;
-    }
-    
-    .swiper-client-msg::before {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-width: 10px;
-      border-style: solid;
-      border-color: rgba(248, 249, 250, 0.9) transparent transparent transparent;
-    }
-    
-    .swiper-client-msg p::before, .swiper-client-msg p::after {
-      font-family: "Font Awesome 6 Free";
-      font-weight: 900;
-      color: #ced3ff;
-      font-size: 24px;
-    }
-    
-    .swiper-client-msg p::before {
-      content: "\f10d";
-      position: absolute;
-      top: -10px;
-      left: 10px;
-    }
-    
-    .swiper-client-msg p::after {
-      content: "\f10e";
-      position: absolute;
-      bottom: -10px;
-      right: 10px;
-    }
-    
-    .swiper-client-data {
-      display: flex;
-      align-items: center;
-      gap: 1.4rem;
-    }
-    
-    .swiper-client-data img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 2px solid #ced3ff;
-      object-fit: cover;
-    }
-    
-    .client-data-details p:first-child {
-      font-weight: bold;
-      color: #333;
-    }
-    
-    .client-data-details p:last-child {
-      color: #666;
-    }
-  
-
-    @media (max-width: 1024px)  and (min-width: 577px){
-      .swiper-section {
-        margin: 20px;
-      }
-    
-      .swiper-container {
-        font-size: 32px;
-      }
-    
-      .swiper-slide {
-        padding: 15px;
-        font-size: 16px;
-        width: 400px !important;
-        margin-bottom: 20px;
-      }
-    
-      .swiper-client-msg {
-        padding: 15px 20px;
-      }
-    
-      .swiper-client-data {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-      }
-    
-      .swiper-client-data img {
-        width: 70px;
-        height: 70px;
-      }
-    
-      .client-data-details p {
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .swiper-section {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    
-      .swiper-container {
-        font-size: 24px; 
-      }
-    
-      .swiper-slide {
-        padding: 10px;
-        font-size: 16px; 
-        width: 100% !important; 
-        margin-bottom: 30px;
-      }
-    
-      .swiper-client-msg {
-        padding: 15px;
-        font-size: 14px; 
-      }
-    
-      .swiper-client-data {
-        flex-direction: column; 
-        align-items: center;
-        gap: 0.5rem;
-      }
-    
-      .swiper-client-data img {
-        width: 60px;
-        height: 60px; 
-      }
-    
-      .client-data-details p {
-        text-align: center; 
-       
-      }
-    
-      .client-data-details p:first-child,
-      .client-data-details p:last-child {
-        margin: 0;
-      }
-    
-      .mySwiper {
-        width: 100%;
-      }
-    
-      .swiper-wrapper {
-        flex-direction: row; 
-      }
-    
-      .swiper-container {
-        width: 100%;
-        padding: 0 20px; 
-      }
-    }
-    
-
-       
-    
+  }
     
   /*--------------------------------- Events------------------- */
   .alex{
