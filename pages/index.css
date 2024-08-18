@@ -1865,25 +1865,20 @@ footer .menu li a:hover {
     flex-direction: column;
     
 }
-
-
-
-
   .testimonial {
     position: relative;
     max-width: 900px;
     width: 100%;
     padding: 50px 0;
     overflow: hidden;
-  
   }
+
   .testimonial .image {
     height: 170px;
     width: 170px;
     object-fit: cover;
     border-radius: 50%;
   }
-
 
   .testimonial .slide {
     display: flex;
@@ -1892,12 +1887,10 @@ footer .menu li a:hover {
     flex-direction: column;
     row-gap: 30px;
     height: 100%;
-    width: 100%;
-  
+    width: 100%;  
   }
 
-
-  .slide p {
+  .slide p{
     text-align: center;
     padding: 0 160px;
     font-size: 17px;
@@ -1905,25 +1898,30 @@ footer .menu li a:hover {
     color: #333;
     text-align: justify;
   }
+
   .slide .quote-icon {
     font-size: 30px;
     color: #4070f4;
   }
+
   .slide .details {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .details .name {
     font-size: 18px;
     font-weight: 700;
     color: #333;
   }
+
   .details .job {
     font-size: 14px;
     font-weight: 500;
     color: #333;
   }
+
   /* swiper button css */
   .nav-btn {
     height: 40px;
@@ -1954,7 +1952,26 @@ footer .menu li a:hover {
     .nav-btn {
       display: none;
     }
+
+    .testimonial .image {
+      height: 100px;
+      width: 100px;
+
+    }
+    .slide p{
+      font-size: 14px;
+      width: 350px;
+    }
+
+   
+    
+
+
+
+
   }
+
+
     
   /*--------------------------------- Events------------------- */
   .alex{
