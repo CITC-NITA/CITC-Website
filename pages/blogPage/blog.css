@@ -43,6 +43,10 @@ body{
   overflow: auto;
   overflow-x: hidden;
 }
+
+/*html,body{
+  overflow: visible;
+}*/
 /*.header {
   position: fixed;
   height: 100px;
@@ -643,6 +647,8 @@ textarea {
   color: black;
   margin: 6px;
   padding: 2rem;
+  position:relative;
+  right:45px;
 }
 
 .blog-post-img img{
@@ -664,6 +670,7 @@ textarea {
   display:flex;
   flex-wrap: wrap;
   overflow-x: hidden;
+  overflow-y:clip;
   
  flex-direction: column;
  min-height: 100vh;
@@ -722,7 +729,7 @@ textarea {
   flex-direction: row;
   border-radius: 0.8rem;
   position: relative;
-  right: -10px;
+  right: 1px;
 }
 
 
