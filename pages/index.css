@@ -1184,7 +1184,7 @@ footer {
 .footer-container3 {
   display: inline-block;
   /* vertical-align: top; */
-  margin: 15px;
+  margin: 10px;
 }
 
 .footer-container2 {
@@ -1201,9 +1201,6 @@ footer {
 .footer-container3 h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
-}
-.footer-container3 h3{
-  margin-left: 15.5px;
 }
 
 .footer-container2 p,
@@ -1339,7 +1336,9 @@ footer .menu li a:hover {
   position: relative;
   left: 36px;
   top: -50px;
+  
 }
+
 .footer-container3 a{
   text-decoration: none;
   color:#f1f1f1;
@@ -1351,6 +1350,7 @@ footer .menu li a:hover {
 
 .bottom-footer {
   margin-top: 20px;
+ 
   position: relative;
   bottom: 41px;
 }
@@ -1455,13 +1455,23 @@ footer .menu li a:hover {
     height: 638px;
   }
 
+  /* .footer-container2,
+  .footer-center,
+  .footer-container3 {
+    display: block;
+    width: 68%;
+    text-align: center;
+    left: 17px;
+    position: relative;
+  }*/
   .footer-center {
     width: 84%;
+    /* height: 9rem; */
     position: relative;
+    /* right: 56px; */
     bottom: 138px;
-    left: 15px;
+    left: 12px;
     font-size: 16px;
-    margin-top:  110px;
   }
 
   .footer-container2 {
@@ -1469,17 +1479,13 @@ footer .menu li a:hover {
     text-align: center;
     position: relative;
     top: 8px;
-    left: -18px;
+    left: -33px;
   }
 
   .footer-container3 {
+         /* bottom: 10px; */
     top: -164px;
     width: 79%;
-  }
-
-  
-  .fp p{
-    text-align: justify;
   }
 
   .footer-container1 li a:hover {
@@ -1563,10 +1569,8 @@ footer .menu li a:hover {
     font-size: 24px;
     margin-bottom: 10px;
     position: relative;
-    
+    left: 3rem;
   }
-
-
   
 
   .footer-container3 h3 {
@@ -1574,8 +1578,7 @@ footer .menu li a:hover {
         left: 6.5rem;
   }
   .footer-container2 a{
-    font-size: 1.5rem;
-  
+    font-size: 1.5rem;;
   }
   .devB h3{
     position:relative;
@@ -1597,7 +1600,7 @@ footer .menu li a:hover {
 
   .fp {
     position: relative;
-    left: 45px;
+    left: 31px;
   }
 
   .footer-container2 p,
@@ -1959,7 +1962,7 @@ footer .menu li a:hover {
     }
     .slide p{
       font-size: 14px;
-      width: 80%;
+      width: 350px;
     }
 
    
