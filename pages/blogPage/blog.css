@@ -95,7 +95,7 @@ body{
 
 .header {
   position: fixed;
-  height: 100px;
+  height: 13%;
   top: 0;
   left: 0;
   width: 100%;
@@ -161,7 +161,7 @@ body{
 }
 @media(max-width:576px){
   .header{
-    height:70px;
+    height:13%;
   }
   .logo img{
     /* border-radius: 50%; */
@@ -2455,6 +2455,8 @@ body {
   footer .menu li a:hover {
     opacity: 1.9;
   }
+
+
 
   .footer-center {
     margin-top: 20px;

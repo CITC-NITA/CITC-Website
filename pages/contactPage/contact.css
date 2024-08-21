@@ -223,11 +223,6 @@ html,body{
   }
 }
 
-#main img{
-  display: flex;
-  width: 120px;
-  height: 80px;
-}
 
 
 #head h1 a{
@@ -249,25 +244,11 @@ body {
 }
 
 
-.home-content {
-  
-  max-width: 600px;
-  margin-left: 20px;
-  margin-top: 180px;
-
-}
 span {
   color: #738da8;
 }
 
-.home-content h1{
-  font-size: 56px;
-  font-weight: 700;
-  color:#ed7e23;
-}
-.home-content p{
-  font-size: 16px;
-}
+
 
 .img {
   position:relative;
