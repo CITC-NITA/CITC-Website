@@ -2112,9 +2112,7 @@ input:checked + .slider:before {
 
 
 
-body {
-  margin:0;
-}
+
 
 .footer-waves-body {
   position: relative;
@@ -2123,6 +2121,7 @@ body {
     /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
   padding-top: 1rem;
 }
+
 
 .footer-waves-content {
   position:relative;
@@ -2163,13 +2162,16 @@ body {
   }
 }
 
+
+
+
 /*responsive changes*/
 @media (max-width: 768px) {
   .footer-waves {
     height:40px;
     min-height:40px;
+    
   }
 }
-
 
 
