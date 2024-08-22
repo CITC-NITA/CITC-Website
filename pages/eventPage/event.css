@@ -964,7 +964,7 @@ font-size: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
   }
 
  
@@ -974,18 +974,23 @@ font-size: 1em;
     /* text-align: left; */
     margin: 10px 1%;
     padding: 20px;
+    margin: 0px;
+    padding: 0px;
   }
 
+
+
   .footer-container2{
-    width: 40%;
+    width: 50%;
     display: inline-block;
     /* text-align: left; */
     margin: 10px 1%;
     padding: 30px;
+
   }
   .footer-container2{
     padding: 0px;
-
+margin: 0px;
   }
 
   /* Adjust for the last container in the first row */
@@ -1055,6 +1060,10 @@ font-size: 1em;
     padding: 40px;
     width: 100%;
     margin-top: 20px;
+  }
+
+  .footer-container2 form{
+    width: 100%;
   }
 }
 

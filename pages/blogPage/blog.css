@@ -2179,62 +2179,6 @@ color: #e6660c;
 
 
 
-
-
-
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-.footer-container2{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* margin: 1px; */
-}
-
-.fp{
-  text-align:center;
-}
-
-.footer-container2 form{
-  /* display: inline; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* margin: 80px; */
-  width: 90%;
-}
-
-
-.footer-center{
-  width: 80%;
-  display: flex;
-flex-direction: column;
-align-items: center;
-/* justify-content: center; */
-
-
-}
-
-.menu li{
-  margin: 0%;
-}
-
-.footer-container3{
-  width: 90%;
-}
-
-
-}
-
-
-
-
 .blog-post-img:hover{
   transform: translateY(0);
 }
@@ -2367,15 +2311,13 @@ body {
 
 
 
-
-
 @media (min-width: 576px) and (max-width: 1200px) {
   footer {
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
   }
 
  
@@ -2385,18 +2327,23 @@ body {
     /* text-align: left; */
     margin: 10px 1%;
     padding: 20px;
+    margin: 0px;
+    padding: 0px;
   }
 
+
+
   .footer-container2{
-    width: 40%;
+    width: 50%;
     display: inline-block;
     /* text-align: left; */
     margin: 10px 1%;
     padding: 30px;
+
   }
   .footer-container2{
     padding: 0px;
-
+margin: 0px;
   }
 
   /* Adjust for the last container in the first row */
@@ -2417,6 +2364,7 @@ body {
 
 .footer-container3{
   width: 100%;
+  left: 0px;
 }
 
   .footer-container1 li a:hover {
@@ -2456,8 +2404,6 @@ body {
     opacity: 1.9;
   }
 
-
-
   .footer-center {
     margin-top: 20px;
   }
@@ -2469,4 +2415,9 @@ body {
     width: 100%;
     margin-top: 20px;
   }
+
+  .footer-container2 form{
+    width: 100%;
+  }
 }
+
