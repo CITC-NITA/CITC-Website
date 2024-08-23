@@ -2130,6 +2130,7 @@ input:checked + .slider:before {
 
 
 .footer-waves-body {
+  height: 170px;
   position: relative;
   text-align: center;
   background: #ed7e23;
@@ -2257,4 +2258,119 @@ input:checked + .slider:before {
 
 
 
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  footer {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+ 
+  .footer-center {
+    width: 50%;
+    display: inline-block;
+    /* text-align: left; */
+    margin: 10px 1%;
+    padding: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+
+  .footer-container2{
+    width: 50%;
+    display: inline-block;
+    /* text-align: left; */
+    margin: 10px 1%;
+    padding: 30px;
+
+  }
+  .footer-container2{
+    padding: 0px;
+margin: 0px;
+  }
+
+  /* Adjust for the last container in the first row */
+
+
+  .footer-center{
+    padding-top: 60px;
+  }
+
+  .footer-container1 {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+.footer-container3{
+  width: 100%;
+  left: 0px;
+}
+
+  .footer-container1 li a:hover {
+    transform: translateY(-10px);
+  }
+
+  footer .footer-container1 li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer .menu li a {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 9px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.85;
+    position: relative;
+  }
+
+  footer .menu li a:hover {
+    opacity: 1.9;
+  }
+
+  .footer-center {
+    margin-top: 20px;
+  }
+
+  .bottom-footer {
+    display: flex;
+    /* justify-content: flex-start; */
+    padding: 40px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-container2 form{
+    width: 100%;
+  }
+}
 
