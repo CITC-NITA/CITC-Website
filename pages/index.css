@@ -1880,7 +1880,7 @@ input:checked + .slider:before {
 .footer-waves-body {
   position: fixed;
   bottom: 0px;
-  height: 170px;
+  height: 130px;
   position: relative;
   text-align: center;
   background: #ed7e23;
