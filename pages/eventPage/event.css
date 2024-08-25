@@ -823,7 +823,7 @@ font-size: 1em;
   color:#f1f1f1;
 }
 .footer-container3 p{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -831,8 +831,8 @@ font-size: 1em;
 
 
 /* Responsive Design */
-@media (max-width: 576px) { 
-  
+@media (max-width: 576px) {
+
   footer {
     height: auto;
     display: flex;
@@ -840,18 +840,20 @@ font-size: 1em;
     align-items: center;
     justify-content: flex-start;
     padding: 25px;
+    height: 594px;
   }
 
 
-  form{
+  form {
     display: flex;
     justify-content: center;
     align-items: center;
 
   }
-#email{
-  width: 40%;
-}
+
+  #email {
+    width: 40%;
+  }
 
 
   .footer-container2 {
@@ -859,8 +861,8 @@ font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-   bottom: 0px;
-   text-align: justify;
+    bottom: 0px;
+    text-align: center;
 
 
 
@@ -880,7 +882,7 @@ font-size: 1em;
     transition: 0.5s;
   }
 
- 
+
 
 
   footer .menu li a {
@@ -923,36 +925,57 @@ font-size: 1em;
 
 
 
-  
 
 
 
 
-.footer-center{
-  left: 1px;
-  bottom: 0px;
-  width: 100%;
-  bottom: 0px;
-  /* top: 0px; */
-  /* justify-content: space-between; */
-  /* justify-content: flex-start; */
-  margin: 25px;
+
+  .footer-center {
+    left: 1px;
+    bottom: 0px;
+    width: 100%;
+    bottom: 0px;
+    /* top: 0px; */
+    /* justify-content: space-between; */
+    /* justify-content: flex-start; */
+    margin: 25px;
 
 
-}
+  }
 
-.footer-container3{
-  left: 0px;
-  width: 100%;
-  padding: 40px;
-  bottom: 0px;
-  top: 0px;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
-  
-}
+  .footer-container3 {
+    left: 0px;
+    width: 100%;
+    padding: 40px;
+    bottom: 0px;
+    top: -21px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+
+  }
+
+  .add h3{
+    position: relative;
+    left: 0px;
+    font-size: 24px;
+  }
+  .add p{
+    text-align: center;
+  }
+
+  .bottom-footer {
+    display: flex;
+    /* justify-content: flex-start; */
+    
+    width: 100%;
+    margin-top: 20px;
+    position:relative;
+    bottom:38px;
+  }
+
 
 
 

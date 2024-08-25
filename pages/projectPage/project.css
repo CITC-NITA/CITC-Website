@@ -960,21 +960,30 @@ font-size: 1em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    height: 594px;
   }
 
- 
+
 
   .footer-container2 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-   justify-content: space-around;
-   bottom: 0px;
+    justify-content: space-around;
+    bottom: 0px;
+    text-align: center;
 
     /* top: 8px; */
     /* left: -33px; */
+  }
+  .add h3{
+    position: relative;
+    left: 105px;
+    font-size: 24px;
+  }
+  .add p{
+    text-align: center;
   }
 
 
@@ -992,7 +1001,7 @@ font-size: 1em;
     /* justify-content: space-between; */
   }
 
- 
+
 
 
   footer .menu li a {
@@ -1036,34 +1045,39 @@ font-size: 1em;
 
 
 
-  
 
 
 
 
-.footer-center{
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  bottom: 0px;
-  top: 0px;
-  justify-content: space-between;
-  margin: 20px;
+
+  .footer-center {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    bottom: 0px;
+    top: 0px;
+    justify-content: space-between;
+    margin: 20px;
 
 
-}
+  }
 
-.footer-container3{
-  left: 0px;
-  width: 100%;
-  padding: 40px;
-  bottom: 0px;
-  top: 0px;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
-}
+  .footer-container3 {
+    left: 0px;
+    width: 100%;
+    padding: 40px;
+    bottom: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .bottom-footer {
+    position:relative;
+    bottom:5px;
+  }
 
 
 
