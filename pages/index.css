@@ -716,7 +716,7 @@ form button{
     align-items: justify;
     margin-left: 15px !important;
     position:relative;
-    right:12px;
+    right:-15px;
 
   }
   
@@ -1159,7 +1159,7 @@ footer .menu li a:hover {
 .bottom-footer p {
   margin: 0;
   position: relative;
-  top: 13px;
+  top: -24px;
 
 }
 
@@ -1210,7 +1210,7 @@ footer .menu li a:hover {
   }
   .bottom-footer p{
     font-size:16px;
-    top:57px;
+    top:15px;
   }
 
 
