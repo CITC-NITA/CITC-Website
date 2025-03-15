@@ -216,8 +216,8 @@ h1 {
 
 .founders101{
     position: absolute;
-    top: -35px;
-    left: -47px;
+    top: -15px;
+    left: -30px;
     
 }
 
@@ -311,7 +311,7 @@ h1 {
 
 @media (max-width: 576px) {
     body{
-        background-image: url(./images/Members_mobile bg.png);
+        background-image: url(./images/Members_mobilebg.png);
     }
 
     .header h1 {
