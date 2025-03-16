@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #055740, #55008a);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .team-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .team-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%; /* Reduced width */
+  margin: 0 auto; /* Centering the card */
+  }
+  
+  .team-card {
+    background: linear-gradient(135deg, #ff007f, #55008a);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .team-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    opacity: 0.8;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    .team-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

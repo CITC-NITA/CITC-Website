@@ -1,119 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Our Team Section</title>
-    <link rel="stylesheet" href="./main-team.css">
-    <!-- font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="commonteam.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Our Team Members</title>
 </head>
-
 <body>
-  <section id="lemon">
-    <div >
-        <div class="header">
-            <h1>Our Development Team</h1>
-        </div>
-        <div class="header-para">
-            <p> We design the future, IT builds it, and engineering <br>makes it last.</p>
-        </div>
-        
-        
-    </div>
+    <div class="team-section">
 
-    <div class="card">
-        <div class="layer">
-            <div>
-                <img src="our team/3.png" alt="">
-                <img class="tech101" src="./images/Abhishek Sakhare.jpg" alt="">
-                <h2>Abhishek Sakhare</h2>
-                <p>Development Team Lead</p>
-            </div>
+        <h1>Development Team</h1>
+        <p>Building the future of civil engineering, one innovation at a time.</p>
+
+        <div class="team-container">
             
-            <div class="social-icons">
-                <a href="https://www.instagram.com/abhishek.sakhare_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/abhishek-sakhare-61ab71214/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div>
-
-            </div>
-        </div>
-        <div class="card">
-            <div class="layer">
-                <div>
-                    <img src="our team/3.png" alt="">
-                    <img class="tech101" src="./images/Adrika Saha.jpg" alt="">
-                    <h2>Adrika Saha</h2>
-                    <p>Development Team Co-Lead</p>
-                </div>
-               
+            <div class="team-card">
+                <img src="./images/Abhishek Sakhare.jpg" alt="Jack Delgado" />
+                <h3>Abhishek Sakhare</h3>
+                <p>Development Team Lead</p>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/adriii__ka/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/adrika-saha-1945752a1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div>
-    
+                <a href="https://www.instagram.com/_shiiiva_____/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shivam-kumar-2a6958256/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
                 </div>
             </div>
+
+            
+            <div class="team-card">
+                <img src="./images/Adrika Saha.jpg" alt="Cynthia Carr" />
+                <h3>Adrika Saha</h3>
+                <p>Development Team Co-lead</p>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/_.adrasteia._/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/atabi-debnath-688526255/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                </div>
+            </div>
+
         </div>
 
+        
+        <h2>We're excited to learn, collaborate, and achieve great things together!
+            Stay tuned for more updates from The <b>Civil Innovation & Technology cell.</b></h2>
     </div>
-
-    <div  class="para">
-        We're excited to learn, collaborate, and achieve great things together! <br> Stay tuned for more updates from <strong>The Civil Innovation & Technology cell.</strong>
-    </div>
-  </section>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const elements = document.querySelectorAll('.card');
-    
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove('fade-out');
-                    entry.target.classList.add('fade-in');
-                } else {
-                    entry.target.classList.remove('fade-in');
-                    entry.target.classList.add('fade-out');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-    
-        elements.forEach(element => {
-            observer.observe(element);
-        });
-    });
-    </script>
-
-<script>
-    const logo = document.querySelector("body");
-    function myFunction(x) {
-        if (x.matches) {
-
-            document.querySelector("body").style.backgroundImage = "url(./images/blackbg.png)"
-        }
-        else {
-            document.querySelector("body").style.backgroundImage = "url(./images/5.png)"
-        }
-    }
-
-
-    var x = window.matchMedia("(max-width: 576px)");
-
-    myFunction(x);
-
-    x.addEventListener("change", function () {
-        myFunction(x);
-    });
-</script>
-    
-
-
 </body>
 </html>

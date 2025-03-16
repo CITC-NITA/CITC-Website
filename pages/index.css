@@ -820,6 +820,9 @@ form button{
 }
 .gapDo{
   margin-top: 40px;
+  display: grid;
+  gap: 3rem;
+
 }
 
 .header-team{
