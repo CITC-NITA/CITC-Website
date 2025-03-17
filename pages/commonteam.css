@@ -59,6 +59,11 @@ body {
     margin: 5px 0;
     opacity: 0.8;
   }
+
+  .aman-kr {
+    display: block;
+    width: 40%;
+  }
   
   .social-icons {
     margin-top: 10px;

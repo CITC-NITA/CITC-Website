@@ -835,6 +835,15 @@ form button{
   
 }
 
+.teams-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  padding-left:5rem;
+  padding-right:5rem;
+}
+
 @media (max-width: 1024px) and (min-width: 577px) {
   .about {
     margin: 20px;
