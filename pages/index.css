@@ -924,6 +924,7 @@ form button{
     margin-bottom: 30rem;
     padding-left: 0;
     padding-right: 0;
+    width: 48rem;
   }
 }
 
@@ -981,13 +982,19 @@ form button{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    padding-right: 7rem;
   
   }
   .teams-row2 {
     margin-bottom: 30rem;
     margin-top: 35rem;
+    width: 40rem;
+    padding-right: 7rem;
+    padding-left: 0rem;
+    
   }
 }
+
 
 
 /* --------------------footer section  -------------------------- */
