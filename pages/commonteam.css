@@ -91,9 +91,12 @@ body {
     }
   }
   
-  @media (max-width: 480px) {
-    .team-container {
+  
+  @media(max-width:668px){
+      .team-container {
       grid-template-columns: 1fr;
     }
-  }
-  
+    .aman-kr {
+      width: 79%;
+    }
+   }

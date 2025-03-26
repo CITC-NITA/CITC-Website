@@ -550,6 +550,7 @@ form button{
 
   }
 
+
   .home-content {
     display: flex;
     grid-template-columns: repeat(2, 1fr);
@@ -919,6 +920,11 @@ form button{
   .team-box:hover img {
     transform: scale(1.05);
   }
+  .teams-row2 {
+    margin-bottom: 30rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
@@ -976,6 +982,10 @@ form button{
     flex-direction: column;
     margin-left: 10px;
   
+  }
+  .teams-row2 {
+    margin-bottom: 30rem;
+    margin-top: 35rem;
   }
 }
 
