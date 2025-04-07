@@ -744,6 +744,10 @@ form button{
 
 }
 
+.team-box2 {
+  width: 90%;
+}
+
 .team-box .team-layer{
   position: absolute;
   bottom: 0;
@@ -841,8 +845,9 @@ form button{
   justify-content: center;
   align-items: center;
   height: 250px;
-  padding-left:5rem;
-  padding-right:5rem;
+  padding-left:8rem;
+  padding-right:8rem;
+  gap: 1rem;
 }
 
 @media (max-width: 1024px) and (min-width: 577px) {
