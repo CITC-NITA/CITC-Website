@@ -39,7 +39,7 @@
 #arjn{
 	position: absolute;
 	top: 50%;
-	left: 57%;
+	left: 50%;
 	transform: translate(-50%, -50%);
   color: rgb(2, 2, 35);
 	overflow: hidden;
