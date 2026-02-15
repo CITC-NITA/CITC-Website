@@ -45,7 +45,7 @@ body {
     height: 200px;
     border-radius: 50%;
     border: 3px solid #fff;
-    object-fit: cover;
+    object-fit:cover;
     margin-bottom: 15px;
   }
   
